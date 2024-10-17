@@ -1,0 +1,20 @@
+    <color name="fondobosco">#361439</color>
+    <color name="fondoboscoclaro">#54bdc4</color>
+    <color name="rojobosco">#f70033</color>
+    <color name="celestecolor">#54bdc4</color>
+    <color name="rosadobosco">#ff00bf</color>
+    <color name="naranjabosco">#ff6600</color>
+    <color name="verdebosco">#66b352</color>
+    <color name="amarillobosco">#d1c94d</color>
+
+    <color name="black">#FF000000</color>
+    <color name="blancobosco">#FFFFFFFF</color>
+    <color name="moradobosco">#8B268C</color>
+    <color name="amarillointenso">#fbf207</color>
+
+    <color name="colorceleste1">#3bffb3</color>
+    <color name="colorceleste2">#85edf2</color>
+    <color name="colorceleste3">#3debd1</color>
+    <color name="colorverdeclar">#99ff19</color>
+    <color name="colorrosadoclar">#ff00bf</color>
+    <color name="colormoradoclar">#8000ff</color>

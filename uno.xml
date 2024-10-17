@@ -1,0 +1,3045 @@
+<resources>
+    <string name="app_name">Campo Bosco</string>
+    <string name="nombre">Campo Bosco</string>
+    <string name="nombre_app">Campo Bosco 50 años.</string>
+    <string name="dbosco">Don Bosco</string>
+    <string name="mazzarello">Madre Mazzarello</string>
+    <string name="desarrollador">FeDactSU</string>
+    <string name="descripcioncampoboscochile">
+        <![CDATA[
+        El Campobosco 2024 celebrará con entusiasmo los 50 años del Movimiento Juvenil Salesiano (MJS) en Chile, congregando a jóvenes de todas las presencias salesianas de los Salesianos de Don Bosco y las Hijas de María Auxiliadora. Este campamento será una oportunidad única para fortalecer la fraternidad, compartir experiencias de fe y renovar el compromiso con los valores salesianos en un ambiente de alegría y comunidad.
+    ]]>
+    </string>
+
+    <string name="siguiente"> Siguiente </string>
+    <string name="atras">⬅️ Atrás</string>
+    <string name="preguntacolegioparroquia">¿Cuál es tu colegio⛪️ o parroquia🕍?</string>
+    <string name="oracionmanana">Oración de\nla mañana🙏🏻</string>
+    <string name="eucaristia">Eucaristía</string>
+
+
+    <string-array name="colegios">
+        <item>Elige colegio:</item>
+
+        <item>Colegio Don Bosco Iquique (Salesianos)</item>
+        <item>Liceo María Auxiliadora de Iquique (Hijas de María Auxiliadora)</item>
+
+        <item>Salesianos Alto Hospicio (Salesianos)</item>
+        <item>Colegio Don Bosco Antofagasta (Salesianos)</item>
+        <item>Liceo María Auxiliadora de Antofagasta (Hijas de María Auxiliadora)</item>
+        <item>Don Bosco Calama (Salesianos)</item>
+
+        <item>Salesianos Copiapó (Salesianos)</item>
+
+        <item>Salesianos La Serena (Salesianos)</item>
+
+        <item>Salesianos Valparaíso (Salesianos)</item>
+        <item>Colegio María Auxiliadora de Los Andes (Hijas de María Auxiliadora)</item>
+        <item>Liceo María Auxiliadora de Valparaíso (Hijas de María Auxiliadora)</item>
+        <item>Salesianos Catemu (Salesianos)</item>
+
+        <item>Salesiano Alameda (Salesianos)</item>
+        <item>Patrocinio San José (Salesianos)</item>
+        <item>Oratorio Don Bosco (Salesianos)</item>
+        <item>Liceo Camilo Ortúzar Montt (Salesianos)</item>
+        <item>Liceo Manuel Arriarán Barros (Salesianos)</item>
+        <item>Domingo Savio de San Ramón (Salesianos)</item>
+        <item>Instituto Sagrada Familia de Santiago (Hijas de María Auxiliadora)</item>
+        <item>Liceo José Miguel Infante de Santiago (Hijas de María Auxiliadora)</item>
+        <item>Liceo Polivalente María Auxiliadora de Santiago (Hijas de María Auxiliadora)</item>
+
+        <item>Liceo María Auxiliadora de Santa Cruz (Hijas de María Auxiliadora)</item>
+        <item>Liceo Manuel Montt de San Fernando (Hijas de María Auxiliadora)</item>
+
+        <item>Salesianos Talca (Salesianos)</item>
+        <item>Salesianos Linares (Salesianos)</item>
+        <item>Liceo María Auxiliadora de Linares (Hijas de María Auxiliadora)</item>
+
+        <item>Salesianos Concepción (Salesianos)</item>
+
+        <item>Salesianos Valdivia (Salesianos)</item>
+        <item>Colegio Laura Vicuña de Valdivia (Hijas de María Auxiliadora)</item>
+
+        <item>Salesiano Puerto Montt (Salesianos)</item>
+
+        <item>Liceo Salesiano Monseñor Fagnano (Salesianos)</item>
+        <item>Instituto Don Bosco (Salesianos)</item>
+        <item>Liceo Salesiano San José (Salesianos)</item>
+        <item>Liceo María Auxiliadora de Punta Arenas (Hijas de María Auxiliadora)</item>
+        <item>Liceo Bicentenario María Mazzarello de Puerto Natales (Hijas de María Auxiliadora)</item>
+        <item>Otro:</item>
+    </string-array>
+    <string-array name="edad">
+        <item>Edad:</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>+29</item>
+    </string-array>
+    <string name="dia0">Martes</string>
+
+    <!-- miercoles  -->
+    <string name="dia1">Miércoles</string>
+    <string name="ceferino_namuncura">Ceferino Namuncurá</string>
+    <string name="historiaCeferino">
+        <![CDATA[
+        <html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h4 id="1">Nacimiento y escuela en Buenos Aires</h4>
+<p>Ceferino Namuncurá nació el 26 de agosto de 1886 en Chimpay, a orillas del Río Negro. Su padre, Manuel, el último gran cacique de las tribus indígenas araucanas, se había rendido tres años antes a las tropas de la República Argentina. Después de once años de vida rural libre, Manuel Namuncurá envía a Ceferino a estudiar a Buenos Aires, para que en un mañana pueda defender a los de su raza. El ambiente de familia que se respiraba en el colegio salesiano lo hizo enamorarse de Don Bosco.</p>
+<h4 id="2">Crecimiento espiritual</h4>
+<p>Creció en él la dimensión espiritual y comenzó a desear el llegar a ser sacerdote salesiano para evangelizar a su gente. Eligió a Domingo Savio como modelo, y durante cinco años, a través de su extraordinario esfuerzo por inserirse en una cultura totalmente nueva, él mismo se convirtió en otro Domingo Savio. Fue ejemplar su empeño en la piedad, en la caridad, en los deberes diarios y en el ejercicio ascético.</p>
+<h4 id="3">Aspirante salesiano</h4>
+<p>Este muchacho, a quien le resultaba difícil "alinearse" u "obedecer a la campana", gradualmente se convirtió en un verdadero modelo. Era exacto en el cumplimiento de sus deberes de estudio y oración, como quería Don Bosco. Era el árbitro en las recreaciones: su palabra era bien recibida por los compañeros en disputa. Impresionaba la calma con la que hacía la señal de la cruz, como si estuviera meditando cada palabra; con su ejemplo corregía a sus compañeros enseñándoles a hacerlo lentamente y con devoción. En l903 (contando él con dieciséis años y medio, su padre fue bautizado a la edad de ochenta años), Mons. Cagliero lo acepta en el grupo de aspirantes en Viedma, capital del Vicariato Apostólico, para comenzar el latín.</p>
+<h4 id="4">Italia</h4>
+<p>Debido a su precaria salud, el obispo salesiano decide llevarlo a Italia para que continúe sus estudios de una manera más seria y en un clima que parece más adecuado. En Italia se encuentra con Don Rua y con el Papa Pío X, quien lo bendice con emoción. Asistió a la escuela en Turín y más tarde en el colegio salesiano de Villa Sora, en Frascati. Él estudia con tanto empeño que llega a ser el segundo de la clase.</p>
+<h4 id="5">La Muerte</h4>
+<p>Pero un mal no diagnosticado a tiempo, tal vez porque nunca se quejaba, lo socavó: la tuberculosis. El 28 de marzo de 1905 fue trasladado al hospital de los hermanos juaninos en la isla Tiberina de Roma. Fue demasiado tarde. Murió allí, pacíficamente, el 11 de mayo. Desde 1924 sus restos mortales descansaron en su tierra natal, en Fortín Mercedes, hasta que en 2009 fueron trasladados a Chinpay, donde multitudes de peregrinos van a venerarlo.</p>
+<p>Venerable el 22 de junio de 1972; beatificado el 11 de noviembre de 2007 bajo el pontificado de Benedicto XVI.</p>
+</body>
+</html>
+
+        ]]>
+    </string>
+    <string name="nuevo_laudes_cefe"><![CDATA[
+
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pepe</title>
+</head>
+
+<body>
+<p style="color:red" dir="ltr"><strong>Laudes</strong></p>
+<p  dir="ltr"><strong  style="color:red"  >V</strong>. Señor, abre mis labios.<br>
+<strong  style="color:red" >R. </strong>Y mi boca proclamará tu alabanza.</p>
+<br />
+<p  style="color:red"  dir="ltr"><strong>HIMNO</strong><br />
+</p>
+<p dir="ltr">Cantemos nuestra fe y, al confesarla,<br>
+unidas nuestras voces de creyentes,<br>
+pidamos al Señor que, al proclamarla,<br>
+inunde con su luz nuestras mentes.<br />
+</p>
+<p dir="ltr">El gozo de creer sea alegría<br>
+de servir al Señor, y su Palabra<br>
+simiente en crecimiento día a día,<br>
+que al don de su verdad el mundo abra.</p>
+<br />
+<p dir="ltr">Clara es la fe y oscuro su camino<br>
+de gracia y libertad en puro encuentro,<br>
+si crees que Jesús es Dios que vino,<br>
+no está lejos de ti, sino muy dentro.<br />
+</p>
+<p dir="ltr">Legión es la asamblea de los santos,<br>
+que en el Señor Jesús puso confianza,<br>
+sus frutos de justicia fueron tantos<br>
+que vieron ya colmada su esperanza.<br />
+</p>
+<p dir="ltr">Demos gracias a Dios, que es nuestra roca,<br>
+sigamos a Jesús con entereza,<br>
+si nuestra fe vacila, si ella es poca,<br>
+su Espíritu de amor nos dará fuerza.<br />
+</p>
+<p dir="ltr">Amén.<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >SALMODIA</strong></p>
+<br />
+<p dir="ltr"><strong  style="color:red"  >Ant.1</strong> Dios mío, tus caminos son santos: ¿qué dios es tan grande como nuestro Dios?<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >- Salmo 76 -</strong><br />
+</p>
+<p dir="ltr">Alzo mi voz a Dios gritando,<br>
+alzo mi voz a Dios para que me oiga.<br />
+</p>
+<p dir="ltr">En mi angustia te busco, Señor mío;<br>
+de noche extiendo las manos sin descanso,<br>
+y mi alma rehusa el consuelo.<br>
+Cuando me acuerdo de Dios, gimo,<br>
+y meditando me siento desfallecer.</p>
+<br />
+<p dir="ltr">Sujetas los párpados de mis ojos,<br>
+y la agitación no me deja hablar.<br>
+Repaso los días antiguos,<br>
+recuerdo los años remotos;<br>
+de noche lo pienso en mis adentros,<br>
+y meditándolo me pregunto:<br />
+</p>
+<p dir="ltr">¿Es que el Señor nos rechaza para siempre<br>
+y ya no volverá a favorecernos?<br>
+¿Se ha agotado ya su misericordia,<br>
+se ha terminado para siempre su promesa?<br>
+¿Es que Dios se ha olvidado de su bondad,<br>
+o la cólera cierra sus entrañas?<br />
+</p>
+<p dir="ltr">Y me digo: ¡Qué pena la mía!<br>
+¡Se ha cambiado la diestra del Altísimo!<br>
+Recuerdo las proezas del Señor;<br>
+sí recuerdo tus antiguos portentos,<br>
+medito todas tus obras<br>
+y considero tus hazañas.<br />
+</p>
+<p dir="ltr">Dios mío, tus caminos son santos:<br>
+¿qué dios es grande como nuestro Dios?.<br />
+</p>
+<p dir="ltr">Tú, ¡oh Dios!, haciendo maravillas,<br>
+mostraste tu poder a los pueblos;<br>
+con tu brazo rescataste a tu pueblo,<br>
+a los hijos de Jacob y de José.<br />
+</p>
+<p dir="ltr">Te vio el mar, ¡oh Dios!,<br>
+te vio el mar y tembló,<br>
+las olas se estremecieron.<br />
+</p>
+<p dir="ltr">Las nubes descargaban sus aguas,<br>
+retumbaban los nubarrones,<br>
+tus saetas zigzagueaban.<br />
+</p>
+<p dir="ltr">Rodaba el fragor de tu trueno,<br>
+los relámpagos deslumbraban el orbe,<br>
+la tierra retembló estremecida.<br />
+</p>
+<p dir="ltr">Tú te abriste camino por las aguas,<br>
+un vado por las aguas caudalosas,<br>
+y no quedaba rastro de tus huellas:<br />
+</p>
+<p dir="ltr">mientras guiabas a tu pueblo, como a un rebaño,<br>
+por la mano de Moisés y de Aarón.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo. <br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Ant.1</strong> Dios mío, tus caminos son santos: ¿qué dios es tan grande como nuestro Dios?</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Ant. 2</strong> Mi corazón se regocija por el Señor, que humilla y enaltece.</p>
+<strong><br />
+</strong>
+<p dir="ltr"><strong  style="color:red" >Cántico IS 2,1-10</strong></p>
+<br />
+<p dir="ltr">Mi corazón se regocija por el Señor,<br>
+mi poder se exalta por Dios;<br>
+mi boca se ríe de mis enemigos,<br>
+porque gozo con tu salvación.<br>
+No hay santo como el Señor,<br>
+no hay roca como nuestro Dios.<br />
+</p>
+<p dir="ltr">No multipliquéis discursos altivos,<br>
+no echéis por la boca arrogancias,<br>
+porque el Señor es un Dios que sabe;<br>
+él es quién pesa las acciones.<br />
+</p>
+<p dir="ltr">Se rompen los arcos de los valientes,<br>
+  mientras los cobardes se ciñen de valor;<br>
+los hartos se contratan por el pan,<br>
+mientras los hambrientos no tienen ya que trabajar;<br>
+la mujer estéril da a luz siete hijos,<br>
+mientras que la madre de muchos se marchita.<br />
+</p>
+<p dir="ltr">El Señor da la muerte y la vida,<br>
+  hunde en el abismo y levanta;<br>
+da la pobreza y la riqueza,<br>
+humilla y enaltece.</p>
+<br />
+<p dir="ltr">Él levanta del polvo al desvalido,<br>
+alza de la basura al pobre,<br>
+para hacer que se siente entre príncipes<br>
+y que herede un trono de gloria;<br>
+pues del Señor son los pilares de la tierra,<br>
+y sobre ellos afirmó el orbe.<br />
+</p>
+<p dir="ltr">El guarda los pasos de sus amigos,<br>
+mientras los malvados perecen en las tinieblas,<br>
+porque el hombre no triunfa por su fuerza.<br />
+</p>
+<p dir="ltr">El Señor desbarata a sus contrarios,<br>
+el altísimo truena desde el cielo,<br>
+el Señor juzga hasta el confín de la tierra.<br>
+Él da fuerza a su Rey,<br>
+exalta el poder de su Ungido.<br />
+</p>
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Ant. 2</strong> Mi corazón se regocija por el Señor, que humilla y enaltece.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Ant. 3 </strong>El Señor reina, la tierra goza. +<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >- Salmo 96 -</strong><br />
+</p>
+<p dir="ltr">El Señor reina, la tierra goza,<br>
+<strong>+</strong> se alegran las islas innumerables.<br>
+Tinieblas y nube lo rodean,<br>
+justicia y derecho sostienen su trono.<br />
+</p>
+<p dir="ltr">Delante de él avanza fuego<br>
+abrazando en torno a los enemigos;<br>
+sus relámpagos deslumbran el orbe,<br>
+y, viéndolos, la tierra se estremece.<br />
+</p>
+<p dir="ltr">Los montes se derriten como cera<br>
+ante el dueño de toda la tierra;<br>
+los cielos pregonan su justicia,<br>
+y todos los pueblos contemplan su gloria.<br />
+</p>
+<p dir="ltr">Los que adoran estatuas se sonrojan,<br>
+los que ponen su orgullo en los ídolos;<br>
+ante él se postran todos los dioses.<br />
+</p>
+<p dir="ltr">Lo oye Sión, y se alegra,<br>
+se regocijan las ciudades de Judá<br>
+por tus sentencias, Señor;<br />
+</p>
+<p dir="ltr">porque tú eres, Señor,<br>
+altísimo sobre toda la tierra,<br>
+encumbrado sobre todos los dioses.<br />
+</p>
+<p dir="ltr">El Señor ama al que aborrece el mal,<br>
+protege la vida de sus fieles<br>
+y los libra de los malvados.<br />
+</p>
+<p dir="ltr">Amanece la luz para el justo,<br>
+y la alegría para los rectos de corazón.<br>
+Alegraos, justos con el Señor,<br>
+celebrad su santo nombre.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Ant. 3</strong> El Señor reina, la tierra goza.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >LECTURA BREVE Rom 12,1-2</strong></p>
+<p dir="ltr">Ahora hermanos, por la misericordia de Dios, os exhorto a ofreceros como sacrificio vivo, santo, aceptable a Dios: sea ese vuestro culto espiritual.<br>
+No os acomodéis a este mundo, antes transformaos interiormente con una mentalidad nueva,para discernir la voluntad de Dios, lo que es bueno y aceptable y perfecto.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >RESPONSORIO BREVE</strong></p>
+<p dir="ltr"><strong  style="color:red" >V. </strong>El corazón de los santos en la ley de Dios.<br>
+  <strong  style="color:red" >R.</strong> El corazón de los santos en la ley de Dios.<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >V.</strong> Su camino es derecho y seguro.<br>
+<strong  style="color:red" >R. </strong>En la ley de Dios.<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >V.</strong> Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+  <strong  style="color:red" >R.</strong> El corazón de los santos en la ley de Dios.<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >CÁNTICO EVANGÉLICO</strong><br />
+</p>
+<p dir="ltr"><strong  style="color:red" >Ant. </strong>El que hace la verdad, viene a la luz. Y aparecerán sus obras de hijo de Dios.<strong><br />
+</strong></p>
+<p dir="ltr"><strong  style="color:red" >Cántico de zacarías Lc 1, 68-79</strong></p>
+<br />
+<p dir="ltr">Bendito sea el Señor, Dios de Israel,<br>
+porque ha visitado y redimido a su pueblo,<br>
+suscitándonos una fuerza de salvación<br>
+en la casa de David, su siervo,<br>
+según lo había predicho desde antiguo<br>
+por boca de sus santos profetas.<br />
+</p>
+<p dir="ltr">Es la salvación que nos libra de nuestros enemigos<br>
+y de la mano de todos los que nos odian;<br>
+ha realizado así la misericordia que tuvo con<br>
+nuestros padres,<br>
+recordando su santa alianza<br>
+y el juramento que juró a nuestro padre Abraham.<br />
+</p>
+<p dir="ltr">Para concedernos que, libres de temor,<br>
+arrancados de la mano de los enemigos,<br>
+le sirvamos con santidad y justicia,<br>
+en su presencia, todos nuestros días</p>
+<br />
+<p dir="ltr">Y a ti, niño, te llamarán profeta del Altísimo,<br>
+porque irás delante del Señor<br>
+a preparar sus caminos,<br>
+anunciando a su pueblo la salvación,<br>
+el perdón de sus pecados.<br />
+</p>
+<p dir="ltr">Por la entrañable misericordia de nuestro Dios,<br>
+nos visitará el sol que nace de lo alto,<br>
+para iluminar a los que viven en tiniebla<br>
+y en sombra de muerte,<br>
+para guiar nuestros pasos<br>
+por el camino de la paz</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre,
+por los siglos de los siglos. Amén.<br />
+</p>
+<p dir="ltr"><strong  style="color:red" >Ant.</strong> El que hace la verdad, viene a la luz. Y aparecerán sus obras de hijo de Dios.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >PRECES</strong></p>
+<p dir="ltr">Adoremos, hermanos, a Cristo, el Dios santo, y, pidiéndole que nos enseñe a servirle con santidad y justicia en su presencia todos nuestros días, aclamémosle, diciendo: Roguemos al Señor.</p>
+<br />
+<p dir="ltr">Por la juventud del Movimiento Juvenil Salesiano,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation">para que inspirados en el ejemplo de Ceferino Namuncurá, vivan con entusiasmo su fe y aspiren a la santidad, siendo luz y esperanza en sus comunidades.</p>
+    <p dir="ltr" role="presentation">&nbsp;</p>
+  </li>
+</ul>
+<p dir="ltr">Por los Salesianos de Don Bosco y las Hijas de María Auxiliadora,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que con amor y dedicación sigan acompañando a los jóvenes en su camino de fe, promoviendo el carisma salesiano con la misma pasión de San Juan Bosco.&nbsp;</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por todos los participantes de este CAMPOBOSCO,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que este tiempo de fraternidad y encuentro fortalezca sus lazos con Dios y con sus hermanos, y les ayude a discernir su vocación en medio del mundo. Roguemos al Señor.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por los pueblos originarios y sus culturas, especialmente el pueblo mapuche al que Ceferino pertenecía,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que se respeten sus derechos y tradiciones, y crezcamos en la construcción de una sociedad más justa y fraterna. Roguemos al Señor.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por las familias y comunidades de los jóvenes aquí presentes,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que sean espacios donde reine el amor, la paz y la solidaridad, y que los jóvenes encuentren en ellas apoyo para seguir a Cristo con generosidad. Roguemos al Señor.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr"  style="color:red" >Se pueden añadir algunas intenciones libres.</p>
+<br />
+<p dir="ltr">Oremos ahora al Padre, como nos enseñó el mismo Jesús: Padre nuestro.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >Oración</strong></p>
+<p dir="ltr">Oh Dios, Padre nuestro, que en el beato Ceferino Namuncurá das a los jóvenes un luminoso ejemplo de santidad florecida en tierra patagónica, concédenos, por su intercesión, colaborar en la difusión de tu reino realizando con paciencia y amor las tareas de cada día. Por nuestro Señor Jesucristo, tu Hijo.</p>
+<br />
+<p dir="ltr"><strong  style="color:red" >CONCLUSIÓN.</strong></p>
+<strong><br />
+</strong>
+<p dir="ltr"><strong  style="color:red" >V</strong>. El Señor nos bendiga, nos guarde de todo mal y nos lleve a la vida eterna.<br>
+<strong  style="color:red" >R.</strong> Amén.</p>
+<br>
+<p>&nbsp;</p><br><br><br>
+</body>
+</html>
+
+
+    ]]></string>
+    <string name="misa_miercoles"><![CDATA[
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>misamiercoles</title>
+</head>
+
+<body>
+<p dir="ltr"><strong  >Lecturas miércoles 30 de octubre.<br>
+</strong ><strong style="color:red">Primera lectura</strong><br>
+<strong> Lectura de la carta del apóstol san Pablo a los Efesios 6,1-9:</strong></p>
+<p dir="ltr">Hijos, obedeced a vuestros padres en el Señor, porque eso es justo.<br>
+«Honra a tu padre y a tu madre» es el primer mandamiento al que se añade una promesa: «Te irá bien y vivirás largo tiempo en la tierra». Padres, no exasperéis a vuestros hijos; criadlos educándolos y corrigiéndolos según el Señor. Esclavos, obedeced a vuestros amos de la tierra con respeto y temor, con la sencillez de vuestro corazón, como a Cristo. No por las apariencias, para quedar bien ante los hombres, sino como esclavos de Cristo que hacen, de corazón, lo que Dios quiere, de buena gana, como quien sirve al Señor y no a hombres. Sabed que lo que uno haga de bueno, sea esclavo o libre, se lo pagará el Señor.&nbsp; Amos, comportaos también vosotros del mismo modo, dejándoos de amenazas; sabéis que ellos y vosotros tenéis un amo en el cielo y que ese no es parcial con nadie.</p>
+<p dir="ltr"><strong>Palabra de Dios.</strong><br />
+</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr"><strong>Salmo 144&nbsp;<br />
+R/. El Señor es fiel a sus palabras</strong></p>
+<p dir="ltr">Que todas tus criaturas te den gracias, Señor,<br>
+que te bendigan tus fieles.<br>
+Que proclamen la gloria de tu reinado,<br>
+que hablen de tus hazañas. <strong>R/.</strong><br />
+</p>
+<p dir="ltr">Explicando tus hazañas a los hombres,<br>
+  la gloria y majestad de tu reinado.<br>
+  Tu reinado es un reinado perpetuo,<br>
+  tu gobierno va de edad en edad. <strong>R/.</strong><br />
+</p>
+<p dir="ltr">El Señor es fiel a sus palabras,<br>
+  bondadoso en todas sus acciones.<br>
+  El Señor sostiene a los que van a caer,<br>
+  endereza a los que ya se doblan. <strong>R/.</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">Evangelio del día<br>
+</strong><strong>Lectura del santo evangelio según san Lucas 13,22-30</strong></p>
+<p dir="ltr">En aquel tiempo, Jesús pasaba por ciudades y aldeas enseñando y se encaminaba hacia Jerusalén. Uno le preguntó: «Señor, ¿son pocos los que se salvan?». Él les dijo: «Esforzaos en entrar por la puerta estrecha, pues os digo que muchos intentarán entrar y no podrán. Cuando el amo de la casa se levante y cierre la puerta, os quedaréis fuera y llamaréis a la puerta diciendo: &ldquo;Señor, ábrenos&rdquo;; pero él os dirá: &ldquo;No sé quiénes sois&rdquo;. Entonces comenzaréis a decir: <br>
+&ldquo;Hemos comido y bebido contigo, y tú has enseñado en nuestras plazas&rdquo;.<br>
+Pero él os dirá: &ldquo;No sé de dónde sois. Alejaos de mí todos los que obráis la iniquidad&rdquo;.<br>
+Allí será el llanto y el rechinar de dientes, cuando veáis a Abrahán, a Isaac y a Jacob y a todos los profetas en el reino de Dios, pero vosotros os veáis arrojados fuera. Y vendrán de oriente y occidente, del norte y del sur, y se sentarán a la mesa en el reino de Dios.<br>
+Mirad: hay últimos que serán primeros, y primeros que serán últimos».</p>
+<p dir="ltr"><strong>Palabra del Señor.</strong></p>
+<br>
+</body>
+</html>
+
+    ]]></string>
+
+    <!-- jueves  -->
+    <string name="dia2">Jueves</string>
+    <string name="laura_vicuna">Laura Vicuña</string>
+    <string name="laudesJueves">
+        <![CDATA[
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>laudesjueves</title>
+</head>
+
+<body>
+<p dir="ltr"><strong>Laudes</strong></p>
+<p dir="ltr"><strong style="color:red">V.</strong> Señor, abre mis labios.<br>
+<strong style="color:red">R. </strong>Y mi boca proclamará tu alabanza.</p>
+<br />
+<p dir="ltr" style="color:red"><strong>HIMNO</strong></p>
+<p dir="ltr">Señor, que ensalzas y humillas,<br>
+¡qué grande eres en tus santos,<br>
+y qué pobres nuestros cantos<br>
+ante tantas maravillas!<br />
+</p>
+<p dir="ltr">Ellos son los seres grandes<br>
+que van siguiendo tu huella.<br>
+Gracias, pues, porque en los Andes<br>
+brotó esta rosa tan bella.<br />
+</p>
+<p dir="ltr">Tú le enseñaste a crecer<br>
+con la firmeza del viento<br>
+para ser, cuando mujer,<br>
+limpia como el firmamento.<br />
+</p>
+<p dir="ltr"> Aprendió a alzarse del suelo,<br>
+  libre de intenciones malas,<br>
+  como el cóndor alza el vuelo<br>
+sin sentir lastre en las alas.</p>
+<p dir="ltr">Por eso, cuando pretende<br>
+  dominarla el poderoso,<br>
+  ella se encara y defiende<br>
+su tesoro más precioso.</p>
+<p dir="ltr">Al final, cuando ya sabe<br>
+  que se acerca la partida,<br>
+  pide a la madre que acabe<br>
+dando sentido a su vida.</p>
+<p dir="ltr">Y el cielo acepta propicio<br>
+  el cuerpo grácil, exhausto,<br>
+  que se ofrece en sacrificio<br>
+como el mejor holocausto.</p>
+<p dir="ltr">Señor, que ensalzas y humillas,<br>
+  ¡qué grande eres en tus santos,<br>
+  y qué pobres nuestros cantos<br>
+  ante tantas maravillas! Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">SALMODIA</strong></p>
+<p dir="ltr"><strong style="color:red">Ant. 1 </strong>Despierta tu poder, Señor, y ven a salvarnos.<br />
+</p>
+<p dir="ltr"><strong style="color:red">- Salmo 79 -</strong><br />
+</p>
+<p dir="ltr">Pastor de Israel, escucha,<br>
+tu que guías a José como a un rebaño;<br>
+tu que te sientas sobre querubines, resplandece<br>
+ante Efraím, Benjamín y Manasés;<br>
+despierta tu poder y ven a salvarnos.<br />
+</p>
+<p dir="ltr">¡Oh Dios!, restáuranos,<br>
+  que brille tu rostro y nos salve.<br />
+</p>
+<p dir="ltr">Señor Dios de los ejércitos,<br>
+¿hasta cuando estarás airado<br>
+mientras tu pueblo te suplica?</p>
+<p dir="ltr">Le diste a comer llanto,<br>
+  a beber lágrimas a tragos;<br>
+  nos entregaste a las disputas de nuestros vecinos,<br>
+  nuestros enemigos se burlan de nosotros.<br />
+</p>
+<p dir="ltr">Dios de los ejércitos, restáuranos,<br>
+que brille tu rostro y nos salve.<br />
+</p>
+<p dir="ltr">Sacaste una vid de Egipto,<br>
+expulsaste a los gentiles, y la trasplantaste;<br>
+le preparaste el terreno y echó rices<br>
+hasta llenar el país;<br />
+</p>
+<p dir="ltr">su sombra cubría las montañas,<br>
+y sus pámpanos, los cedros altísimos;<br>
+extendió sus sarmientos hasta el mar,<br>
+y sus brotes hasta el Gran Río.</p>
+<p dir="ltr">¿Por que has derribado su cerca<br>
+  para que la saqueen los viandantes,<br>
+  la pisoteen los jabalíes<br>
+  y se la coman las alimañas?<br />
+</p>
+<p dir="ltr">Dios de los ejércitos, vuélvete:<br>
+  mira desde el cielo, fíjate,<br>
+  ven a visitar tu viña,<br>
+  la cepa que tu diestra plantó,<br>
+  y que tú hiciste vigorosa.<br />
+</p>
+<p dir="ltr">La han talado y le han prendido fuego:<br>
+con un bramido hazlos perecer.<br>
+Que tu mano proteja a tu escogido,<br>
+al hombre que tu fortaleciste.<br>
+No nos alejaremos de ti:<br>
+danos vida, para que invoquemos tu nombre.<br />
+</p>
+<p dir="ltr">Señor Dios de los ejércitos, restáuranos,<br>
+  que brille tu rostro y nos salve.<br />
+</p>
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 1</strong> Despierta tu poder, Señor, y ven a salvarnos.<br />
+</p>
+<p dir="ltr"><strong style="color:red">Ant. 2 </strong>Anunciad a toda la tierra que el Señor hizo proezas.<br />
+</p>
+<p dir="ltr" style="color:red">Cántico Is. 12,1-6</p>
+<p dir="ltr" >Te doy, gracias, Señor, <br>
+porque estabas airado contra mí,<br>
+pero ha cesado tu ira<br>
+y me has consolado.</p>
+<br />
+<p dir="ltr">Él es mí Dios y salvador:<br>
+confiaré y no temeré,<br>
+porque mi fuerza y mi poder es el Señor,<br>
+él fue mi salvación.<br>
+Y sacaréis aguas con gozo<br>
+de las fuentes de la salvación.</p>
+<br />
+<p dir="ltr">Aquel día, diréis:<br>
+Dad gracias al Señor,<br>
+invocad su nombre,<br>
+contad a los pueblos sus hazañas,<br>
+proclamad que su nombre es excelso.</p>
+<br />
+Tañed para el Señor, que hizo proezas;<br>
+anunciadlas a toda la tierra;<br>
+gritad jubilosos, habitantes de Sión:<br>
+&quot;¡Qué grande es en medio de ti<br>
+el Santo de Israel!&quot; <br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo. <br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 2 </strong>Anunciad a toda la tierra que el Señor hizo proezas.<br>
+</p>
+<p dir="ltr"> <strong style="color:red">Ant. 3</strong> Aclamad a Dios, nuestra fuerza. <strong style="color:red">+</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">- Salmo 80 -</strong></p>
+<br />
+<p dir="ltr">Aclamad a Dios, nuestra fuerza:<br>
+<strong style="color:red"> + </strong>dad vítores al Dios de Jacob:</p>
+<br />
+<p dir="ltr">acompañad, tocad los panderos,<br>
+las cítaras templadas y las arpas;<br>
+tocad las trompetas por la luna nueva,<br>
+por la luna llena que es nuestra fiesta;</p>
+<br />
+<p dir="ltr">Porque es una ley de Israel,<br>
+un precepto del Dios de Jacob,<br>
+una norma establecida para José<br>
+al salir de Egipto.</p>
+<br />
+<p dir="ltr">Oigo un lenguaje desconocido:<br>
+&quot;Retiré sus hombros de la carga,<br>
+y sus manos dejaron la espuerta.</p>
+<br />
+<p dir="ltr">Clamaste en la aflicción, y te libré,<br>
+te respondí oculto entre los truenos,<br>
+te puse a prueba junto a la fuente de Meribá.</p>
+<br />
+<p dir="ltr">Escucha, pueblo mío, doy testimonio contra ti;<br>
+¡ojalá me escuchases, Israel!</p>
+<br />
+<p dir="ltr">No tendrás un Dios extraño,<br>
+no adoraras un dios extranjero:<br>
+yo soy el Señor Dios tuyo,<br>
+que te saqué del país de Egipto:<br>
+abre tu boca y yo la saciaré.</p>
+<br />
+<p dir="ltr">Pero mi pueblo no escuchó mi voz,<br>
+Israel no quiso obedecer:<br>
+los entregué a su corazón obstinado,<br>
+para que anduviesen según sus antojos.</p>
+<br />
+<p dir="ltr">¡Ojalá me escuchase mi pueblo<br>
+y caminase Israel por mi camino!<br>
+En un momento humillaría a sus enemigos<br>
+y volvería mi mano contra sus adversarios,</p>
+<br />
+<p dir="ltr">los que aborrecen al Señor te adularían,<br>
+y su suerte quedaría fijada;<br>
+te alimentaría con flor de harina,<br>
+te saciaría con miel silvestre.&quot;</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 3</strong> Aclamad a Dios, nuestra fuerza.</p>
+<br />
+<p dir="ltr"><strong style="color:red">LECTURA BREVE Rom 12,1-2</strong></p>
+<p dir="ltr">Ahora hermanos, por la misericordia de Dios, os exhorto a ofreceros como sacrificio vivo, santo, aceptable a Dios: sea ése vuestro culto espiritual. No os acomodéis a este mundo, antes transformaos con una mentalidad nueva, para discernir la voluntad de Dios, lo que es bueno y aceptable y perfecto.</p>
+<br />
+<p dir="ltr"><strong style="color:red">RESPONSORIO BREVE</strong></p>
+<p dir="ltr"><strong style="color:red">V.</strong> Dios la sostiene con la luz de su rostro.<br>
+<strong style="color:red">R. </strong>Dios la sostiene con la luz de su rostro.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> No podrá dudar: Dios está con ella,&nbsp;<br>
+<strong style="color:red">R. </strong>Con la luz de su rostro.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+<strong style="color:red">R. </strong>Dios la sostiene con la luz de su rostro.<br />
+<br />
+</p>
+<p dir="ltr"><strong style="color:red">CÁNTICO EVANGÉLICO</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant.</strong> Dios reveló los misterios del Reino a la gente sencilla.</p>
+<p dir="ltr"><strong  style="color:red" >Cántico de zacarías Lc 1, 68-79</strong></p>
+<br />
+<p dir="ltr">Bendito sea el Señor, Dios de Israel,<br>
+porque ha visitado y redimido a su pueblo,<br>
+suscitándonos una fuerza de salvación<br>
+en la casa de David, su siervo,<br>
+según lo había predicho desde antiguo<br>
+por boca de sus santos profetas.<br />
+</p>
+<p dir="ltr">Es la salvación que nos libra de nuestros enemigos<br>
+y de la mano de todos los que nos odian;<br>
+ha realizado así la misericordia que tuvo con<br>
+nuestros padres,<br>
+recordando su santa alianza<br>
+y el juramento que juró a nuestro padre Abraham.<br />
+</p>
+<p dir="ltr">Para concedernos que, libres de temor,<br>
+arrancados de la mano de los enemigos,<br>
+le sirvamos con santidad y justicia,<br>
+en su presencia, todos nuestros días</p>
+<br />
+<p dir="ltr">Y a ti, niño, te llamarán profeta del Altísimo,<br>
+porque irás delante del Señor<br>
+a preparar sus caminos,<br>
+anunciando a su pueblo la salvación,<br>
+el perdón de sus pecados.<br />
+</p>
+<p dir="ltr">Por la entrañable misericordia de nuestro Dios,<br>
+nos visitará el sol que nace de lo alto,<br>
+para iluminar a los que viven en tiniebla<br>
+y en sombra de muerte,<br>
+para guiar nuestros pasos<br>
+por el camino de la paz</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre,
+	por los siglos de los siglos. Amén.</p><br />
+<br />
+<p dir="ltr"><strong style="color:red">Ant.</strong> Dios reveló los misterios del Reino a la gente sencilla.</p>
+<br />
+<p dir="ltr"><strong style="color:red">PRECES.</strong></p>
+<p dir="ltr">Hermanos y hermanas, en este día especial en el que recordamos a la Beata Laura Vicuña, joven valiente y fervorosa, que nos enseñó el valor del sacrificio y la entrega total al Señor.</p>
+<br />
+<p dir="ltr">Por los jóvenes del Movimiento Juvenil Salesiano,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, al igual que Laura Vicuña, respondan con generosidad a la llamada de Dios, entregándose con amor y perseverancia a sus ideales cristianos.</em></p>
+    <p dir="ltr" role="presentation">&nbsp;</p>
+  </li>
+</ul>
+<p dir="ltr">Por los educadores y acompañantes espirituales,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, como María Auxiliadora guió a Laura, ellos sepan ser verdaderos referentes de fe y fortaleza, acompañando con ternura y sabiduría a los jóvenes en su caminar.&nbsp;</em></p>
+    <p dir="ltr" role="presentation">&nbsp;</p>
+  </li>
+</ul>
+<p dir="ltr">Por todas las familias aquí representadas,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, inspiradas por el ejemplo de Laura, sean lugares de amor, perdón y apoyo mutuo, y que los jóvenes crezcan en ellas fortalecidos en su fe.</em></p>
+    <p dir="ltr" role="presentation">&nbsp;</p>
+  </li>
+</ul>
+<p dir="ltr">Por la protección y respeto a la dignidad de la mujer,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, al recordar el coraje y la pureza de Laura Vicuña, trabajemos juntos por una sociedad donde las mujeres sean valoradas y respetadas en todas sus dimensiones.&nbsp;</em><br>
+    </p>
+  </li>
+</ul>
+<p dir="ltr">Por la gracia de la reconciliación y la paz,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que en este CAMPOBOSCO se fortalezca en cada uno de nosotros el deseo de vivir en armonía, superando divisiones y construyendo puentes de fraternidad y amor cristiano.</em></p>
+  </li>
+</ul>
+<p dir="ltr" style="color:red">Se pueden añadir algunas intenciones libres.</p>
+<br />
+<p dir="ltr">Oremos ahora al Padre, como nos enseñó el mismo Jesús: Padre nuestro.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Oración</strong></p>
+<p dir="ltr">Padre de inmensa ternura, que en la adolescente Laura Vicuña uniste de modo admirable la</p>
+<p dir="ltr">fortaleza de espíritu y el candor de la inocencia; concédenos, por su intercesión, valentía</p>
+<p dir="ltr">para superar las dificultades de la vida y dar testimonio, ante el mundo, de la</p>
+<p dir="ltr">bienaventuranza de los limpios de corazón. Por nuestro Señor Jesucristo tu Hijo.</p>
+<br />
+<p dir="ltr"><strong style="color:red">CONCLUSIÓN.</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">V. </strong>El Señor nos bendiga, nos guarde de todo mal y nos lleve a la vida eterna.</p>
+<p dir="ltr"><strong style="color:red">R.</strong> Amén.</p>
+<br><br><br>
+</body>
+</html>
+        ]]>
+    </string>
+    <string name="htmlmisajueves">
+        <![CDATA[
+
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>misajueves</title>
+</head>
+
+<body>
+<p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
+<p dir="ltr"><strong>Lectura de la carta del apóstol san Pablo a los Efesios 6, 10-20</strong></p>
+<p dir="ltr">Hermanos: Buscad vuestra fuerza en el Señor y en su invencible poder. Poneos las armas de Dios, para poder afrontar las asechanzas del diablo, porque nuestra lucha no es contra hombres de carne y hueso sino contra los principados, contra las potestades, contra los dominadores de este mundo de tinieblas, contra los espíritus malignos del aire.<br />
+Por eso, tomad las armas de Dios para poder resistir en el día malo y manteneros firmes después de haber superado todas las pruebas. Estad firmes; ceñid la cintura con la verdad, y revestid la coraza de la justicia; calzad los pies con la prontitud para el evangelio de la paz. Embrazad el escudo de la fe, donde se apagarán las flechas incendiarias del maligno. Poneos el casco de la salvación y empuñad la espada del Espíritu que es la palabra de Dios.<br />
+Siempre en oración y súplica, orad en toda ocasión en el Espíritu, velando juntos con constancia, y suplicando por todos los santos. Pedid también por mí, para que cuando abra mi boca, se me conceda el don de la palabra, y anuncie con valentía el misterio del Evangelio, del que soy embajador en cadenas, y tenga valor para hablar de él como debo. <strong>Palabra de Dios.</strong></p>
+<br />
+<p dir="ltr"><strong>Salmo 143<br>
+R/. ¡Bendito el Señor, mi alcázar!
+</strong></p>
+<p dir="ltr">Bendito el Señor, mi Roca,<br>
+que adiestra mis manos para el combate,<br>
+mis dedos para la pelea. <strong>R/.</strong><br />
+</p>
+<p dir="ltr">Mi bienhechor, mi alcázar,<br>
+  baluarte donde me pongo a salvo,<br>
+  mi escudo y refugio,<br>
+  que me somete los pueblos. <strong>R/.</strong><br />
+</p>
+<p dir="ltr">Dios mío, te cantaré un cántico nuevo,<br>
+  tocaré para ti el arpa de diez cuerdas:<br>
+  para ti que das la victoria a los reyes,<br>
+  y salvas a David, tu siervo, de la espada maligna. <strong>R/.</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">Evangelio</strong></p>
+<p dir="ltr"><strong>Lectura del santo evangelio según san Lucas 13, 31-35</strong></p>
+<p dir="ltr">En aquel día, se acercaron unos fariseos a decir a Jesús:&nbsp; «Sal y marcha de aquí, porque Herodes quiere matarte». Jesús les dijo:<br>
+«Id y decid a ese zorro: &ldquo;Mira, yo arrojo demonios y realizo curaciones hoy y mañana, y al tercer día mi obra quedará consumada. Pero es necesario que camine hoy y mañana y pasado, porque no cabe que un profeta muera fuera de Jerusalén&rdquo;. ¡Jerusalén, Jerusalén, que matas a los profetas y apedreas a los que se te envían! Cuántas veces he querido reunir a tus hijos, como la gallina reúne a sus polluelos bajo las alas, y no habéis querido.<br>
+Mirad, vuestra casa va a ser abandonada. Os digo que no me veréis hasta el día en que digáis: &ldquo;¡Bendito el que viene en nombre del Señor!&rdquo;». <strong>Palabra del Señor. </strong></p>
+<br><br><br>
+</body>
+</html>
+
+        ]]>
+    </string>
+    <string name="historiaLaura">
+        <![CDATA[
+       <html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<p dir="ltr">Laura Carmen Vicuña nació en Santiago de Chile el 5 de abril de 1891. Educada según el Sistema Preventivo de san Juan Bosco en el colegio «María Auxiliadora», de los Andes argentinos, esta ejemplar adolescente no tardó en ser modelo de amistad. con Jesús, de caridad apostólica entre sus compañeras y de fidelidad a sus deberes cotidianos.</p>
+    <p dir="ltr">Llena de confianza, soportó con heroica fortaleza sufrimientos físicos y morales superiores a su edad. Fiel a la inspiración del Espíritu Santo, no vaciló en ofrecerse como víctima para que su madre volviera al camino de la salvación. Murió el 22 de enero de 1904 en Junín de los Andes (Argentina). Juan Pablo II la beatificó el 3 de septiembre de 1988 en la Colina de las bienaventuranzas juveniles de Castelnuovo Don Bosco (provincia de Asti, Italia).</p>
+    <br></body>
+</html>
+        ]]>
+    </string>
+
+    <!-- viernes  -->
+    <string name="dia3">Viernes</string>
+    <string name="todosLosSantos">Todos los santos</string>
+    <string name="historiaTodosLosSantos">
+        <![CDATA[
+        <html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h2><strong>El significado de la solemnidad</strong></h2>
+<p>La memoria litúrgica dedica un día especial a todos aquellos que están unidos a Cristo en la gloria y que no sólo son indicados como arquetipos, sino también invocados como protectores de nuestras acciones. Los Santos son los hijos de Dios que han alcanzado la meta de la salvación y que viven en la eternidad esa condición de bienaventuranza bien expresada por Jesús en el discurso de la montaña narrado en el Evangelio (Mt 5, 1-12). Los Santos son también los que nos acompañan en el camino de la imitación de Jesús, que nos conduce a ser la piedra angular en la construcción del Reino de Dios.</p>
+<h2><strong>La Comunión de los santos</strong></h2>
+<p>En nuestra Profesión de Fe afirmamos que creemos en la Comunión de los Santos: con esto queremos decir tanto la vida como la contemplación eterna de Dios, que es la razón y el propósito de esta comunión, pero también queremos decir la comunión con las "cosas" santas. Si, en efecto, los bienes terrenales, en cuanto son limitados, dividen a las personas en el espacio y en el tiempo, las gracias, los dones que Dios hace son infinitos y de ellos todos pueden participar. Especialmente el don de la Eucaristía nos permite vivir ya ahora la anticipación de esa liturgia que el Señor celebra en el santuario celestial con todos los santos. La grandeza de la redención se mide por el fruto, es decir, por los que han sido redimidos y han madurado en la santidad. La Iglesia contempla en sus rostros su vocación, la condición de humanidad transfigurada en el camino hacia el Reino.</p>
+<h2><strong>Orígenes e historia de la fiesta</strong></h2>
+<p>Esta fiesta de la esperanza, que nos recuerda el objetivo de nuestra vida, tiene raíces antiguas: en el siglo IV comienza a celebrarse la conmemoración de los mártires, común a varias Iglesias. Los primeros vestigios de esta celebración se encontraron en Antioquía el domingo siguiente a Pentecostés y San Juan Crisóstomo ya hablaba de ello. Entre los siglos VIII y IX, la fiesta comenzó a extenderse por toda Europa, y en Roma específicamente en el siglo IX: aquí el Papa Gregorio III (731-741) eligió como fecha del 1 de noviembre para coincidir con la consagración de una capilla en San Pedro dedicada a las reliquias "de los santos apóstoles y de todos los santos mártires y confesores, y de todos los justos perfeccionados que descansan en paz en todo el mundo". En la época de Carlomagno, esta fiesta ya era ampliamente conocida como la ocasión en que la Iglesia, que todavía peregrina y sufre en la Tierra, miraba al cielo, donde residen sus hermanos y hermanas más gloriosos.</p>
+<h4 id="1">&nbsp;</h4>
+</body>
+</html>
+  ]]>
+
+    </string>
+    <string name="laudesViernes"><![CDATA[
+
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laudes; Todos los Santos</title>
+    <style>
+    body{
+            font-size: large;
+        }
+        j {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Laudes</h2><br>
+    Todos los Santos<br>
+    <j>Solemnidad</j>
+
+    <p>
+        1 noviembre
+    </p>
+    <p>
+        <j>V.</j> Señor, abre mis labios.<br>
+        <j>R.</j> Y mi boca proclamará tu alabanza.
+    </p>
+    <p>
+
+        <j><b>HIMNO</b></j>
+        </j>
+    </p>
+    <p>
+        Vosotros sois luz del mundo<br>
+        y ardiente sal de la tierra,<br>
+        ciudad esbelta en el monte,<br>
+        fermento en la masa nueva.
+    </p>
+    <p>
+        Vosotros sois los sarmientos,<br>
+        y yo la Vid verdadera;<br>
+        si el Padre poda las ramas,<br>
+        más fruto llevan las cepas.
+    </p>
+    </p>
+    <p>
+        Vosotros sois la abundancia<br>
+        del reino que ya está cerca,<br>
+        los doce mil señalados<br>
+        que no caerán en la siega.
+    </p>
+    </p>
+    <p>
+        Dichosos, porque sois limpios<br>
+        y ricos en la pobreza,<br>
+        y es vuestro el reino que sólo<br>
+        se gana con la violencia. Amén.
+    </p>
+    </p>
+    <p>
+
+        <j>S<b>ALMODIA</b></j>
+    </p>
+    </p>
+    <p>
+        <j>Ant. 1 </j> Los santos tienen su morada en el reino de Dios, y allí han encontrado descanso eterno. Aleluya.
+    </p>
+    <p>
+        <j>- Salmo 62 - </j>
+    </p>
+    <p>
+        ¡Oh Dios!, tú eres mi Dios, por ti madrugo,<br>
+        mi alma está sedienta de ti; <br>
+        mi carne tiene ansias de ti,<br>
+        como tierra reseca, agostada, sin agua.
+    </p>
+    <p>
+        ¡Cómo te contemplaba en el santuario <br>
+        viendo tu fuerza y tu gloria! <br>
+        Tu gracia vale más que la vida, <br>
+        te alabarán mis labios.
+    </p>
+    <p>
+        Toda mi vida te bendeciré <br>
+        y alzaré las manos invocándote.<br>
+        Me saciaré de manjares exquisitos, <br>
+        y mis labios te alabarán jubilosos.
+    </p>
+    <p>
+        En el lecho me acuerdo deti <br>
+        y velando medito en ti, <br>
+        porque fuiste mi auxilio,<br>
+        y a las sombras de tus alas canto con júbilo;<br>
+        mi alma está unida a ti, <br>
+        y tu diestra me sostiene.
+    </p>
+    <p>
+        Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+        Como era en el principio, ahora y siempre,<br>
+        por los siglos de los siglos.
+        Amén.
+    </p>
+    <p>
+        <j>Ant. 1 </j> Los santos tienen su morada en el reino de Dios, y allí han encontrado descanso eterno. Aleluya.
+    </p>
+    <p>
+        <j>Ant. 2 </j> Santos de Dios, bendecid al Señor eternamente.
+    </p>
+    <p>
+        <j>Cántico. <br>
+            Dn. 3,57-88. 56</j>
+    </p>
+    <p>
+        Creaturas todas del Señor, bendecid al Señor,<br>
+        ensalzadlo con himnos por los siglos.
+    </p>
+    <p>
+        Angeles del Señor, bendecid al Señor;<br>
+        cielos, bendecid al Señor.
+    </p>
+    <p>
+        Aguas del espacio, bendecid al Señor;<br>
+        ejércitos del Señor bendecid al Señor.
+    </p>
+    <p>
+        Sol y luna, bendecid al Señor;<br>
+        astros del cielo, bendecid al Señor.
+    </p>
+    <p>
+        Lluvia y rocío, bendecid al Señor;<br>
+        vientos todos, bendecid al Señor.
+    </p>
+    <p>
+        Fuego y calor, bendecid al Señor;<br>
+        fríos y heladas, bendecid al Señor.
+    </p>
+    <p>
+        Rocíos y nevadas bendecid al Señor;<br>
+        témpanos y hielos, bendecid al Señor.
+    </p>
+    <p>
+        E scarchas y nieve, bendecid al Señor;<br>
+        noche
+        y
+        día,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Luz
+        y
+        tinieblas,
+        bendecid
+        al
+        Señor;<br>
+        rayos
+        y
+        nubes,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Bendiga
+        la
+        tierra
+        al
+        Señor,
+        <br>
+        ensálcelo
+        con
+        himnos
+        por
+        los
+        siglos.
+    </p>
+    <p>
+
+        Montes
+        y
+        cumbres,
+        bendecid
+        al
+        Señor;<br>
+        cuanto
+        germina
+        en
+        la
+        tierra,
+        bendiga
+        al
+        Señor.
+    </p>
+    <p>
+
+        Manantiales,
+        bendecid
+        al
+        Señor;
+        <br>
+        mares
+        y
+        ríos,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Cetáceos
+        y
+        peces,
+        bendecid
+        al
+        Señor;<br>
+        aves
+        del
+        cielo,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Fieras
+        y
+        ganados,
+        bendecid
+        al
+        Señor,
+        <br>
+        ensalzadlo
+        con
+        himnos
+        por
+        los
+        siglos.
+    </p>
+    <p>
+
+        Hijos
+        de
+        los
+        hombres,
+        bendecid
+        al
+        Señor;
+        <br>
+        bendiga
+        Israel
+        al
+        Señor.
+    </p>
+    <p>
+
+        Sacerdotes
+        del
+        Señor,
+        bendecid
+        al
+        Señor;<br>
+        siervos
+        del
+        Señor,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Almas
+        y
+        espíritus
+        justos,
+        bendecid
+        al
+        Señor;<br>
+        santos
+        y
+        humildes
+        de
+        corazón,
+        bendecid
+        al
+        Señor.
+    </p>
+    <p>
+
+        Ananías,
+        Azarías
+        y
+        Misael,
+        bendecid
+        al
+        Señor,<br>
+        ensalzadlo
+        con
+        himnos
+        por
+        los
+        siglos.
+    </p>
+    <p>
+
+        Bendito
+        el
+        Señor
+        en
+        la
+        bóveda
+        del
+        cielo,
+        <br>
+        alabado
+        y
+        glorioso
+        y
+        ensalzadlo,
+        por
+        los
+        siglos.
+    </p>
+    <p>
+
+        Gloria
+        al
+        Padre,
+        y
+        al
+        Hijo,
+        y
+        al
+        Espíritu
+        Santo.<br>
+        Como
+        era
+        en
+        el
+        principio,
+        ahora
+        y
+        siempre,<br>
+        por
+        los
+        siglos
+        de
+        los
+        siglos.
+        Amén.
+    </p>
+    <p>
+        <j>Ant.
+            2
+        </j>
+        Santos
+        de
+        Dios,
+        bendecid
+        al
+        Señor
+        eternamente.
+    </p>
+    <p>
+        <j>Ant.
+            3
+        </j>
+        Cantemos
+        el
+        himno
+        de
+        alabanza
+        de
+        todos
+        los
+        santos,<br>
+        de
+        Israel,
+        su
+        pueblo
+        escogido;
+        es
+        un
+        honor
+        para
+        todos<br>
+        sus
+        fieles.
+    </p>
+    <p>
+        <j>
+            -Salmo
+            149-
+        </j>
+    </p>
+    <p>
+
+        Cantad
+        al
+        Señor
+        un
+        cántico
+        nuevo,
+        <br>
+        resuene
+        su
+        alabanza
+        en
+        la
+        asamblea
+        de
+        los
+        fieles;<br>
+        que
+        se
+        alegre
+        Israel
+        por
+        su
+        creador,
+        <br>
+        los
+        hijos
+        de
+        Sión
+        por
+        su
+        Rey.
+    </p>
+    <p>
+
+        Alabad
+        su
+        nombre
+        con
+        danzas,
+        <br>
+        cantadle
+        con
+        tambores
+        y
+        cítaras;<br>
+        porque
+        el
+        Señor
+        ama
+        a
+        su
+        pueblo
+        <br>
+        y
+        adorna
+        con
+        la
+        victoria
+        a
+        los
+        humildes.
+    </p>
+    <p>
+
+        Que
+        los
+        fieles
+        festejen
+        su
+        gloria
+        <br>
+        y
+        canten
+        jubilosos
+        en
+        filas:
+        <br>
+        con
+        vítores
+        a
+        Dios
+        en
+        la
+        boca
+        <br>
+        y
+        espadas
+        de
+        dos
+        filos
+        en
+        las
+        manos:
+    </p>
+    <p>
+
+        para
+        tomar
+        venganza
+        de
+        los
+        pueblos
+        <br>
+        y
+        aplicar
+        el
+        castigo
+        a
+        las
+        naciones,
+        <br>
+        sujetando
+        a
+        los
+        reyes
+        con
+        argollas,
+        <br>
+        a
+        los
+        nobles
+        con
+        esposas
+        de
+        hierro.
+    </p>
+    <p>
+
+        Ejecutar
+        la
+        sentencia
+        dictada
+        <br>
+        es
+        un
+        honor
+        para
+        todos
+        sus
+        fieles.
+    </p>
+    <p>
+
+        Gloria
+        al
+        Padre,
+        y
+        al
+        Hijo,
+        y
+        al
+        Espíritu
+        Santo.<br>
+        Como
+        era
+        en
+        el
+        principio,
+        ahora
+        y
+        siempre,<br>
+        por
+        los
+        siglos
+        de
+        los
+        siglos.
+        Amén.
+    </p>
+    <p>
+        <j>Ant.
+            3
+        </j>
+        Cantemos
+        el
+        himno
+        de
+        alabanza
+        de
+        todos
+        los
+        santos,<br>
+        de
+        Israel,
+        su
+        pueblo
+        escogido;
+        es
+        un
+        honor
+        para
+        todos<br>
+        sus
+        fieles.
+    </p>
+    <p>
+        <j>LECTURA
+            BREVE
+        </j>
+
+    </p>
+    <p>
+        <j>
+            Ef
+            1,
+            17-18
+        </j>
+    </p>
+    <p>
+
+        El
+        Dios
+        de
+        nuestro
+        Señor
+        Jesucristo,
+        el
+        Padre
+        de
+        la<br>
+        gloria,
+        quiera
+        concederos
+        el
+        don
+        de
+        sabiduría
+        y
+        de<br>
+        revelación,
+        para
+        que
+        lleguéis
+        al
+        pleno
+        conocimiento<br>
+        de
+        él
+        e,
+        iluminados
+        así
+        los
+        ojosde
+        vuestra
+        mente,<br>
+        conozcáis
+        cuál
+        es
+        la
+        esperanza
+        a
+        que
+        nos
+        ha
+        llamado<br>
+        y
+        cuáles
+        las
+        riquezas
+        de
+        gloria
+        otorgadas
+        por
+        él
+        como<br>
+        herencia
+        a
+        su
+        pueblo
+        santo.
+    </p>
+    <p>
+
+
+
+        <j>RESPONSORIO BREVE
+        </j>
+        </j>
+    </p>
+    <p>
+        <j>V.
+        </j>
+        Alegraos,
+        justos,
+        y
+        gozad
+        con
+        el
+        Señor.<br>
+        <j>R.
+        </j>
+        Alegraos,
+        justos,
+        y
+        gozad
+        con
+        el
+        Señor.
+    </p>
+    <p>
+        <j>V.
+        </j>
+        Aclamadlo,
+        los
+        de
+        corazón
+        sincero.<br>
+        <j>R.
+        </j>
+        Y
+        gozad
+        con
+        el
+        Señor.
+    </p>
+    <p>
+        <j>V.
+        </j>
+        Gloria
+        al
+        Padre,
+        y
+        al
+        Hijo,
+        y
+        al
+        Espíritu
+        Santo.<br>
+        <j>R.
+        </j>
+        Alegraos,
+        justos,
+        y
+        gozad
+        con
+        el
+        Señor.
+    </p>
+    <p>
+
+
+        <j>CÁNTICO
+            EVANGÉLICO
+        </j>
+        </j>
+    </p>
+    <p>
+        <j>Ant.
+        </j>
+        Los
+        santos
+        brillarán
+        como
+        el
+        sol
+        en
+        el
+        reino
+        de<br>
+        su
+        Padre.
+        Aleluya.
+    </p>
+    <p>
+        <j>
+            Cántico
+            de
+            Zacarías<br>
+            Lc
+            1,
+            68-79
+        </j>
+    </p>
+    <p>
+
+        Bendito
+        sea
+        el
+        Señor,
+        Dios
+        de
+        Israel,<br>
+        porque
+        ha
+        visitado
+        y
+        redimido
+        a
+        su
+        pueblo,<br>
+        suscitándonos
+        una
+        fuerza
+        de
+        salvación<br>
+        en
+        la
+        casa
+        de
+        David,
+        su
+        siervo,<br>
+        según
+        lo
+        había
+        predicho
+        desde
+        antiguo<br>
+        por
+        boca
+        de
+        sus
+        santos
+        profetas.
+    </p>
+    <p>
+
+        Es
+        la
+        salvación
+        que
+        nos
+        libra
+        de
+        nuestros
+        enemigos<br>
+        y
+        de
+        la
+        mano
+        de
+        todos
+        los
+        que
+        nos
+        odian;<br>
+        ha
+        realizado
+        así
+        la
+        misericordia
+        que
+        tuvo
+        con<br>
+        nuestros
+        padres,<br>
+        recordando
+        su
+        santa
+        alianza<br>
+        y
+        el
+        juramento
+        que
+        juró
+        a
+        nuestro
+        padre
+        Abraham.
+    </p>
+    <p>
+
+        Para
+        concedernos
+        que,
+        libres
+        de
+        temor,<br>
+        arrancados
+        de
+        la
+        mano
+        de
+        los
+        enemigos,<br>
+        le
+        sirvamos
+        con
+        santidad
+        y
+        justicia,<br>
+        en
+        su
+        presencia,
+        todos
+        nuestros
+        días
+    </p>
+    <p>
+
+        Y a
+        ti,
+        niño,
+        te
+        llamarán
+        profeta
+        del
+        Altísimo,<br>
+        porque
+        irás
+        delante
+        del
+        Señor<br>
+        a
+        preparar
+        sus
+        caminos,
+        <br>
+        anunciando
+        a
+        su
+        pueblo
+        la
+        salvación,<br>
+        el
+        perdón
+        de
+        sus
+        pecados.
+    </p>
+    <p>
+
+        Por
+        la
+        entrañable
+        misericordia
+        de
+        nuestro
+        Dios,<br>
+        nos
+        visitará
+        el
+        sol
+        que
+        nace
+        de
+        lo
+        alto,<br>
+        para
+        iluminar
+        a
+        los
+        que
+        viven
+        en
+        tiniebla<br>
+        y
+        en
+        sombra
+        de
+        muerte,<br>
+        para
+        guiar
+        nuestros
+        pasos<br>
+        por
+        el
+        camino
+        de
+        la
+        paz
+    </p>
+    <p>
+
+        Gloria
+        al
+        Padre,
+        y
+        al
+        Hijo,
+        y
+        al
+        Espíritu
+        Santo.<br>
+        Como
+        era
+        en
+        el
+        principio,
+        ahora
+        y
+        siempre,<br>
+        por
+        los
+        siglos
+        de
+        los
+        siglos.
+        Amén.
+    </p>
+    <p>
+
+        <j>Ant.
+        </j>
+        Los
+        santos
+        brillarán
+        como
+        el
+        sol
+        en
+        el
+        reino
+        de<br>
+        su
+        Padre.
+        Aleluya.
+    </p>
+    <p>
+
+        <j>PRECES.</j>
+    </p>
+    <p>
+
+    </p>
+    <p>
+    <dl>
+        <dt>
+        <dd>
+            <dl>
+                <dt>
+
+                    A
+                    </j>
+                    cudamos,
+                    alegres,
+                    a
+                    nuestro
+                    Dios,
+                    corona
+                    de
+                    todos<br>
+                    los
+                    santos
+                    y
+                    digámosle:
+                    </p>
+                    <p>
+                <dd>Por
+                    intercesión
+                    de
+                    todos
+                    los
+                    santos,
+                    sálvanos,
+                    Señor.
+                    </p>
+                    <p>
+                <dt>Oh
+                    Señor,
+                    fuente
+                    y
+                    origen
+                    de
+                    toda
+                    santidad,
+                    tú
+                    que<br>
+                    has
+                    hecho
+                    resplandecer
+                    a
+                    los
+                    santos
+                    con
+                    gran
+                    va-<br>
+                    riedad
+                    de
+                    dones,
+                <dd>haz
+                    que
+                    al
+                    contemplarlos
+                    sepamos
+                    celebrar
+                    tu<br>
+                    grandeza.
+                    </p>
+                    <p>
+                <dt>Señor
+                    todopoderoso,
+                    que
+                    has
+                    querido
+                    que
+                    los
+                    santos<br>
+                    fueran
+                    imángenes
+                    admirables
+                    de
+                    tu
+                    Hijo,
+                <dd>concédenos
+                    que,
+                    por
+                    su
+                    ejemplo
+                    y
+                    su
+                    intercesión,<br>
+                    vivamos
+                    más
+                    plenamente
+                    unidos
+                    a
+                    Cristo.
+                    </p>
+                    <p>
+                <dt>Rey
+                    del
+                    cielo,
+                    que
+                    por
+                    medio
+                    de
+                    los
+                    fieles
+                    seguido-<br>
+                    res
+                    de
+                    Cristo
+                    nos
+                    estimulas
+                    a
+                    desear
+                    la
+                    ciudad
+                    fu-<br>
+                    tura,
+                <dd>haz
+                    que
+                    descubramos
+                    en
+                    los
+                    santos
+                    el
+                    mejor
+                    ca-<br>
+                    mino
+                    que
+                    lleva
+                    a
+                    ti.
+                    </p>
+                    <p>
+                <dt>Dios
+                    y
+                    Señor
+                    nuestro
+                    que
+                    en
+                    la
+                    celebración
+                    de
+                    la<br>
+                    eucaristía
+                    nos
+                    pones
+                    en
+                    comunión
+                    con
+                    los
+                    santos,
+                <dd>concédenos
+                    celebrar
+                    cada
+                    día
+                    con
+                    mayor
+                    perfec-<br>
+                    ción
+                    tu
+                    culto
+                    en
+                    espíritu
+                    y
+                    en
+                    verdad.
+                    </p>
+                    <p>
+                <dt>
+                    <j>
+                        Se
+                        pueden
+                        añadir
+                        algunas
+                        intenciones
+                        libres
+                    </j>
+                    <br>
+                <dd>
+
+                    <p>
+                <dt>Con
+                    el
+                    gozo
+                    que
+                    nos
+                    da
+                    sabernos
+                    miembros
+                    de
+                    la<br>
+                    gran
+                    familia
+                    de
+                    los
+                    santos,
+                    digamos
+                    al
+                    Padre
+                    de
+                    todos:
+                <dd>
+
+                    P
+                    </j>
+                    adre
+                    nuestro
+                    ...
+                    </p>
+                    <p>
+                <dt>
+            </dl>
+    </dl>
+    </p>
+    <p>
+
+
+
+
+        <j>
+            <b>ORACIÓN.
+            </b>
+        </j>
+        </j>
+    </p>
+    <p>
+
+        D
+        </j>
+        ios
+        todopoderoso
+        y
+        eterno,
+        que
+        nos
+        concedes
+        cele-<br>
+        brar
+        los
+        méritos
+        de
+        todos
+        los
+        santos
+        en
+        una
+        misma<br>
+        solemnidad,
+        te
+        rogamos
+        que,
+        por
+        las
+        súplicas
+        de
+        tan<br>
+        numerosos
+        intercesores,
+        nos
+        concedas
+        en
+        abundancia<br>
+        los
+        dones
+        que
+        te
+        pedimos.
+        Por
+        nuestro
+        Señor
+        Jesu-<br>
+        Cristo,
+        tu
+        Hijo.
+    </p>
+    <p>
+
+
+        <j>
+            <b>CONCLUSIÓN.</b>
+        </j>
+        </j>
+    </p>
+    <p>
+        <j>V.
+        </j>
+        El
+        Señor
+        nos
+        bendiga,
+        nos
+        guarde
+        de
+        todo
+        mal<br>
+        y
+        nos
+        lleve
+        a
+        la
+        vida
+        eterna.<br>
+        <j>R,
+        </j>
+        Amén.
+    </p>
+    <p>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
+
+    ]]></string>
+    <string name="misaviernes"><![CDATA[
+
+         <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>misaviernes</title>
+</head>
+
+<body>
+<p dir="ltr"><strong style="color:red" >Primera lectura</strong></p>
+<p dir="ltr"><strong>Lectura del libro del Apocalipsis 7, 2-4. 9-14</strong></p>
+<p dir="ltr">Yo, Juan, vi a otro ángel que subía del oriente llevando el sello del Dios vivo. Gritó con voz potente a los cuatro ángeles encargados de dañar a la tierra y al mar diciéndoles: «No dañéis a la tierra ni al mar ni a los árboles hasta que sellemos en la frente a los siervos de nuestro Dios». Oí también el número de los sellados, ciento cuarenta y cuatro mil, de todas las tribus de Israel. Después de esto vi una muchedumbre inmensa, que nadie podría contar, de todas las naciones, razas, pueblos y lenguas, de pie delante del trono y delante del Cordero, vestidos con vestiduras blancas y con palmas en sus manos. Y gritan con voz potente:<br>
+«¡La victoria es de nuestro Dios, que está sentado en el trono, y del Cordero!».
+Y todos los ángeles que estaban de pie alrededor del trono y de los ancianos y de los cuatro vivientes cayeron rostro a tierra ante el trono, y adoraron a Dios, diciendo: «Amén. La alabanza y la gloria y la sabiduría y la acción de gracias y el honor y el poder y la fuerza son de nuestro Dios, por los siglos de los siglos. Amén». Y uno de los ancianos me dijo: «Estos que están vestidos con vestiduras blancas, ¿quiénes son y de dónde han venido?». Yo le respondí: «Señor mío, tú lo sabrás». Él me respondió: «Estos son los que vienen de la gran tribulación: han lavado y blanqueado sus vestiduras en la sangre del Cordero». <strong>Palabra de Dios.</strong><br />
+<br />
+</p>
+<p dir="ltr"><strong >Salmo 23</strong></p>
+<p dir="ltr"><strong>R/. Esta es la generación que busca tu rostro, Señor.</strong></p>
+<p dir="ltr">Del Señor es la tierra y cuanto la llena,<br>
+el orbe y todos sus habitantes:<br>
+él la fundó sobre los mares,<br>
+él la afianzó sobre los ríos. <strong>R/.</strong></p>
+<br />
+<p dir="ltr">¿Quién puede subir al monte del Señor?<br>
+¿Quién puede estar en el recinto sacro?<br>
+El hombre de manos inocentes y puro corazón,<br>
+que no confía en los ídolos. <strong>R/.</strong></p>
+<br />
+<p dir="ltr">Ese recibirá la bendición del Señor,<br>
+le hará justicia el Dios de salvación.<br>
+Este es el grupo que busca al Señor,<br>
+que busca tu rostro, Dios de Jacob. <strong>R/.</strong></p>
+<br />
+<p dir="ltr" style="color:red"><strong>Segunda lectura</strong></p>
+<p dir="ltr"><strong>Lectura de la primera carta del apóstol san Juan 3, 1-3</strong></p>
+<p dir="ltr">Queridos hermanos:</p>
+<p dir="ltr">Mirad qué amor nos ha tenido el Padre para llamarnos hijos de Dios, pues ¡lo somos! El mundo no nos conoce porque no lo conoció a él. Queridos, ahora somos hijos de Dios y aún no se ha manifestado lo que seremos. Sabemos que, cuando él se manifieste, seremos semejantes a él, porque lo veremos tal cual es. Todo el que tiene esta esperanza en él se purifica a sí mismo, como él es puro. <strong>Palabra de Dios.</strong></p>
+<br />
+<p dir="ltr" style="color:red"><strong>Evangelio</strong></p>
+<p dir="ltr"><strong>Lectura del santo evangelio según san Mateo 5, 1-12a</strong></p>
+<p dir="ltr">En aquel tiempo, al ver Jesús el gentío, subió al monte, se sentó y se acercaron sus discípulos; y, abriendo su boca, les enseñaba diciendo:<br>
+«Bienaventurados los pobres en el espíritu,<br>
+porque de ellos es el reino de los cielos.<br>
+Bienaventurados los mansos,<br>
+porque ellos heredarán la tierra.<br>
+Bienaventurados los que lloran,<br>
+porque ellos serán consolados.<br>
+Bienaventurados los que tienen hambre y sed de la justicia,<br>
+porque ellos quedarán saciados.<br>
+Bienaventurados los misericordiosos,<br>
+porque ellos alcanzarán misericordia.<br>
+Bienaventurados los limpios de corazón,<br>
+porque ellos verán a Dios.<br>
+Bienaventurados los que trabajan por la paz,<br>
+porque ellos serán llamados hijos de Dios.<br>
+Bienaventurados los perseguidos por causa de la justicia,<br>
+porque de ellos es el reino de los cielos.<br>
+Bienaventurados vosotros cuando os insulten y os persigan y os calumnien de cualquier modo por mi causa. <br>
+Alegraos y regocijaos, porque vuestra recompensa será grande en el cielo».</p>
+<p dir="ltr"><strong>Palabra del Señor.</strong></p>
+<br>
+</body>
+</html>
+
+    ]]></string>
+
+    <!-- sabado  -->
+    <string name="dia4">Sábado</string>
+    <string name="domingosavio">Domingo Savio</string>
+    <string name="htmlmisasabado">
+        <![CDATA[
+
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pepe</title>
+</head>
+
+<body>
+<h2 style="color:red">Primera lectura</h2>
+<h3>Lectura del libro del Apocalipsis 21, 1-5a. 6b-7</h3>
+<p>Yo, Juan, vi un cielo nuevo y una tierra nueva, pues el primer cielo y la primera tierra desaparecieron, y el mar ya no existe.<br>
+  Y vi la ciudad santa, la nueva Jerusalén que descendía del cielo, de parte de Dios, preparada como una esposa que se ha adornado para su esposo.<br>
+  Y oí una gran voz desde el trono que decía: «He aquí la morada de Dios entre los hombres, y morará con ellos, y ellos serán su pueblo, y el "Dios con ellos" será su Dios». Y enjugará toda lágrima de sus ojos, y ya no habrá muerte, ni duelo, ni llanto, ni dolor, porque lo primero ha desaparecido.<br>
+  Y dijo el que está sentado en el trono: «Mira, hago nuevas todas las cosas. Yo soy el Alfa y la Omega, el principio y el fin. Al que tenga sed yo le daré de la fuente del agua de la vida gratuitamente. El vencedor heredará esto: yo seré Dios para él, y él será para mí hijo».</p>
+<p><strong>Palabra de Dios.</strong></p>
+<h2 style="color:red">Salmo de hoy</h2>
+<h3>Salmo 24, 6. 7b. 17-18. 20-21 </h3>
+<h3>R/. A ti, Señor, levanto mi alma</h3>
+<p>Recuerda, Señor, que tu ternura<br>
+  y tu misericordia son eternas;<br>
+  acuérdate de mí con misericordia,<br>
+por tu bondad, Señor. <strong>R/.</strong></p>
+<p>Ensancha mi corazón oprimido<br>
+  y sácame de mis tribulaciones.<br>
+  Mira mis trabajos y mis penas<br>
+  y perdona todos mis pecados. <strong>R/.</strong></p>
+<p>Guarda mi vida y líbrame,<br>
+  no quede yo defraudado de haber acudido a ti.<br>
+  La inocencia y la rectitud me protegerán,<br>
+  porque espero en ti. <strong>R/.</strong></p>
+<h2 style="color:red">Segunda lectura</h2>
+<h3>Lectura de la carta del apóstol san Pablo a los Filipenses 3, 20-21</h3>
+<p>Hermanos:<br>
+  Nosotros somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.<br>
+  Él transformará nuestro cuerpo humilde, según el modelo de su cuerpo glorioso, con esa energía que posee para sometérselo todo.</p>
+<p><strong>Palabra de Dios.</strong></p>
+<h2 style="color:red">Evangelio del día</h2>
+<h3>Lectura del santo evangelio según san Juan 11, 17-27</h3>
+<p>Cuando Jesús llegó a Betania, Lázaro llevaba ya cuatro días enterrado. Betania distaba poco de Jerusalén: unos quince estadios; y muchos judíos habían ido a ver a Marta y a María para darles el pésame por su hermano.<br>
+  Cuando Marta se enteró de que llegaba Jesús, salió a su encuentro, mientras María se quedó en casa. Y dijo Marta a Jesús:<br>
+  «Señor, si hubieras estado aquí, no habría muerto mi hermano. Pero aún ahora sé que todo lo que pidas a Dios, Dios te lo concederá».<br>
+  Jesús le dijo:<br>
+  «Tu hermano resucitará».<br>
+  Marta respondió:<br>
+  «Sé que resucitará en la resurrección en el último día».<br>
+  Jesús le dijo:<br>
+  «Yo soy la resurrección y la vida: el que cree en mí, aunque haya muerto, vivirá; y el que está vivo y cree en mí, no morirá para siempre. ¿Crees esto?».<br>
+  Ella le contestó:<br>
+  «Sí, Señor: yo creo que tú eres el Cristo, el Hijo de Dios, el que tenía que venir al mundo».</p>
+<p><strong>Palabra del Señor.</strong></p>
+<br><br><br>
+
+</body>
+</html>
+
+        ]]>
+    </string>
+    <string name="historiaDomingoSavio">
+        <![CDATA[
+        <html>
+        <html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<p>Domingo Savio tuvo una vida muy sencilla, pero en poco tiempo recorrió un largo camino de santidad, obra maestra del Espíritu Santo y fruto de la pedagogía de san Juan Bosco.</p>
+<p>Había nacido en San Giovanni di Riva (cerca de Chieri, provincia de Turín) en una familia pobre de bienes materiales, pero rica de fe. </p>
+<p>Su niñez quedó marcada por la primera comunión, hecha con fervor a los siete años, y se distingue por el cumplimiento del deber. </p>
+<p>A sus doce años tuvo lugar un acontecimiento decisivo: el encuentro con San Juan Bosco, que lo acoge, como padre y guía, en Valdocco (Turín) para cursar los estudios secundarios.</p>
+<p>Al descubrir entonces los altos horizontes de su vida como hijo de Dios, apoyándose en su amistad con Jesús y María se lanza a la aventura de la santidad, entendida como entrega total a Dios por amor. Reza, pone empeño en los estudios, es el compañero más amable. </p>
+<p>Sensibilizado en el ideal del Da mihi ánimas de san Juan Bosco, quiere salvar el alma de todos y funda la compañía de la Inmaculada, de la que saldrán los mejores, de la que saldrán los mejores colaboradores del fundador de los salesianos.</p>
+<p>Habiendo enfermado de gravedad a los 15 años, regresa al hogar paterno de Mondonio (provincia de Asti), donde muere serenamente el 9 de marzo de 1857 con la alegría de ir al encuentro del Señor. </p>
+<p>Pío XII lo proclamó santo el 12 de junio de 1954.</p>
+<h4 id="1">&nbsp;</h4>
+</body>
+</html>
+  ]]>
+
+    </string>
+    <string name="laudesSabado"><![CDATA[
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>laudessabado</title>
+</head>
+
+<body>
+<p dir="ltr"><strong style="color:red">V.</strong> Señor, abre mis labios.<br>
+<strong style="color:red">R. </strong>Y mi boca proclamará tu alabanza.</p>
+<br />
+<p dir="ltr"><strong style="color:red">HIMNO</strong></p>
+<p dir="ltr">Señor, esta mañana nos alegras<br>
+con el recuerdo de Domingo Savio.<br>
+Qué pureza la suya! Blanca nieve<br>
+de la montaña herida por el sol.</p>
+<br />
+<p dir="ltr">Y ¡qué fuerza prendida en su palabra!:<br>
+«Señor,antes la muerte que el pecado».<br>
+¡Y qué prisa en el aire de su vuelo!:<br>
+«Puedo y quiero ser santo, pronto santo».</p>
+<br />
+<p dir="ltr">Señor,y tú guiabas su camino,<br>
+y eras la ligereza de sus pasos;<br>
+y le diste la gracia de ser joven<br>
+que cumplió en breves días muchos años.</p>
+<br />
+<p dir="ltr">Y lo guiaba tu sabiduría<br>
+para elegir amigos y ganarlos;<br>
+para vivir el día y la alegría,<br>
+y abrir el corazón, los ojos claros.</p>
+<br />
+<p dir="ltr">Gracias,Señor, por la pureza joven<br>
+y por la santidad de este muchacho.<br>
+Y que un día podamos ver tu rostro<br>
+en compañía de Domingo Savio. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">SALMODIA</strong></p>
+<p dir="ltr"><strong style="color:red">Ant. 1.</strong>Te mantuviste fiel hasta la muerte, y recibiste del Señor una corona de gloria. Aleluya.</p>
+<p dir="ltr" style="color:red"><strong>- Salmo 62 -</strong></p>
+<br />
+<br />
+<p dir="ltr">¡Oh Dios!, tú eres mi Dios, por ti madrugo,<br>
+mi alma está sedienta de ti;<br>
+mi carne tiene ansias de ti,<br>
+como tierra reseca, agostada, sin agua.</p>
+<br />
+<p dir="ltr">¡Cómo te contemplaba en el santuario<br>
+viendo tu fuerza y tu gloria!<br>
+Tu gracia vale más que la vida,<br>
+te alabarán mis labios.</p>
+<br />
+<p dir="ltr">Toda mi vida te bendeciré<br>
+y alzaré las manos invocándote.<br>
+Me saciaré de manjares exquisitos,<br>
+y mis labios te alabarán jubilosos.</p>
+<br />
+<p dir="ltr">En el lecho me acuerdo de ti<br>
+y velando medito en ti,<br>
+porque fuiste mi auxilio,<br>
+y a las sombras de tus alas canto con júbilo;<br>
+mi alma está unida a ti,<br>
+y tu diestra me sostiene.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<p dir="ltr"><strong style="color:red">Ant. 1.</strong>Te mantuviste fiel hasta la muerte, y recibiste del Señor una corona de gloria. Aleluya.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 2. </strong>Fieles del Señor, cantadle himnos y ensalzad su santo nombre. Aleluya.</p>
+<p dir="ltr"><strong style="color:red">Cántico. Dn. 3,57-88. 56</strong></p>
+<br />
+<p dir="ltr">Creaturas todas del Señor, bendecid al Señor,<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Angeles del Señor, bendecid al Señor;<br>
+cielos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Aguas del espacio, bendecid al Señor;<br>
+ejércitos del Señor bendecid al Señor.</p>
+<br />
+<p dir="ltr">Sol y luna, bendecid al Señor;<br>
+astros del cielo, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Lluvia y rocío, bendecid al Señor;<br>
+vientos todos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Fuego y calor, bendecid al Señor;<br>
+fríos y heladas, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Rocíos y nevadas bendecid al Señor;<br>
+témpanos y hielos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Escarchas y nieve, bendecid al Señor;<br>
+noche y día, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Luz y tinieblas, bendecid al Señor;<br>
+rayos y nubes, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Bendiga la tierra al Señor,<br>
+ensálcelo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Montes y cumbres, bendecid al Señor;<br>
+cuanto germina en la tierra, bendiga al Señor.</p>
+<br />
+<p dir="ltr">Manantiales, bendecid al Señor;<br>
+mares y ríos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Cetáceos y peces, bendecid al Señor;<br>
+aves del cielo, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Fieras y ganados, bendecid al Señor,<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Hijos de los hombres, bendecid al Señor;<br>
+bendiga Israel al Señor.</p>
+<br />
+<p dir="ltr">Sacerdotes del Señor, bendecid al Señor;<br>
+siervos del Señor, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Almas y espíritus justos, bendecid al Señor;<br>
+santos y humildes de corazón, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Ananías, Azarías y Misael, bendecid al Señor,<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Bendito el Señor en la bóveda del cielo,<br>
+alabado y glorioso y ensalzadlo, por los siglos.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<p dir="ltr"><strong style="color:red">Ant. 2.</strong> Fieles del Señor, cantadle himnos y ensalzad su santo nombre. Aleluya.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 3. </strong>Mi fuerza y mi canto es el Señor: él fue mi salvación. Aleluya.</p>
+<p dir="ltr"><strong style="color:red">-Salmo 149-</strong></p>
+<br />
+<p dir="ltr">Cantad al Señor un cántico nuevo,<br>
+resuene su alabanza en la asamblea de los fieles;<br>
+que se alegre Israel por su creador,<br>
+los hijos de Sión por su Rey.</p>
+<br />
+<p dir="ltr">Alabad su nombre con danzas,<br>
+cantadle con tambores y cítaras;<br>
+porque el Señor ama a su pueblo<br>
+y adorna con la victoria a los humildes.</p>
+<br />
+<p dir="ltr">Que los fieles festejen su gloria<br>
+y canten jubilosos en filas:<br>
+con vítores a Dios en la boca<br>
+y espadas de dos filos en las manos:</p>
+<br />
+<p dir="ltr">para tomar venganza de los pueblos<br>
+y aplicar el castigo a las naciones,<br>
+sujetando a los reyes con argollas,<br>
+a los nobles con esposas de hierro.</p>
+<br />
+<p dir="ltr">Ejecutar la sentencia dictada<br>
+es un honor para todos sus fieles.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<p dir="ltr"><strong style="color:red">Ant. 3. </strong>Mi fuerza y mi canto es el Señor: él fue mi salvación. Aleluya.</p>
+<br />
+<br />
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">LECTURA BREVE 1Jn 3,1-2</strong></p>
+<br />
+<p dir="ltr">Ved qué amor tan grande nos ha mostrado el Padre: que nos llamamos hijos de Dios y lo somos. Por eso el mundo no nos reconoce, porque no lo reconoce a él. Queridos, ya somos hijos de Dios, pero todavía no se ha manifestado lo que seremos. Sabemos que, cuando aparezca, seremos semejantes a él y lo veremos como él es.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">RESPONSORIO BREVE</strong></p>
+<p dir="ltr"><strong style="color:red">V.</strong> La ley de Dios en el corazón de los santos.<br>
+<strong style="color:red">R. </strong>La ley de Dios en el corazón de los santos.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V. </strong>Su camino es derecho y seguro.<br>
+<strong style="color:red">R. </strong>en el corazón de los santos.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+<strong style="color:red">R. </strong>La ley de Dios en el corazón de los santos.</p>
+<br />
+<p dir="ltr"><strong style="color:red">CÁNTICO EVANGÉLICO</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant.</strong> Domingo Savio, consagrado en cuerpo y alma al Señor, caminó en su presencia con santidad y justicia.</p>
+<br />
+	<p dir="ltr"><strong  style="color:red" >Cántico de zacarías Lc 1, 68-79</strong></p>
+<br />
+<p dir="ltr">Bendito sea el Señor, Dios de Israel,<br>
+porque ha visitado y redimido a su pueblo,<br>
+suscitándonos una fuerza de salvación<br>
+en la casa de David, su siervo,<br>
+según lo había predicho desde antiguo<br>
+por boca de sus santos profetas.<br />
+</p>
+<p dir="ltr">Es la salvación que nos libra de nuestros enemigos<br>
+y de la mano de todos los que nos odian;<br>
+ha realizado así la misericordia que tuvo con<br>
+nuestros padres,<br>
+recordando su santa alianza<br>
+y el juramento que juró a nuestro padre Abraham.<br />
+</p>
+<p dir="ltr">Para concedernos que, libres de temor,<br>
+arrancados de la mano de los enemigos,<br>
+le sirvamos con santidad y justicia,<br>
+en su presencia, todos nuestros días</p>
+<br />
+<p dir="ltr">Y a ti, niño, te llamarán profeta del Altísimo,<br>
+porque irás delante del Señor<br>
+a preparar sus caminos,<br>
+anunciando a su pueblo la salvación,<br>
+el perdón de sus pecados.<br />
+</p>
+<p dir="ltr">Por la entrañable misericordia de nuestro Dios,<br>
+nos visitará el sol que nace de lo alto,<br>
+para iluminar a los que viven en tiniebla<br>
+y en sombra de muerte,<br>
+para guiar nuestros pasos<br>
+por el camino de la paz</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre,
+	por los siglos de los siglos. Amén.</p><br />
+
+ <p dir="ltr"><strong style="color:red">Ant.</strong> Domingo Savio, consagrado en cuerpo y alma al Señor, caminó en su presencia con santidad y justicia.</p>
+<br />
+<p dir="ltr"><strong style="color:red">PRECES.</strong></p>
+<p dir="ltr">Hoy, en este cuarto día de CAMPOBOSCO, recordamos la figura de Domingo Savio, joven santo del Oratorio de Don Bosco, que nos enseñó que la santidad se puede alcanzar en la vida cotidiana, siendo fieles a Dios con alegría y compromiso. Inspirados por su ejemplo, presentemos nuestras peticiones al Señor, con la confianza de que también nosotros estamos llamados a ser santos.</p>
+<br />
+<p dir="ltr">Por todos los jóvenes presentes en este CAMPOBOSCO,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, como Domingo Savio, busquen la santidad en sus vidas diarias, siendo testigos del amor de Cristo entre sus amigos y comunidades.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por nuestros educadores y acompañantes espirituales,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, siguiendo el ejemplo de San Juan Bosco, sepan guiar a los jóvenes con paciencia y sabiduría, motivándolos a ser discípulos de Cristo, al igual que Domingo Savio lo fue.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por nuestras familias y amigos,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, con el ejemplo de la pureza y alegría de Domingo Savio, podamos llevar el mensaje de amor y reconciliación de Cristo a nuestros hogares, siendo fuentes de paz y unidad.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por la santidad de vida de todos los aquí presentes,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, a través de este campamento, cada uno de nosotros descubra el llamado personal que Dios nos hace y lo siga con el mismo fervor y entrega de Domingo Savio.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por todos los jóvenes que enfrentan dificultades y luchas interiores,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, al igual que Domingo Savio, encuentren en Cristo y en la Virgen María el consuelo y la fortaleza para superar los obstáculos y seguir adelante en su camino hacia la santidad.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr" style="color:red">Se pueden añadir algunas intenciones libres.</p>
+<br />
+<p dir="ltr">Oremos ahora al Padre, como nos enseñó el mismo Jesús: Padre nuestro.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">ORACIÓN</strong>.</p>
+<p dir="ltr">Oh Dios, fuente de todo bien, que en santo Domingo Savio ofreces a los adolescentes un ejemplo admirable de caridad y de pureza: concédenos también a nosotros crecer como hijos en la alegría y en el amor hasta la estatura de Cristo.El que vive y reina contigo por los siglos de los siglos.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">CONCLUSIÓN.</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> El Señor nos bendiga, nos guarde de todo mal y nos lleve a la vida eterna.<br>
+<strong style="color:red">R. </strong>Amén.</p>
+<br /><br><br><br>
+</body>
+</html>
+
+    ]]></string>
+
+    <!-- domingo  -->
+    <string name="dia5">del Tiempo de la Iglesia</string>
+    <string name="domingofinal">Domingo n° 31</string>
+    <string name="laudesDomingo"><![CDATA[
+
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>laudes_domingo</title>
+</head>
+
+<body>
+<p dir="ltr"><strong>Domingo XXXI</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> Señor, abre mis labios.<br>
+<strong style="color:red">R. </strong>Y mi boca proclamará tu alabanza.</p>
+<br />
+<p dir="ltr"><strong style="color:red">HIMNO</strong></p>
+<p dir="ltr">Las sombras oscuras huyen,<br>
+ya va pasando la noche;<br>
+y el sol, con su luz de fuego,<br>
+nos disipa los temores.</p>
+<br />
+<p dir="ltr">Ya se apagan las estrellas<br>
+y se han encendido soles;<br>
+el rocío cae de los cielos<br>
+en el cáliz de las flores.</p>
+<br />
+<p dir="ltr">Las creaturas van vistiendo<br>
+sus galas y sus colores,<br>
+porque al nacer nuevo día<br>
+hacen nuevas las canciones.</p>
+<br />
+<p dir="ltr">¡Lucero, Cristo, del alba,<br>
+que paces entre esplendores,<br>
+apacienta nuestras vidas<br>
+ya sin sombras y sin noches!</p>
+<br />
+<p dir="ltr">¡Hermoso Cristo, el Cordero,<br>
+entre collados y montes! Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">SALMODIA</strong></p>
+<p dir="ltr"><strong style="color:red">Ant. 1</strong> El Señor es admirable en el cielo. Aleluya.</p>
+<br />
+<p dir="ltr"><strong style="color:red">- Salmo 92 -</strong></p>
+<br />
+<br />
+<p dir="ltr">El Señor reina vestido de majestad,<br>
+el Señor, vestido y ceñido de poder:<br>
+así está firme el orbe y no vacila.</p>
+<br />
+<p dir="ltr">Tu trono está firme desde siempre,<br>
+y tú eres eterno.</p>
+<br />
+<p dir="ltr">Levantan los ríos, Señor,<br>
+levantan los ríos su voz,<br>
+levantan los ríos su fragor;</p>
+<br />
+<p dir="ltr">pero más que la voz de aguas caudalosas,<br>
+más potente que el oleaje del mar,<br>
+más potente en el cielo es el Señor.</p>
+<br />
+<p dir="ltr">Tus mandatos son fieles y seguros;<br>
+la santidad es el adorno de tu casa,<br>
+Señor, por días sin término.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre,<br>
+por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 1 </strong>El Señor es admirable en el cielo. Aleluya.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 2</strong> Tú, Señor, eres alabado y ensalzado por los siglos. Aleluya.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Cántico Dn. 3, 57-88.56</strong></p>
+<br />
+<p dir="ltr">Creaturas todas del Señor, bendecid al Señor,<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Ángeles del Señor, bendecid al Señor;<br>
+cielos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Aguas del espacio, bendecid al Señor;<br>
+ejércitos del Señor, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Sol y luna, bendecid al Señor;<br>
+astros del cielo, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Lluvia y rocío, bendecid al Señor;<br>
+vientos todos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Fuego y calor, bendecid al Señor;<br>
+fríos y heladas, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Rocíos y nevadas, bendecid al Señor;<br>
+témpanos y hielos, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Escarchas y nieves, bendecid al Señor;<br>
+noche y día, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Luz y tinieblas, bendecid al Señor;<br>
+rayos y nubes, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Bendiga la tierra al Señor,<br>
+ensálcelo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Montes y cumbres, bendecid al Señor;<br>
+cuanto germina en la tierra, bendiga al Señor.</p>
+<br />
+<p dir="ltr">Manantiales, bendecid al Señor;<br>
+mares y ríos bendecid al Señor.</p>
+<br />
+<p dir="ltr">Cetáceos y peces, bendecid al Señor;<br>
+aves del cielo, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Fieras y ganados, bendecid al Señor,<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Hijos de los hombres, bendecid al Señor;<br>
+bendiga Israel al Señor.</p>
+<br />
+<p dir="ltr">Sacerdotes del Señor, bendecid al Señor;<br>
+siervos del Señor, bendecid al Señor.</p>
+<br />
+<p dir="ltr">Almas y espíritus justos, bendecid al Señor;<br>
+santos y humildes de corazón, bendecid al señor.</p>
+<br />
+<p dir="ltr">Ananías, Azarías y Misael, bendecid al Señor;<br>
+ensalzadlo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Bendigamos al Padre, al Hijo y al Espíritu Santo,<br>
+ensalcémoslo con himnos por los siglos.</p>
+<br />
+<p dir="ltr">Bendito el Señor en la bóveda del cielo,<br>
+alabado y glorioso y ensalzado por los siglos.</p>
+<br />
+<p dir="ltr" style="color:red">no se dice Gloria al Padre ...</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 2 </strong>Tú, Señor, eres alabado y ensalzado por los siglos. Aleluya.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 3</strong> Alabad al Señor en el cielo. Aleluya. <strong>+</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">- Salmo 148 -</strong></p>
+<br />
+<p dir="ltr">Alabad al Señor en el cielo,<br>
+<strong style="color:red">+</strong> alabad al Señor en lo alto.</p>
+<br />
+<p dir="ltr">Alabadlo todos sus ángeles,<br>
+alabadlo todos su ejércitos,</p>
+<br />
+<p dir="ltr">Alabadlo, sol y luna;<br>
+alabadlo, estrellas lucientes.</p>
+<br />
+<p dir="ltr">Alabadlo, espacios celestes,<br>
+y aguas que cuelgan en el cielo.</p>
+<br />
+<p dir="ltr">Alaben el nombre del Señor,<br>
+porque él lo mandó, y existieron.</p>
+<br />
+<p dir="ltr">Les dio consistencia perpetua<br>
+y una ley que no pasará.</p>
+<br />
+<p dir="ltr">Alabad al Señor en la tierra,<br>
+cetáceos y abismos del mar.</p>
+<br />
+<p dir="ltr">Rayos, granizo, nieve y bruma,<br>
+viento huracanado que cumple sus órdenes.</p>
+<br />
+<p dir="ltr">Montes y todas las sierras,<br>
+árboles frutales y cedros.</p>
+<br />
+<p dir="ltr">Fieras y animales domésticos,<br>
+reptiles y pájaros que vuelan.</p>
+<br />
+<p dir="ltr">Reyes y pueblos del orbe,<br>
+príncipes y jefes del mundo.</p>
+<br />
+<p dir="ltr">Los jóvenes y también las doncellas,<br>
+los viejos junto con los niños.</p>
+<br />
+<p dir="ltr">Alaben el nombre del Señor,<br>
+el único nombre sublime.</p>
+<br />
+<p dir="ltr">Su majestad sobre el cielo y la tierra;<br>
+él acrece el vigor de su pueblo.</p>
+<br />
+<p dir="ltr">Alabanza de todos sus fieles,<br>
+de Israel, su pueblo escogido.</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant. 3</strong> Alabad al Señor en el cielo. Aleluya.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">LECTURA BREVE Ez 37,12b-14</strong></p>
+<p dir="ltr">Así dice el Señor: &quot;Yo mismo abriré vuestros sepulcros, y os haré salir de vuestros sepulcros, pueblo mío, y os traeré a la tierra de Israel. Y cuando abra vuestros sepulcros y os saque de vuestros sepulcros, pueblo mío, sabréis que yo soy el Señor: os infundiré mi espíritu y viviréis, os colocaré en vuestra tierra y sabréis que yo el Señor lo digo y lo hago.&quot; Oráculo del Señor.<br />
+<br />
+</p>
+<p dir="ltr"><strong style="color:red">RESPONSORIO BREVE</strong></p>
+<p dir="ltr"><strong style="color:red">V.</strong> Cristo, Hijo de Dios vivo, ten piedad de nosotros.<br>
+<strong style="color:red">R. </strong>Cristo, Hijo de Dios vivo, ten piedad de nosotros.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> Tú que está sentado a la derecha del Padre.<br>
+<strong style="color:red">R. </strong>Ten piedad de nosotros.</p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+<strong style="color:red">R. </strong>Cristo, Hijo de Dios vivo, ten piedad de nosotros.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">CÁNTICO EVANGÉLICO</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">Ant.</strong> No sois vosotros los que habláis, sino el Espíritu de vuestro Padre quien habla por vosotros.</p>
+<br />
+	<p dir="ltr"><strong  style="color:red" >Cántico de zacarías Lc 1, 68-79</strong></p>
+<br />
+<p dir="ltr">Bendito sea el Señor, Dios de Israel,<br>
+porque ha visitado y redimido a su pueblo,<br>
+suscitándonos una fuerza de salvación<br>
+en la casa de David, su siervo,<br>
+según lo había predicho desde antiguo<br>
+por boca de sus santos profetas.<br />
+</p>
+<p dir="ltr">Es la salvación que nos libra de nuestros enemigos<br>
+y de la mano de todos los que nos odian;<br>
+ha realizado así la misericordia que tuvo con<br>
+nuestros padres,<br>
+recordando su santa alianza<br>
+y el juramento que juró a nuestro padre Abraham.<br />
+</p>
+<p dir="ltr">Para concedernos que, libres de temor,<br>
+arrancados de la mano de los enemigos,<br>
+le sirvamos con santidad y justicia,<br>
+en su presencia, todos nuestros días</p>
+<br />
+<p dir="ltr">Y a ti, niño, te llamarán profeta del Altísimo,<br>
+porque irás delante del Señor<br>
+a preparar sus caminos,<br>
+anunciando a su pueblo la salvación,<br>
+el perdón de sus pecados.<br />
+</p>
+<p dir="ltr">Por la entrañable misericordia de nuestro Dios,<br>
+nos visitará el sol que nace de lo alto,<br>
+para iluminar a los que viven en tiniebla<br>
+y en sombra de muerte,<br>
+para guiar nuestros pasos<br>
+por el camino de la paz</p>
+<br />
+<p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo.<br>
+Como era en el principio, ahora y siempre,
+	por los siglos de los siglos. Amén.</p><br />
+ <p dir="ltr"><strong style="color:red">Ant</strong>. No sois vosotros los que habláis, sino el Espíritu de vuestro Padre quien habla por vosotros.
+ <br />
+</p>
+<p dir="ltr"><strong style="color:red">PRECES.</strong></p>
+<p dir="ltr">Hermanos y hermanas, llegamos al último día de nuestro CAMPOBOSCO, llenos de gratitud por los momentos vividos, las enseñanzas compartidas y las amistades fortalecidas. Al volver a nuestros hogares, llevemos en el corazón el mensaje de Cristo, siendo luz y testimonio en nuestras comunidades. Con este espíritu, presentemos nuestras peticiones al Señor.</p>
+<br />
+<p dir="ltr">Por la Iglesia, signo de unidad y amor en el mundo,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, siguiendo el ejemplo de Jesús, continúe siendo un faro de esperanza y servicio, especialmente para los jóvenes.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por todos los jóvenes que han participado en este CAMPOBOSCO,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, fortalecidos por la experiencia vivida, regresen a sus hogares con el deseo de ser testigos del amor de Cristo en su vida diaria y en sus comunidades.&nbsp;</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por las familias que nos esperan,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que al regresar, seamos instrumentos de paz y amor, compartiendo con ellos las bendiciones y aprendizajes que hemos recibido durante este campamento.&nbsp;</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por nuestros acompañantes y educadores,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, como verdaderos pastores y guías, sigan impulsando a los jóvenes a caminar en la fe, con la misma pasión de Don Bosco y el ejemplo de los santos salesianos.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr">Por nuestras comunidades locales y parroquiales,</p>
+<ul>
+  <li dir="ltr" aria-level="1">
+    <p dir="ltr" role="presentation"><em>para que, al volver a ellas, llevemos el mensaje del Evangelio con un compromiso renovado, sirviendo a los más necesitados y siendo agentes de cambio en nuestra sociedad.</em></p>
+  </li>
+</ul>
+<br />
+<p dir="ltr" style="color:red">Se pueden añadir algunas intenciones libres.</p>
+<br />
+<p dir="ltr">Oremos ahora al Padre, como nos enseñó el mismo Jesús: Padre nuestro.</p>
+<br />
+<br />
+<p dir="ltr"><strong style="color:red">ORACIÓN</strong></p>
+<p dir="ltr">Señor de poder y de misericordia, que has querido hacer digno y agradable por favor tuyo el servicio de tus fieles, concédenos caminar sin tropiezos hacia los bienes que nos prometes. Por nuestro Señor Jesucristo, tu Hijo, que vive y reina contigo en la unidad del Espíritu Santo y es Dios por los siglos de los siglos.</p>
+<br />
+<p dir="ltr"><strong style="color:red">CONCLUSIÓN</strong></p>
+<br />
+<p dir="ltr"><strong style="color:red">V.</strong> El Señor nos bendiga, nos guarde de todo mal y nos lleve a la vida eterna.<br>
+<strong style="color:red">R, </strong>Amén. </p> <br><br><br>
+</body>
+</html>
+
+    ]]></string>
+    <string name="htmlmisadomingo">
+        <![CDATA[
+        <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pepe</title>
+</head>
+
+<body>
+<h2 style="color:red">Primera lectura</h2>
+<h3>Lectura del Libro del Deuteronomio 6, 2-6</h3>
+<p>Moisés habló al pueblo diciendo:<br>
+  «Teme al Señor, tu Dios, tú, tus hijos y nietos, y observa todos sus mandatos y preceptos, que yo te mando, todos los días de tu vida, a fin de que se prolonguen tus días. Escucha, pues, Israel, y esmérate en practicarlos, a fin de que te vaya bien y te multipliques, como te prometió el Señor, Dios de tus padres, en la tierra que mana leche y miel.<br>
+  Escucha, Israel: El Señor es nuestro Dios, el Señor es uno solo. Amarás, pues, al Señor, tu Dios, con todo tu corazón, con toda tu alma y con todas tus fuerzas.<br>
+  Estas palabras que yo te mando hoy estarán en tu corazón».</p>
+<p><strong>Palabra de Dios.</strong></p>
+<h2 style="color:red">Salmo</h2>
+<h3>Sal. 17, 2-3a. 3bc-4. 47 y 51ab </h3>
+<h3>R: Yo te amo, Señor, tú eres mi fortaleza.</h3>
+<p>Yo te amo, Señor; tú eres mi fortaleza;<br>
+Señor, mi roca, mi alcázar, mi libertador. <strong>R/.</strong></p>
+<p>Dios mío, peña mía, refugio mío,<br>
+  escudo mío, mi fuerza salvadora, mi baluarte.<br>
+  Invoco al Señor de mi alabanza<br>
+  y quedo libre de mis enemigos. <strong>R/.</strong></p>
+<p>Viva el Señor, bendita sea mi Roca,<br>
+  sea ensalzado mi Dios y Salvador:<br>
+  Tú diste gran victoria a tu rey,<br>
+  tuviste misericordia de tu ungido. <strong>R/.</strong></p>
+<h2 style="color:red">Segunda lectura</h2>
+<h3>Lectura de la carta a los Hebreos 7, 23-28</h3>
+<p>Hermanos:<br>
+  Ha habido multitud de sacerdotes de la anterior Alianza, porque la muerte les impedía permanecer; en cambio, Jesús, como permanece para siempre, tiene el sacerdocio que no pasa. De ahí que puede salvar definitivamente a los que se acercan a Dios por medio de él, pues vive siempre para interceder a favor de ellos.<br>
+  Y tal convenía que fuese nuestro sumo sacerdote: santo, inocente, sin mancha, separado de los pecadores y encumbrado sobre el cielo.<br>
+  Él no necesita ofrecer sacrificios cada día como los sumos sacerdotes, que ofrecían primero por los propios pecados, después por los del pueblo, porque lo hizo de una vez para siempre, ofreciéndose a sí mismo.<br>
+  En efecto, la ley hace sumos sacerdotes a hombres llenos de debilidades. En cambio, la palabra del juramento, posterior a la ley, consagra al Hijo, perfecto para siempre.</p>
+<p><strong>Palabra de Dios.</strong></p>
+<h2 style="color:red">Evangelio del día</h2>
+<h3>Lectura del santo Evangelio según San Marcos 12, 28b-34</h3>
+<p>En aquel tiempo, un escriba se acercó a Jesús y le preguntó:<br>
+  «¿Qué mandamiento es el primero de todos?».<br>
+  Respondió Jesús:<br>
+  «El primero es: &ldquo;Escucha, Israel, el Señor, nuestro Dios, es el único Señor: amarás al Señor, tu Dios, con todo tu corazón, con toda tu alma, con toda tu mente, con todo tu ser&rdquo;. El segundo es este: &ldquo;Amarás a tu prójimo como a ti mismo&rdquo;. No hay mandamiento mayor que estos».<br>
+  El escriba replicó:<br>
+  «Muy bien, Maestro, sin duda tienes razón cuando dices que el Señor es uno solo y no hay otro fuera de él; y que amarlo con todo el corazón, con todo el entendimiento y con todo el ser, y amar al prójimo como a uno mismo vale más que todos los holocaustos y sacrificios».<br>
+  Jesús, viendo que había respondido sensatamente, le dijo:<br>
+  «No estás lejos del reino de Dios».<br>
+  Y nadie se atrevió a hacerle más preguntas.</p>
+<p><strong>Palabra del Señor.</strong></p>
+<h2 style="color:red">&nbsp;</h2>
+	<br><br><br>
+
+</body>
+</html>
+
+        ]]>
+    </string>
+    <string name="comentarioDomingo">
+        <![CDATA[
+        <html>
+        <html>
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<p>Para conocer a Dios nuestro intelecto, la razón es insuficiente. Dios se conoce totalmente en el encuentro con Él, y para el encuentro la razón no basta. Hace falta algo más:</p>
+<p>¡Dios es amor! Y sólo por el camino del amor puedes conocer a Dios. Amor razonable, acompañado de la razón. ¡Pero amor! \'¿Pero cómo puedo amar lo que no conozco?\'; \'Ama a los que tienes cerca\'. Y esta es la doctrina de los dos mandamientos: El más importante es amar a Dios, porque Él es amor; Pero el segundo es amar al prójimo, pero para llegar al primero debemos subir los escalones del segundo: es decir, a través del amor al prójimo llegamos a conocer a Dios, que es amor. Sólo amando razonablemente, pero amando, podemos llegar a este amor.</p>
+<p>Es por eso que debemos amarnos los unos a los otros, porque el amor es de Dios y quien ama ha sido engendrado por Dios. Para conocer a Dios hay que amar. (Cf Homilía de S.S. Francisco, 8 de enero de 2015, en Santa Marta).</p>
+</body>
+</html>
+  ]]>
+
+    </string>
+
+
+</resources>

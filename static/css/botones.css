@@ -1,0 +1,22 @@
+.btncampobosco{
+    background-color: #ff00bf;
+    color: #fff;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: 'tipoCampo';
+    src: url('/static/fonts/Novecento CondUltraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fuente_basica';
+    src: url('/static/fonts/neutraface2display_thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.atras{
+}

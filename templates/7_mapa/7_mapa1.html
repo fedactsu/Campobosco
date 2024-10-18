@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css">
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
     <style>
@@ -47,30 +48,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
   <!-- Agrega Leaflet.js -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="{{ url_for('static',filename='js/leaflet.js') }}"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.js"></script>
 
   <script>
-      // Crear el mapa centrado en una ubicación inicial (Concepción, Chile)
-      var map = L.map('map').setView([-33.95977, -70.62784], 13);
+      var map = L.map('map').setView([-33.9587500, -70.6279700], 13);
 
       // Agregar los tiles de OpenStreetMap
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
-      // Agregar varios marcadores en diferentes ubicaciones
+    
       var markers = [
           {
               coords: [-33.9612392, -70.6277668],
-              popup: "<bZona Turín</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.9612392, -70.6277668],
-              popup: "<bZona Turín</b><br>CAMPOBOSCO 2024"
+              popup: "<b>Zona Turín</b><br><p style='color:purple'>Zona de trabajo 15 años</p>"
           },
           {
               coords: [-33.9602426, -70.6302238],
-              popup: "<b>Zona Nizza</b><br>CAMPOBOSCO 2024"
+              popup: "<b>Zona Nizza</b><br><p style='color:yellow'>Zona de trabajo 18-29 años</p>"
           },
           {
               coords: [-33.9586319, -70.6292582],
@@ -82,20 +80,45 @@
           },
           {
               coords: [-33.9581647, -70.6273913],
-              popup: "<b>Zona IBecchi</b><br>CAMPOBOSCO 2024"
+              popup: "<b>Zona IBecchi</b><br><p style='color:magenta'>Zona de trabajo 17 años</p>"
           },
           {
               coords: [-33.9592900, -70.6264500],
-              popup: "<b>Zona Roma</b><br>CAMPOBOSCO 2024"
-          }
+              popup: "<b>Zona Roma</b><br><p style='color:red'>Zona de trabajo 16 años</p>"
+          },
+          {
+              coords: [-33.963252, -70.626918],
+              popup: "<b>Francisco Besuco</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.962923, -70.627784],
+              popup: "<b>Ceferino Namuncurá</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.962612, -70.629609],
+              popup: "<b>Santo Domingo Savio</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.962465, -70.631090],
+              popup: "<b>Corina Arrigotti</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.962741, -70.634177],
+              popup: "<b>Beata Laura Vicuña</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.960320, -70.631582],
+              popup: "<b>Multi Canchas</b><br>CAMPOBOSCO 2024"
+          },
+          
+
       ];
 
-      // Iterar sobre los marcadores y agregarlos al mapa
+
       markers.forEach(function(marker) {
           L.marker(marker.coords).addTo(map).bindPopup(marker.popup);
       });
 
-      // Función para mostrar la ubicación actual del usuario
       function mostrarUbicacionActual() {
           if (navigator.geolocation) {
               navigator.geolocation.getCurrentPosition(function(position) {
@@ -118,7 +141,7 @@
       mostrarUbicacionActual();
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 
 </html>

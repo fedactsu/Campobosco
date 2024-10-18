@@ -36,6 +36,32 @@ def miercoles_misa():
     return render_template('1_miercoles/3_mier_misa.html')
 
 
+#-----------------------------------------------------------------------------------------------JUEVES
+@app.route('/jueves')
+def jueves():
+    return render_template('2_jueves/1_jueves.html')
+
+@app.route('/jueves/laudes')
+def jueves_laudes():
+    return render_template('2_jueves/2_jueves_laudes.html')
+
+@app.route('/jueves/misa')
+def jueves_misa():
+    return render_template('2_jueves/3_jueves_misa.html')
+
+#-----------------------------------------------------------------------------------------------viernes
+@app.route('/viernes')
+def viernes():
+    return render_template('3_viernes/1_viernes.html')
+
+@app.route('/viernes/laudes')
+def viernes_laudes():
+    return render_template('3_viernes/2_viernes_laudes.html')
+
+@app.route('/viernes/misa')
+def viernes_misa():
+    return render_template('3_viernes/3_viernes_misa.html')
+
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)
 def page_not_found(error):

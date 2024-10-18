@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}" />
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
     <style>
@@ -51,7 +51,7 @@
 
   <script>
       // Crear el mapa centrado en una ubicación inicial (Concepción, Chile)
-      var map = L.map('map').setView([-36.82699, -73.04977], 13);
+      var map = L.map('map').setView([-33.95977, -70.62784], 13);
 
       // Agregar los tiles de OpenStreetMap
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -61,16 +61,32 @@
       // Agregar varios marcadores en diferentes ubicaciones
       var markers = [
           {
-              coords: [-36.82699, -73.04977],
-              popup: "<b>Ubicación del Campobasco</b><br>Concepción, Chile"
+              coords: [-33.9612392, -70.6277668],
+              popup: "<bZona Turín</b><br>CAMPOBOSCO 2024"
           },
           {
-              coords: [-36.82122, -73.04439],
-              popup: "<b>Punto de Interés 1</b><br>Centro de Concepción"
+              coords: [-33.9612392, -70.6277668],
+              popup: "<bZona Turín</b><br>CAMPOBOSCO 2024"
           },
           {
-              coords: [-36.83287, -73.05041],
-              popup: "<b>Punto de Interés 2</b><br>Parque Ecuador"
+              coords: [-33.9602426, -70.6302238],
+              popup: "<b>Zona Nizza</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.9586319, -70.6292582],
+              popup: "<b>Valponasca</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.9587500, -70.6279700],
+              popup: "<b>Valdocco</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.9581647, -70.6273913],
+              popup: "<b>Zona IBecchi</b><br>CAMPOBOSCO 2024"
+          },
+          {
+              coords: [-33.9592900, -70.6264500],
+              popup: "<b>Zona Roma</b><br>CAMPOBOSCO 2024"
           }
       ];
 
@@ -86,7 +102,7 @@
                   var lat = position.coords.latitude;
                   var lon = position.coords.longitude;
                   var userMarker = L.marker([lat, lon]).addTo(map)
-                      .bindPopup("<b>Tu ubicación actual</b><br>Latitud: " + lat + ", Longitud: " + lon).openPopup();
+                      .bindPopup("<b>Estás Aquí</b><br>Latitud: " + lat + ", Longitud: " + lon).openPopup();
 
                   // Centrar el mapa en la ubicación del usuario
                   map.setView([lat, lon], 13);

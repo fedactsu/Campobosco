@@ -5,7 +5,6 @@ class Opcion():
         self.logoCabeza = ""
         self.subLogoCABEZA = ""
         self.fechaAct = ""
-        self.nombreAlumno = ""
         self.anioActualTotal = 2024
         self.DEBUG = False
         self.keyPrivada = '][232312023!_01@@@@dsEWFds¡@∑€∂'
@@ -21,9 +20,6 @@ class Opcion():
 
     def get_fechaAct(self):
         return self.fechaAct
-
-    def get_nombreAlumno(self):
-        return self.nombreAlumno
 
     def get_anioActualTotal(self):
         return self.anioActualTotal

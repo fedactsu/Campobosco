@@ -84,6 +84,11 @@ def domingo_laudes():
 def domingo_misa():
     return render_template('5_domingo/3_domingo_misa.html')
 
+#-----------------------------------------------------------------------------------------------mapa
+@app.route('/mapalugar')
+def mapa():
+    return render_template('7_mapa/7_mapa1.html')
+
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')
 def cancionero():

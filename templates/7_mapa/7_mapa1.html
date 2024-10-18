@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #66b352;
+
+        }
+        #map {
+            height: 400px; /* Altura del mapa */
+            width: 100%;   /* Ancho del mapa */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1 class="text-center">Mapa del Lugar</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+
+        <div class="container my-3">
+            <h1 class="text-center">Mapa del Campobasco</h1>
+            <div id="map"></div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+  <!-- Agrega Leaflet.js -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <script>
+      // Crear el mapa centrado en una ubicación inicial (Concepción, Chile)
+      var map = L.map('map').setView([-36.82699, -73.04977], 13);
+
+      // Agregar los tiles de OpenStreetMap
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Agregar varios marcadores en diferentes ubicaciones
+      var markers = [
+          {
+              coords: [-36.82699, -73.04977],
+              popup: "<b>Ubicación del Campobasco</b><br>Concepción, Chile"
+          },
+          {
+              coords: [-36.82122, -73.04439],
+              popup: "<b>Punto de Interés 1</b><br>Centro de Concepción"
+          },
+          {
+              coords: [-36.83287, -73.05041],
+              popup: "<b>Punto de Interés 2</b><br>Parque Ecuador"
+          }
+      ];
+
+      // Iterar sobre los marcadores y agregarlos al mapa
+      markers.forEach(function(marker) {
+          L.marker(marker.coords).addTo(map).bindPopup(marker.popup);
+      });
+
+      // Función para mostrar la ubicación actual del usuario
+      function mostrarUbicacionActual() {
+          if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function(position) {
+                  var lat = position.coords.latitude;
+                  var lon = position.coords.longitude;
+                  var userMarker = L.marker([lat, lon]).addTo(map)
+                      .bindPopup("<b>Tu ubicación actual</b><br>Latitud: " + lat + ", Longitud: " + lon).openPopup();
+
+                  // Centrar el mapa en la ubicación del usuario
+                  map.setView([lat, lon], 13);
+              }, function() {
+                  alert("No se pudo obtener la ubicación.");
+              });
+          } else {
+              alert("La geolocalización no es compatible con este navegador.");
+          }
+      }
+
+      // Llamar a la función para mostrar la ubicación actual
+      mostrarUbicacionActual();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

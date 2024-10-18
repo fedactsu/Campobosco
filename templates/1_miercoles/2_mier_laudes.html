@@ -21,8 +21,24 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand " >
+        <div class="nav navbar-nav">
+            <a style="color: rgb(184, 184, 184);" class="nav-item nav-link" href="/inicio">🏠</a>
+            <a style="color: white;" class="nav-item nav-link active" href="/miercoles">3️⃣0️⃣</a>
+            <a style="color: rgb(184, 184, 184);" class="nav-item nav-link" href="/jueves">3️⃣1️⃣</a>
+            <a style="color: rgb(184, 184, 184);" class="nav-item nav-link" href="/viernes">0️⃣1️⃣</a>
+            <a style="color: rgb(184, 184, 184);" class="nav-item nav-link" href="/sabado">0️⃣2️⃣</a>
+            <a style="color: rgb(184, 184, 184);" class="nav-item nav-link"  href="/domingo">0️⃣3️⃣</a>
+        </div>
+    </nav>
+    
     <div class="container my-3">
         <h1 class="text-center">Laudes:</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
         <h3 class="text-center"></h3>
         <p style="color:red" dir="ltr"><strong>Laudes</strong></p>
         <p dir="ltr"><strong style="color:red">V</strong>. Señor, abre mis labios.<br>

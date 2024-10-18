@@ -87,16 +87,65 @@ def domingo_misa():
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')
 def cancionero():
-    cancionero = [[1,"Creemos en el Dios que ama a los jóvenes"],
+    cancionero = [[0,"Himno CAMPOBOSCO"],
+                [1,"Creemos en el Dios que ama a los jóvenes"],
                   [2,"Don Bosco Amigo"],
-                  [3,""]]
+                  [3,"Haz cantar tu vida"],
+                  [4,"Señor ten piedad (C.  Fones)"],
+                  [5,"Oh Señor, ten  piedad"],
+                  [6,"Kyrie eleison"],
+                  [7,"Gloria a Dios (C. Fones)"],
+                  [8,"Gloria a ti eterno amor"],
+                  [9,"Dios está aquí"],
+                  [10,"Margaritas"],
+                  [11,"Aleluya, gloria  aleluya"],
+                  [12,"Aleluya vivo estás"],
+                  [13,"En Ti Señor"],
+                  [14,"Donde hay amor"],
+                  [15,"Tomad, Señor y recibid"],
+                  [16,"En tus manos hoy"],
+                  [17,"Santo (C. Fones)"],
+                  [18,"Santo continental"],
+                  [19,"Cordero juvenil"],
+                  [20,"Cordero de Dios"],
+                  [21,"Don Bosco  enséñanos"],
+                  [22,"Procura  hacerte amar"],
+                  [23,"Contigo  María"],
+                  [24,"Auxiliadora de don Bosco"],
+                  [25,"María es"],
+                  [26,"María mírame"],
+                  ]
     return render_template('6_cancionero/6_cancionero_general.html',canciones=cancionero )
 
 @app.route('/cancionero/<idcancion>', methods=['GET'])
 def cancionparticular(idcancion):
-    cancionero=[[""],
+    cancionero=[[can.cancionero().himnodonbosco],
                 [can.cancionero().getCan1()],
-                [can.cancionero().getCan2()]
+                [can.cancionero().getCan2()],
+                [can.cancionero().hazcantartuvida],
+                [can.cancionero().senortenpiedad],
+                [can.cancionero().ohsenortenpiedad],
+                [can.cancionero().kyrieeleison],
+                [can.cancionero().gloriaadiosfones],
+                [can.cancionero().gloriatieternoamor],
+                [can.cancionero().diosestaaqui],
+                [can.cancionero().margaritas],
+                [can.cancionero().aleluya1],
+                [can.cancionero().aleluya2],
+                [can.cancionero().entisenor],
+                [can.cancionero().dondehayanmor],
+                [can.cancionero().tomadyrecibir],
+                [can.cancionero().entusmanoshoy],
+                [can.cancionero().santofones],
+                [can.cancionero().santocontinental],
+                [can.cancionero().corderojuvenil],
+                [can.cancionero().corderodios],
+                [can.cancionero().donboscoensenanos],
+                [can.cancionero().procurahacerteamar],
+                [can.cancionero().contigomaria],
+                [can.cancionero().auxiliadoradonbosco],
+                [can.cancionero().mariaes],
+                [can.cancionero().mariamirame],
                 ]
     return render_template('6_cancionero/6_1_cancionero_especifico.html',letra=cancionero[int(idcancion)][0] )
 

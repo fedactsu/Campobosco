@@ -36,7 +36,6 @@ class cancionero():
                         él  nos pide llevar a los jóvenes su corazón.<br>
                         Mira sus sueños son ya realidad  todos tus hijos te quieren cantar</p>
                         """
-        
         self.hazcantartuvida = """
                                 <h3>Haz cantar tu vida</h3>
                             <p><strong>Yo creo en Dios que canta Que la vida hace cantar. (bis)</strong></p>
@@ -47,8 +46,7 @@ class cancionero():
                             la vida que Él te da.</p>
                             <p><strong>Yo creo en Dios que  canta Que la vida hace cantar. (bis)</strong></p>
                             """
-        self.senortenpiedad= """"
-                            <h3><strong>Señor ten piedad </strong><strong>(C.  Fones)</strong><strong> </strong></h3>
+        self.senortenpiedad= """"<h3><strong>Señor ten piedad </strong><strong>(C.  Fones)</strong><strong> </strong></h3>
                             <p>Tú que has sido enviado a sanar<br>
                             los corazones afligidos<br>
                             <strong>Señor ten piedad de nosotros</strong><br>
@@ -184,8 +182,7 @@ class cancionero():
                             Hemos puesto nuestra fe.<br>
                             En Ti, en Ti, en Ti Señor<br>
                             Hemos puesto nuestra fe.</p>
-                            """
-        
+                            """    
         self.dondehayanmor= """<h3>Donde hay amor</h3>
                             <p>Donde hay amor y caridad<br>
                             Donde hay amor, <br>
@@ -214,14 +211,14 @@ class cancionero():
                             que se transforman en este altar<br>
                             transforma nuestras vidas y nuestro hogar.</p>
                             <p>&nbsp;</p>
-                            
-                            <h3><strong>Tomad, Señor y recibid</strong></h3>
+                            """
+        self.tomadyrecibir="""<h3><strong>Tomad, Señor y recibid</strong></h3>
                             <p>Tomad Señor  y recibid<br>
                             la ofrenda  que traigo:<br>
                             pan y vino  al altar.<br>
                             Que pronto  se convertirán<br>
                             en tu  Cuerpo y tu Sangre,<br>
-                            Don   de Tú  santidad.</p>
+                            Don de Tú  santidad.</p>
                             <p>Traigo  junto al pan y a este vino<br>
                             La alegría  que tengo<br>
                             de servirte  Señor,<br>
@@ -242,8 +239,8 @@ class cancionero():
                             les des de  tu paz.<br>
                             Tomad Señor  y recibid...</p>
                             <p>&nbsp;</p>
-                            
-                            <h3>En tus manos hoy</h3>
+                            """    
+        self.entusmanoshoy="""<h3>En tus manos hoy</h3>
                             <p>Nuestras vidas,  nuestros dones, <br>
                             nuestro amor<br>
                             Son regalos que  ponemos<br>
@@ -262,8 +259,8 @@ class cancionero():
                             Encontramos nuestra  salvación</p>
                             <p><strong>&nbsp;</strong></p>
                             <p><strong>&nbsp;</strong></p>
-                            
-                            <h3><strong>Santo </strong><strong>(C. Fones)</strong><strong> </strong></h3>
+                            """
+        self.santofones=    """<h3><strong>Santo </strong><strong>(C. Fones)</strong><strong> </strong></h3>
                             <p><strong>Santo,  Santo, </strong><br>
                             <strong>Santo  es el Señor</strong><br>
                             <strong>Dios  del universo,</strong><br>
@@ -283,8 +280,8 @@ class cancionero():
                             <strong>Dios  del universo,</strong><br>
                             <strong>Santo  es el Señor.</strong></p>
                             <p>&nbsp;</p>
-                            
-                            <h3><strong>Santo continental</strong></h3>
+                            """
+        self.santocontinental="""<h3><strong>Santo continental</strong></h3>
                             <p>Santo, Santo, Santo<br>
                             el Señor Dios del universo<br>
                             el cielo y la tierra<br>
@@ -296,7 +293,8 @@ class cancionero():
                             <strong>Hosanna, hosanna,</strong><br>
                             <strong>hosanna en lo alto del cielo (bis)</strong></p>
                             <p>&nbsp;</p>
-                            <h3><strong>Cordero juvenil</strong></h3>
+                            """
+        self.corderojuvenil="""<h3><strong>Cordero juvenil</strong></h3>
                             <p>Cordero  de Dios que quitas <br>
                             el  pecado del mundo<br>
                             <strong>ten piedad, ten piedad </strong></p>
@@ -305,9 +303,10 @@ class cancionero():
                             <strong> ten piedad, ten piedad </strong></p>
                             <p>Cordero de  Dios que quitas<br>
                             el pecado del mundo</p>
-                            <p><strong>danos la paz,  danos la paz        danos la paz.</strong></p>
+                            <p><strong>danos la paz,  danos la paz danos la paz.</strong></p>
                             <p>&nbsp;</p>
-                            <h3><strong>Cordero de Dios</strong></h3>
+                            """
+        self.corderodios=   """<h3><strong>Cordero de Dios</strong></h3>
                             <p>Cordero de Dios<br>
                             tú que quitas<br>
                             el pecado del  mundo<br>
@@ -323,7 +322,8 @@ class cancionero():
                             ven y danos la paz,<br>
                             ven y danos la paz.</strong></p>
                             <p>&nbsp;</p>
-                            <h3>Don Bosco  enséñanos</h3>
+                            """
+        self.donboscoensenanos ="""<h3>Don Bosco  enséñanos</h3>
                             <p>Cuántos sueños has tenido, <br>
                             cuánta esperanza en ti guardada. <br>
                             Es que el Señor<strong> </strong>confió en  ti su misión: <br>
@@ -356,8 +356,8 @@ class cancionero():
                             <strong>decirle &ldquo;dame almas, </strong><br>
                             <strong>y lo demás… llévalo&rdquo;</strong>. </p>
                             <p>&nbsp;</p>
-                            
-                            <h3><strong>Procura  hacerte amar</strong></h3>
+                            """
+        self.procurahacerteamar="""<h3><strong>Procura  hacerte amar</strong></h3>
                             <p>La vida de ustedes<br>
                             es el más precioso bien<br>
                             me basta que seas joven<br>
@@ -390,8 +390,8 @@ class cancionero():
                             Si amas lo que ellos aman,</strong><br>
                             <strong>milagros haz de ver</strong></p>
                             <h1>&nbsp;</h1>
-                            
-                            <h3><strong>Contigo  María</strong></h3>
+                            """
+        self.contigomaria="""<h3><strong>Contigo  María</strong></h3>
                             <p>Quiero caminar contigo María<br>
                             pues Tú  eres mi madre eres mi guía<br>
                             tú eres para mí <br>
@@ -427,7 +427,8 @@ class cancionero():
                             <strong>Llena de gracia, Ave María</strong><br>
                             <strong>Hoy yo te ofrezco toda mi vida. </strong></p>
                             <p>&nbsp;</p>
-                            <h3><strong>Auxiliadora de don Bosco</strong></h3>
+                            """
+        self.auxiliadoradonbosco="""<h3><strong>Auxiliadora de don Bosco</strong></h3>
                             <p>Eres María Madre nuestra<br>
                             esclava humilde del Señor<br>
                             eres purísima doncella<br>
@@ -453,8 +454,8 @@ class cancionero():
                             <p><strong>¡Ave, ave María ave!</strong><br>
                             <strong>¡Ave, ave María ave!</strong></p>
                             <p>&nbsp;</p>
-                            
-                            <h3><strong>María es</strong></h3>
+                            """
+        self.mariaes="""<h3><strong>María es</strong></h3>
                             <p>Hace unos días me han preguntado: <br>
                             ¿Quién es María y porque aún hay tantos <br>
                             que a ella acuden y en ella esperan<br>
@@ -479,8 +480,8 @@ class cancionero():
                             <p><strong>María es del hogar la fuerza es la palabra amiga, la  mano que alienta. Aquel milagro que aún esperas..</strong><br>
                             <strong>Muy dentro tuyo hallarás respuesta</strong></p>
                             <p>&nbsp;</p>
-                            
-                            <h3><strong>María mírame</strong></h3>
+                            """
+        self.mariamirame="""<h3><strong>María mírame</strong></h3>
                             <p>María mírame, María mírame<br>
                             Si tú me miras, Él también me mirará <br>
                             Madre mía mírame, de la&nbsp;mano llévame <br>
@@ -497,8 +498,54 @@ class cancionero():
                             Si tú me miras, Él también me mirará <br>
                             Madre mía mírame, de la&nbsp;mano llévame <br>
                             Muy cerca de Él, que ahí me quiero quedar</p>
-                            <p><strong>En tus brazos quiero, descansar.</strong><strong> </strong></p>
-    """
+                            <p><strong>En tus brazos quiero, descansar.</strong><strong> </strong></p>"""
+        self.himnodonbosco="""
+                            <h3 dir="ltr">NO PARES DE SOÑAR</h3>
+                            <p dir="ltr">Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            los sueños se hacen realidad</p>
+                            </strong>
+                            <p dir="ltr"> Te comparto uno de mis sueños, el más especial<br>
+                            que marcó mi vida, mi futuro, mi proyecto y más…<br>
+                            en medio de jóvenes me encontré&nbsp;<br>
+                            tratando de conducirlos al bien.<strong><br />
+                            </strong></p>
+                            <p dir="ltr">Malas palabras con puños las callé<br>
+                            y ocurrió lo que hasta hoy a muchos les cuesta creer.<br>
+                            Escuché mi nombre con el corazón<br>
+                            No con golpes Juan con la sabiduría del amor.
+                            <strong><br />
+                            </strong></p>
+                            <strong>
+                            <p dir="ltr">Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            los sueños se hacen realidad</p>
+                            </strong>
+                            <p> Cómo haré posible lo que me pides yo soy tan solo un niño<br>
+                            no te preocupes porque yo te daré la Maestra.<br>
+                            Hazte humilde, fuerte y robusto<br>
+                            lobos en corderos cambiarás<br>
+                            con el paso de los años todo lo comprenderás…</p>
+                            <p>Porque este sueño la vuelta mundo dio<br>
+                            María Mazzarello en Mornés lo continuó<br>
+                            Una gran familia dispuesta a la misión<br>
+                            Salesianos, salesianas,<br>
+                            razón, religión y amor.</p>
+                            <p>Tú y yo… somos parte de este gran sueño<br>
+                            que con amor..pueden transformar lobos en corderos<br>
+                            Un movimiento… que no puede parar<br>
+                            Don Bosco y Maín…este sueño nos hace soñar.</p>
+                            <p><strong>Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            Don Bosco<br>
+                            ¡no pares de soñar!<br>
+                            los sueños se hacen realidad</strong><br>
+                            </p>
+                            """
     def getCan1(self):
         return self.Creemos
     def getCan2(self):

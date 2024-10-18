@@ -25,7 +25,11 @@
 <body>
     <div class="container my-3">
         <h1 class="text-center">Cancionero</h1>
-
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
         <div class="list-group mt-4">
             {{letra|safe}}
              

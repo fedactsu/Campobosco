@@ -62,7 +62,7 @@
             caches.open('offline-cache-v1').then(function (cache) {
                 cache.addAll([
                     '/',
-                    '/static/Favicon.png',  // Incluye aquí los archivos que quieras cachear
+                    '/static/Favicon.png',
                     '/static/css/botones.css',
                     '/static/css/boot/bootstrap.css',
                     '/static/css/boot/bootstrap.min.css',
@@ -91,6 +91,7 @@
                     '/static/img/imagenes_CP50/CP50/logoredondo01.png',
                     '/static/img/imagenes_CP50/CP50/mariamazarello01.png',
                     '/static/img/imagenes_CP50/CP50/santos_salesianos.png',
+                    '/static/img/imagenes_CP50/cpb50_sin.png',
                     '/static/img/atras.png',
                     '/static/js/jquery.min.js',
                     '/static/js/service-worker.js',
@@ -111,6 +112,7 @@
                     '/sabado/misa',
                     '/domingo',
                     '/domingo/laudes',
+                    '/domingo/misa',
                     '/cancionero',
                 ]);
             });
@@ -124,9 +126,9 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
                 .then(function (registration) {
-                    console.log('Service Worker registrado con éxito:', registration.scope);
+                    console.log('CAMPOBOSCO ok:', registration.scope);
                 }).catch(function (error) {
-                    console.log('Registro de Service Worker fallido:', error);
+                    console.log('CAMPOBOSCO no-ok:', error);
                 });
         }
 

@@ -1,7 +1,7 @@
 const CACHE_NAME = 'offline-cache-v1';
 const urlsToCache = [
     '/',
-    '/static/Favicon.png',  // Incluye aquí los archivos que quieras cachear
+    '/static/Favicon.png',
     '/static/css/botones.css',
     '/static/css/boot/bootstrap.css',
     '/static/css/boot/bootstrap.min.css',

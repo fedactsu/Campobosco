@@ -27,9 +27,8 @@
         <h1 class="text-center">Cancionero</h1>
 
         <div class="list-group mt-4">
-            {% for ee in canciones %}
-            <a href="/cancionero/{{ee[0]}}" class="list-group-item list-group-item-action"> {{ ee[1] }} </a>
-             {% endfor %}
+            {{letra|safe}}
+             
         </div>
 
 

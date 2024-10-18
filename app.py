@@ -1,6 +1,7 @@
-from flask import Flask, request, jsonify, make_response, redirect, send_file
+from flask import Flask
 from flask import render_template
 import configuracion as c
+import cancionero as can
 
 import os
 
@@ -86,7 +87,18 @@ def domingo_misa():
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')
 def cancionero():
-    return render_template('6_cancionero/6_cancionero_general.html')
+    cancionero = [[1,"Creemos en el Dios que ama a los jóvenes"],
+                  [2,"Don Bosco Amigo"],
+                  [3,""]]
+    return render_template('6_cancionero/6_cancionero_general.html',canciones=cancionero )
+
+@app.route('/cancionero/<idcancion>', methods=['GET'])
+def cancionparticular(idcancion):
+    cancionero=[[""],
+                [can.cancionero().getCan1()],
+                [can.cancionero().getCan2()]
+                ]
+    return render_template('6_cancionero/6_1_cancionero_especifico.html',letra=cancionero[int(idcancion)][0] )
 
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)

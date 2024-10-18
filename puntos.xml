@@ -1,0 +1,7 @@
+        addMarker(-33.95977,-70.62784, "PICARQUÍN - CAMPOBOSCO",R.drawable.puntorojo)
+        addMarker(-33.9612392, -70.6277668, "Zona Turín - 14-16 años", R.drawable.puntomorado)
+        addMarker(-33.9602426, -70.6302238, "Zona Nizza - 26-29 años",R.drawable.puntorosado)
+        addMarker(-33.9586319, -70.6292582, "Valponasca",R.drawable.puntoamarillo)
+        addMarker(-33.9587500, -70.6279700, "Valdocco", R.drawable.puntonaranja_24)
+        addMarker(-33.9581647, -70.6273913, "Zona IBecchi - 20-25 años",R.drawable.puntomorado)
+        addMarker(-33.9592900, -70.6264500, "Zona Roma - 17-19 años",R.drawable.puntoamarillo)

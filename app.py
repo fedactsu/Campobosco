@@ -83,12 +83,19 @@ def domingo_laudes():
 def domingo_misa():
     return render_template('5_domingo/3_domingo_misa.html')
 
+#-----------------------------------------------------------------------------------------------cancionero
+@app.route('/cancionero')
+def cancionero():
+    return render_template('6_cancionero/6_cancionero_general.html')
+
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('estructura/404.html')
 
-
+@app.route('/service-worker.js')
+def service_worker():
+    return app.send_static_file('js/service-worker.js')
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)

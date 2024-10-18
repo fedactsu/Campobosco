@@ -31,11 +31,19 @@
             <img src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}"
                 alt="Descripción de la imagen" style="max-width: 70%; height: auto;">
             <a href="/inicio" type="button" class=" btncampobosco mt-3">Bienvenid@s</a>
-            <a type="button" class=" mt-3" style="background-color: #361439; color: aliceblue; padding: 10px;"
+            <a type="button" class="btn mt-3" style="background-color: #361439; color: aliceblue; padding: 10px;"
                 onclick="pepe()">Creditos</a>
+            <a type="button" class="btn mt-3" style="background-color: #66b352; color: #361439; padding: 10px;"
+                id="cache-btn">Descargar Toda la página</a>
         </div>
 
-
+        <!-- Spinner de carga -->
+        <div id="loading" class="text-center mt-4" style="display:none;">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <p>Guardando la página en caché, por favor espera...</p>
+        </div>
     </main>
     <footer>
     </footer>
@@ -48,6 +56,78 @@
                 text: "Trabajo realizado por el equipo de liturgia \nCualquier cosa que necesiten no dude de buscarnos en el campamento",
                 icon: "success"
             });
+        }
+
+        document.getElementById('cache-btn').addEventListener('click', () => {
+            caches.open('offline-cache-v1').then(function (cache) {
+                cache.addAll([
+                    '/',
+                    '/static/Favicon.png',  // Incluye aquí los archivos que quieras cachear
+                    '/static/css/botones.css',
+                    '/static/css/boot/bootstrap.css',
+                    '/static/css/boot/bootstrap.min.css',
+                    '/static/fonts/neutraface2display_thin.otf',
+                    '/static/fonts/Novecento CondUltraBold.otf',
+                    '/static/img/imagenes_CP50/CAMPO/btndomingo.png',
+                    '/static/img/imagenes_CP50/CAMPO/btnjueves.png',
+                    '/static/img/imagenes_CP50/CAMPO/btnMapa01.png',
+                    '/static/img/imagenes_CP50/CAMPO/btnmiercoles.png',
+                    '/static/img/imagenes_CP50/CAMPO/btnsabado.png',
+                    '/static/img/imagenes_CP50/CAMPO/btnviernes.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_cancionero2.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_eucaristia.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_eucaristia_claro.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_liturgia_manana_claro.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_oracion_manana.png',
+                    '/static/img/imagenes_CP50/CP50/ceferinosinfondo01.png',
+                    '/static/img/imagenes_CP50/CP50/circulo_01.png',
+                    '/static/img/imagenes_CP50/CP50/dbmm.png',
+                    '/static/img/imagenes_CP50/CP50/DBStefan.png',
+                    '/static/img/imagenes_CP50/CP50/domingosavio01.png',
+                    '/static/img/imagenes_CP50/CP50/donboscofrente.png',
+                    '/static/img/imagenes_CP50/CP50/gente_bosco.png',
+                    '/static/img/imagenes_CP50/CP50/laurasinfondo01.png',
+                    '/static/img/imagenes_CP50/CP50/logocampobosco.png',
+                    '/static/img/imagenes_CP50/CP50/logoredondo01.png',
+                    '/static/img/imagenes_CP50/CP50/mariamazarello01.png',
+                    '/static/img/imagenes_CP50/CP50/santos_salesianos.png',
+                    '/static/img/atras.png',
+                    '/static/js/jquery.min.js',
+                    '/static/js/service-worker.js',
+                    '/static/js/sweetalert2.all.min.js',
+                    '/static/js/bootjs/bootstrap.min.js',
+                    '/inicio',
+                    '/miercoles',
+                    '/miercoles/laudes',
+                    '/miercoles/misa',
+                    '/jueves',
+                    '/jueves/laudes',
+                    '/jueves/misa',
+                    '/viernes',
+                    '/viernes/laudes',
+                    '/viernes/misa',
+                    '/sabado',
+                    '/sabado/laudes',
+                    '/sabado/misa',
+                    '/domingo',
+                    '/domingo/laudes',
+                    '/cancionero',
+                ]);
+            });
+            Swal.fire({
+                title: "Éxitos",
+                text: "Página guardada correctamente",
+                icon: "success"
+            });
+        });
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registrado con éxito:', registration.scope);
+                }).catch(function (error) {
+                    console.log('Registro de Service Worker fallido:', error);
+                });
         }
 
     </script>

@@ -1,11 +1,7 @@
-from flask import Flask, request, jsonify, make_response, redirect, send_file,url_for
+from flask import Flask, request, jsonify, make_response, redirect, send_file
 from flask import render_template
 import configuracion as c
-import mysql.connector
-from datetime import timedelta
-import datetime as dt
-import locale
-import zipfile
+
 import os
 
 app=Flask(__name__)
@@ -61,6 +57,31 @@ def viernes_laudes():
 @app.route('/viernes/misa')
 def viernes_misa():
     return render_template('3_viernes/3_viernes_misa.html')
+
+#-----------------------------------------------------------------------------------------------sabado
+@app.route('/sabado')
+def sabado():
+    return render_template('4_sabado/1_sabado.html')
+
+@app.route('/sabado/laudes')
+def sabado_laudes():
+    return render_template('4_sabado/2_sabado_laudes.html')
+
+@app.route('/sabado/misa')
+def sabado_misa():
+    return render_template('4_sabado/3_sabado_misa.html')
+#-----------------------------------------------------------------------------------------------domingo
+@app.route('/domingo')
+def domingo():
+    return render_template('5_domingo/1_domingo.html')
+
+@app.route('/domingo/laudes')
+def domingo_laudes():
+    return render_template('5_domingo/2_domingo_laudes.html')
+
+@app.route('/domingo/misa')
+def domingo_misa():
+    return render_template('5_domingo/3_domingo_misa.html')
 
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)

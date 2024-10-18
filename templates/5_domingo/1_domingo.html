@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #8B268C;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container my-3">
+        <h1 class="text-center">Domingo n° 31</h1>
+        <h3 class="text-center">del tiempo de la Iglesia:</h3>
+
+        <div class="list-group mt-4">
+            <a href="/domingo/laudes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_oracion_manana.png')}} "
+                    alt="" width="100%">
+            </a>
+            <a href="/domingo/misa" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_eucaristia.png')}} " alt=""
+                    width="100%">
+            </a>
+            <p>Para conocer a Dios nuestro intelecto, la razón es insuficiente. Dios se conoce totalmente en el encuentro con Él, y para el encuentro la razón no basta. Hace falta algo más:</p>
+            <p>¡Dios es amor! Y sólo por el camino del amor puedes conocer a Dios. Amor razonable, acompañado de la razón. ¡Pero amor! \'¿Pero cómo puedo amar lo que no conozco?\'; \'Ama a los que tienes cerca\'. Y esta es la doctrina de los dos mandamientos: El más importante es amar a Dios, porque Él es amor; Pero el segundo es amar al prójimo, pero para llegar al primero debemos subir los escalones del segundo: es decir, a través del amor al prójimo llegamos a conocer a Dios, que es amor. Sólo amando razonablemente, pero amando, podemos llegar a este amor.</p>
+            <p>Es por eso que debemos amarnos los unos a los otros, porque el amor es de Dios y quien ama ha sido engendrado por Dios. Para conocer a Dios hay que amar. (Cf Homilía de S.S. Francisco, 8 de enero de 2015, en Santa Marta).</p>
+            
+
+                <a class=" list-group-item-action">
+                    <img src=" {{ url_for('static', filename='img/imagenes_CP50/CP50/dbmm.png')}} " alt=""
+                        width="100%">
+                </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

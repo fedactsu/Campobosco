@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 import configuracion as c
 import cancionero as can
+from user_agents import parse
 
 import os
 
@@ -14,7 +15,34 @@ application=app
 
 @app.route("/",methods=['GET','POST'])
 def index():
-    return render_template('index.html')
+    user_agente=request.headers.get('User-Agent')
+    parse_agente = parse(user_agente)
+    if parse_agente.is_mobile:
+        if "Android" in user_agente:
+            dispositivo = "Android"
+        elif "Iphone" in user_agente:
+            dispositivo = "Iphone"
+        else:
+            dispositivo = "Otro móvil"
+    else:
+        dispositivo = "WEB"
+
+    return render_template('index.html',device=dispositivo)
+
+@app.route("/comoagregar")
+def comoagregar():
+    user_agente=request.headers.get('User-Agent')
+    parse_agente = parse(user_agente)
+    if parse_agente.is_mobile:
+        if "Android" in user_agente:
+            dispositivo = "Android"
+        elif "iPhone" in user_agente:
+            dispositivo = "iPhone"
+        else:
+            dispositivo = "Otro móvil"
+    else:
+        dispositivo = "WEB"
+    return render_template('estructura/agregaralinicio.html', device=dispositivo )
 
 @app.route("/inicio")
 def inicio():

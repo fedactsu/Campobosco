@@ -72,11 +72,11 @@
           },
           {
               coords: [-33.9586319, -70.6292582],
-              popup: "<b>Valponasca</b><br>CAMPOBOSCO 2024"
+              popup: "<b>Valponasca</b><br>Espacio de oración, capilla"
           },
           {
               coords: [-33.9587500, -70.6279700],
-              popup: "<b>Valdocco</b><br>CAMPOBOSCO 2024"
+              popup: "<b>Valdocco</b><br>Escenario central"
           },
           {
               coords: [-33.9581647, -70.6273913],
@@ -125,7 +125,7 @@
                   var lat = position.coords.latitude;
                   var lon = position.coords.longitude;
                   var userMarker = L.marker([lat, lon]).addTo(map)
-                      .bindPopup("<b>Estás Aquí</b><br>Latitud: " + lat + ", Longitud: " + lon).openPopup();
+                      .bindPopup("<b>Estás Aquí</b><br>").openPopup();
 
                   // Centrar el mapa en la ubicación del usuario
                   map.setView([lat, lon], 13);

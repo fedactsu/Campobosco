@@ -32,6 +32,9 @@ def miercoles_laudes():
 def miercoles_misa():
     return render_template('1_miercoles/3_mier_misa.html')
 
+@app.route('/miercoles/horario')
+def miercoles_horario():
+    return render_template('1_miercoles/4_mier_horario.html')
 
 #-----------------------------------------------------------------------------------------------JUEVES
 @app.route('/jueves')
@@ -46,6 +49,10 @@ def jueves_laudes():
 def jueves_misa():
     return render_template('2_jueves/3_jueves_misa.html')
 
+@app.route('/jueves/horario')
+def jueves_horario():
+    return render_template('2_jueves/4_jueves_horario.html')
+
 #-----------------------------------------------------------------------------------------------viernes
 @app.route('/viernes')
 def viernes():
@@ -59,6 +66,10 @@ def viernes_laudes():
 def viernes_misa():
     return render_template('3_viernes/3_viernes_misa.html')
 
+@app.route('/viernes/horario')
+def viernes_horario():
+    return render_template('3_viernes/4_viernes_horario.html')
+
 #-----------------------------------------------------------------------------------------------sabado
 @app.route('/sabado')
 def sabado():
@@ -71,6 +82,10 @@ def sabado_laudes():
 @app.route('/sabado/misa')
 def sabado_misa():
     return render_template('4_sabado/3_sabado_misa.html')
+
+@app.route('/sabado/horario')
+def sabado_horario():
+    return render_template('4_sabado/4_sabado_horario.html')
 #-----------------------------------------------------------------------------------------------domingo
 @app.route('/domingo')
 def domingo():
@@ -83,6 +98,10 @@ def domingo_laudes():
 @app.route('/domingo/misa')
 def domingo_misa():
     return render_template('5_domingo/3_domingo_misa.html')
+
+@app.route('/domingo/horario')
+def domingo_horario():
+    return render_template('5_domingo/4_domingo_horario.html')
 
 #-----------------------------------------------------------------------------------------------mapa
 @app.route('/mapalugar')

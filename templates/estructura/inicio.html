@@ -35,7 +35,7 @@
 
 <body>
     <div class="container my-3">
-        <h2 class="text-center">Bienvenid@s</h2>
+        <h2 class="text-center">{{ mensaje|safe}}</h2>
         <h1 class="text-center">Selecciona el Día:</h1>
 
         <div class="list-group mt-4">
@@ -69,15 +69,22 @@
                 alt=""
                 width="100%">
             </a>
+            <a  class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/vocacional.png')}} " 
+                alt=""
+                width="100%">
+            </a>
 
             <a href="/mapalugar" class=" list-group-item-action">
                 <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnMapa01.png')}} " 
                 alt=""
                 width="100%">
             </a>
+            <a onclick="location.href='/'">
             <img 
             class="list-group-item-action"
-            src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="" width="70%">
+            src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="" width="50%">
+            </a>
         </div>
 
 

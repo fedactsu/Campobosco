@@ -4,6 +4,18 @@
     padding: 10px;
 }
 
+.btn2{
+    background-color: #54bdc4;
+    color: #fff;
+    padding: 10px;
+}
+
+.btn3{
+    background-color: #66b352;
+    color: #fff;
+    padding: 10px;
+}
+
 @font-face {
     font-family: 'tipoCampo';
     src: url('/static/fonts/NovecentoCondUltraBold.otf') format('opentype');

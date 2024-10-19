@@ -3,14 +3,13 @@ from flask import render_template
 import configuracion as c
 import cancionero as can
 from user_agents import parse
+from datetime import datetime
 
 import os
 
 app=Flask(__name__)
 app.config['SECRET_KEY']=c.Opcion().get_keyPrivada()
 application=app
-
-#print(c.Opcion().get_anioActualTotal())
 
 
 @app.route("/",methods=['GET','POST'])
@@ -20,14 +19,14 @@ def index():
     if parse_agente.is_mobile:
         if "Android" in user_agente:
             dispositivo = "Android"
-        elif "Iphone" in user_agente:
-            dispositivo = "Iphone"
+        elif "iPhone" in user_agente:
+            dispositivo = "iPhone"
         else:
             dispositivo = "Otro móvil"
     else:
         dispositivo = "WEB"
-
-    return render_template('index.html',device=dispositivo)
+    print(user_agente)
+    return render_template('index.html',device=dispositivo, mensaje=determinar_momento_del_dia())
 
 @app.route("/comoagregar")
 def comoagregar():
@@ -46,7 +45,7 @@ def comoagregar():
 
 @app.route("/inicio")
 def inicio():
-    return render_template('estructura/inicio.html')
+    return render_template('estructura/inicio.html', mensaje=determinar_momento_del_dia())
 #-----------------------------------------------------------------------------------------------MIERCOLES
 @app.route('/miercoles')
 def miercoles():
@@ -201,6 +200,10 @@ def cancionparticular(idcancion):
                 ]
     return render_template('6_cancionero/6_1_cancionero_especifico.html',letra=cancionero[int(idcancion)][0] )
 
+
+
+
+
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)
 def page_not_found(error):
@@ -209,6 +212,27 @@ def page_not_found(error):
 @app.route('/service-worker.js')
 def service_worker():
     return app.send_static_file('js/service-worker.js')
+
+
+def determinar_momento_del_dia():
+    hora_actual = datetime.now().hour  # Obtiene la hora actual
+
+    if 6 <= hora_actual < 8:
+        return "<h3 class='text-center'>Hola buenos días✌️</h3>"
+    elif 8 <= hora_actual < 13:
+        return "<h3 class='text-center'>Buena jornada 👩‍🏭🪚</h3>"
+    elif 13<= hora_actual <14:
+        return "<h3 class='text-center'>🍢A comeer!! 🍕</h3>"
+    elif 14 <= hora_actual < 18:
+        return "<h3 class='text-center'>☀️🫡Buena tarde </h3>"
+    elif hora_actual==19:
+        return "<h3 class='text-center'>⛪Vamos a misa ✝️</h3>"
+    elif 20 <= hora_actual < 21:
+        return "<h3 class='text-center'>vamos a cenar🌃</h3>"
+    elif 21 <= hora_actual < 24:
+        return "<h3 class='text-center'>Buenas actividades nocturnas🌉🌓🌙</h3>"
+    else:
+        return "<h3 class='text-center'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)

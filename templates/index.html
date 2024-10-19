@@ -20,21 +20,29 @@
 </head>
 
 <body>
-
-    <header>
-
-
-    </header>
+<header>
+    
+</header>
     <main>
 
         <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+            
             <img src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}"
-                alt="Descripción de la imagen" style="max-width: 70%; height: auto;">
-            <a href="/inicio" type="button" class=" btncampobosco mt-3">Bienvenid@s</a>
+                alt="Logo Campobosco" style="max-width: 70%; height: auto;">
+                {{ mensaje|safe }}
+             
+            <button onclick="location.href='/inicio'"  type="button" class=" btncampobosco mt-3">🤙Bienvenid@s✌️</button>
+
+            <button type="button" class="btn3 mt-3" style="background-color: #66b352; color: #361439; padding: 10px;"
+                id="cache-btn">🌐Descargar<br>toda la página💻</button>
+            {% if device == "WEB" %}
+            {% else %}
+            <button type="button" class="mt-3 btn2" style="color: black;" onclick="location.href='/comoagregar'">🤳¿Cómo agregar<br>al inicio en {{device}}? 📲</button>
+            {% endif %}
             <a type="button" class="btn mt-3" style="background-color: #361439; color: aliceblue; padding: 10px;"
-                onclick="pepe()">Creditos</a>
-            <a type="button" class="btn mt-3" style="background-color: #66b352; color: #361439; padding: 10px;"
-                id="cache-btn">Descargar Toda la página</a>
+            onclick="pepe()">Creditos</a>
+
+            
         </div>
 
         <!-- Spinner de carga -->
@@ -52,9 +60,9 @@
     <script>
         function pepe() {
             Swal.fire({
-                title: "Equipo de Liturgia CAMPOBOSCO",
-                text: "Trabajo realizado por el equipo de liturgia \nCualquier cosa que necesiten no dude de buscarnos en el campamento",
-                icon: "success"
+                title: "Equipo de Liturgia",
+                text: "Trabajo realizado por el equipo de liturgia\nCualquier cosa que necesiten, no duden en buscarnos en el campamento.",
+                
             });
         }
 
@@ -168,14 +176,14 @@
             });
         });
 
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(function (registration) {
-                    console.log('CAMPOBOSCO ok:', registration.scope);
-                }).catch(function (error) {
-                    console.log('CAMPOBOSCO no-ok:', error);
-                });
-        }
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/service-worker.js')
+        //         .then(function (registration) {
+        //             console.log('CAMPOBOSCO ok:', registration.scope);
+        //         }).catch(function (error) {
+        //             console.log('CAMPOBOSCO no-ok:', error);
+        //         });
+        // }
 
     </script>
 

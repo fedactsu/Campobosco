@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMPOBOSCO 2024</title>
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}">
+
+
+    
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
     <style>
@@ -18,11 +20,13 @@
             background-color: #66b352;
 
         }
-        #map {
-            height: 400px; /* Altura del mapa */
-            width: 100%;   /* Ancho del mapa */
-        }
 
+        #map {
+            height: 400px;
+            /* Altura del mapa */
+            width: 100%;
+            /* Ancho del mapa */
+        }
     </style>
 
 </head>
@@ -45,103 +49,105 @@
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
-  <!-- Agrega Leaflet.js -->
-  <script src="{{ url_for('static',filename='js/leaflet.js') }}"></script>
- 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.js"></script>
 
-  <script>
-      var map = L.map('map').setView([-33.9587500, -70.6279700], 13);
-
-      // Agregar los tiles de OpenStreetMap
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      }).addTo(map);
-
-    
-      var markers = [
-          {
-              coords: [-33.9612392, -70.6277668],
-              popup: "<b>Zona Turín</b><br><p style='color:purple'>Zona de trabajo 15 años</p>"
-          },
-          {
-              coords: [-33.9602426, -70.6302238],
-              popup: "<b>Zona Nizza</b><br><p style='color:yellow'>Zona de trabajo 18-29 años</p>"
-          },
-          {
-              coords: [-33.9586319, -70.6292582],
-              popup: "<b>Valponasca</b><br>Espacio de oración, capilla"
-          },
-          {
-              coords: [-33.9587500, -70.6279700],
-              popup: "<b>Valdocco</b><br>Escenario central"
-          },
-          {
-              coords: [-33.9581647, -70.6273913],
-              popup: "<b>Zona IBecchi</b><br><p style='color:magenta'>Zona de trabajo 17 años</p>"
-          },
-          {
-              coords: [-33.9592900, -70.6264500],
-              popup: "<b>Zona Roma</b><br><p style='color:red'>Zona de trabajo 16 años</p>"
-          },
-          {
-              coords: [-33.963252, -70.626918],
-              popup: "<b>Francisco Besuco</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.962923, -70.627784],
-              popup: "<b>Ceferino Namuncurá</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.962612, -70.629609],
-              popup: "<b>Santo Domingo Savio</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.962465, -70.631090],
-              popup: "<b>Corina Arrigotti</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.962741, -70.634177],
-              popup: "<b>Beata Laura Vicuña</b><br>CAMPOBOSCO 2024"
-          },
-          {
-              coords: [-33.960320, -70.631582],
-              popup: "<b>Multi Canchas</b><br>CAMPOBOSCO 2024"
-          },
-          
-
-      ];
+    <!-- Agrega Leaflet.js -->
+    <script src="{{ url_for('static',filename='js/leaflet.js') }}"></script>
 
 
-      markers.forEach(function(marker) {
-          L.marker(marker.coords).addTo(map).bindPopup(marker.popup);
-      });
 
-      function mostrarUbicacionActual() {
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(function(position) {
-                  var lat = position.coords.latitude;
-                  var lon = position.coords.longitude;
-                  var userMarker = L.marker([lat, lon]).addTo(map)
-                      .bindPopup("<b>Estás Aquí</b><br>").openPopup();
+    <script>
+        var map = L.map('map').setView([-33.9587500, -70.6279700], 13);
 
-                  // Centrar el mapa en la ubicación del usuario
-                  map.setView([lat, lon], 13);
-              }, function() {
-                  alert("No se pudo obtener la ubicación.");
-              });
-          } else {
-              alert("La geolocalización no es compatible con este navegador.");
-          }
-      }
-
-      // Llamar a la función para mostrar la ubicación actual
-      mostrarUbicacionActual();
-  </script>
+        // Agregar los tiles de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
  
+
+        var markers = [
+            {
+                coords: [-33.9612392, -70.6277668],
+                popup: "<b>Zona Turín</b><br><p style='color:purple'>Zona de trabajo 15 años</p>"
+            },
+            {
+                coords: [-33.9602426, -70.6302238],
+                popup: "<b>Zona Nizza</b><br><p style='color:yellow'>Zona de trabajo 18-29 años</p>"
+            },
+            {
+                coords: [-33.9586319, -70.6292582],
+                popup: "<b>Valponasca</b><br>Espacio de oración, capilla"
+            },
+            {
+                coords: [-33.9587500, -70.6279700],
+                popup: "<b>Valdocco</b><br>Escenario central"
+            },
+            {
+                coords: [-33.9581647, -70.6273913],
+                popup: "<b>Zona IBecchi</b><br><p style='color:magenta'>Zona de trabajo 17 años</p>"
+            },
+            {
+                coords: [-33.9592900, -70.6264500],
+                popup: "<b>Zona Roma</b><br><p style='color:red'>Zona de trabajo 16 años</p>"
+            },
+            {
+                coords: [-33.963252, -70.626918],
+                popup: "<b>Francisco Besuco</b><br>CAMPOBOSCO 2024"
+            },
+            {
+                coords: [-33.962923, -70.627784],
+                popup: "<b>Ceferino Namuncurá</b><br>CAMPOBOSCO 2024"
+            },
+            {
+                coords: [-33.962612, -70.629609],
+                popup: "<b>Santo Domingo Savio</b><br>CAMPOBOSCO 2024"
+            },
+            {
+                coords: [-33.962465, -70.631090],
+                popup: "<b>Corina Arrigotti</b><br>CAMPOBOSCO 2024"
+            },
+            {
+                coords: [-33.962741, -70.634177],
+                popup: "<b>Beata Laura Vicuña</b><br>CAMPOBOSCO 2024"
+            },
+            {
+                coords: [-33.960320, -70.631582],
+                popup: "<b>Multi Canchas</b><br>CAMPOBOSCO 2024"
+            },
+
+
+        ];
+
+
+        markers.forEach(function (marker) {
+            L.marker(marker.coords ).addTo(map).bindPopup(marker.popup);
+        });
+
+        function mostrarUbicacionActual() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+                    var userMarker = L.marker([lat, lon] ).addTo(map)
+                        .bindPopup("<b>Estás Aquí</b><br>").openPopup();
+
+                    // Centrar el mapa en la ubicación del usuario
+                    map.setView([lat, lon], 13);
+                }, function () {
+                    alert("No se pudo obtener la ubicación.");
+                });
+            } else {
+                alert("La geolocalización no es compatible con este navegador.");
+            }
+        }
+
+        // Llamar a la función para mostrar la ubicación actual
+        mostrarUbicacionActual();
+    </script>
+
+
 </body>
 
 </html>

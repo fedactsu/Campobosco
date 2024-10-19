@@ -1,0 +1,23 @@
+.widget-container {
+    width: 100%;
+    max-width: 350px; /* Ancho máximo del widget */
+    margin: auto; /* Centra el widget en la página */
+}
+
+#countdown .col-3 {
+    padding: 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+    #countdown .h4 {
+        font-size: 1.2rem;
+    }
+
+    small {
+        font-size: 0.75rem;
+    }
+}

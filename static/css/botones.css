@@ -1,16 +1,16 @@
-.btncampobosco{
+.btncampobosco {
     background-color: #ff00bf;
     color: #fff;
     padding: 10px;
 }
 
-.btn2{
+.btn2 {
     background-color: #54bdc4;
     color: #fff;
     padding: 10px;
 }
 
-.btn3{
+.btn3 {
     background-color: #66b352;
     color: #fff;
     padding: 10px;
@@ -44,7 +44,81 @@ h3 {
 #cache-btn {
     font-size: 1.1em;
 }
-h4,p{
+
+h4,
+p {
     color: #ffffff;
-    
+
+}
+
+.fondobosco {
+    background-color: #361439
+}
+
+.fondoboscoclaro {
+    background-color: #54bdc4
+}
+
+.rojobosco {
+    background-color: #f70033
+}
+
+.celestecolor {
+    background-color: #54bdc4
+}
+
+.rosadobosco {
+    background-color: #ff00bf
+}
+
+.naranjabosco {
+    background-color: #ff6600
+}
+
+.verdebosco {
+    background-color: #66b352
+}
+
+.amarillobosco {
+    background-color: #d1c94d
+}
+
+.black {
+    background-color: #FF000000
+}
+
+.blancobosco {
+    background-color: #FFFFFFFF
+}
+
+.moradobosco {
+    background-color: #8B268C
+}
+
+.amarillointenso {
+    background-color: #fbf207
+}
+
+.colorceleste1 {
+    background-color: #3bffb3
+}
+
+.colorceleste2 {
+    background-color: #85edf2
+}
+
+.colorceleste3 {
+    background-color: #3debd1
+}
+
+.colorverdeclar {
+    background-color: #99ff19
+}
+
+.colorrosadoclar {
+    background-color: #ff00bf
+}
+
+.colormoradoclar {
+    background-color: #8000ff
 }

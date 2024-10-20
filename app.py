@@ -129,6 +129,10 @@ def domingo_misa():
 @app.route('/domingo/horario')
 def domingo_horario():
     return render_template('5_domingo/4_domingo_horario.html')
+#-----------------------------------------------------------------------------------------------vocacional
+@app.route('/vocacional')
+def vocacional():
+    return render_template('8_vocacional/8_vocacional.html')
 
 #-----------------------------------------------------------------------------------------------mapa
 @app.route('/mapalugar')

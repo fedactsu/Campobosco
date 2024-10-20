@@ -27,6 +27,7 @@ const urlsToCache = [
     '/static/img/imagenes_CP50/CAMPO/btn_mornese.png',
     '/static/img/imagenes_CP50/CAMPO/btn_ibecchi.png',
     '/static/img/imagenes_CP50/CAMPO/atras.png',
+    '/static/img/imagenes_CP50/CAMPO/vocacional.png',
     '/static/img/imagenes_CP50/CP50/ceferinosinfondo01.png',
     '/static/img/imagenes_CP50/CP50/circulo_01.png',
     '/static/img/imagenes_CP50/CP50/dbmm.png',

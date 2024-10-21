@@ -38,7 +38,7 @@
         {% include 'estructura/nav.html' %}
     
     <div class="container my-3">
-        <h2 class="text-center">{{ mensaje|safe}}</h2>
+        <div id="idhora"></div>
         <h1 class="text-center">Selecciona el Día:</h1>
 
         <div class="list-group mt-4">
@@ -96,6 +96,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+
+    <script>
+         function determinarMomentoDelDia() {
+            const horaActual = new Date().getHours();  // Obtiene la hora actual
+
+            if (6 <= horaActual && horaActual < 8) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>";
+            } else if (8 <= horaActual && horaActual < 13) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🪚</h3>";
+            } else if (13 <= horaActual && horaActual < 14) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>";
+            } else if (14 <= horaActual && horaActual < 18) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>";
+            } else if (horaActual === 19) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>";
+            } else if (20 <= horaActual && horaActual < 21) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>";
+            } else if (21 <= horaActual && horaActual < 24) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>";
+            } else {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>";
+            }
+        }
+
+        document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
+    </script>
 </body>
 
 </html>

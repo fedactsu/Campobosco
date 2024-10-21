@@ -20,29 +20,30 @@
 </head>
 
 <body>
-<header>
-    
-</header>
+    <header>
+
+    </header>
     <main>
 
         <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
-            
-            <img src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}"
-                alt="Logo Campobosco" style="max-width: 70%; height: auto;">
-                {{ mensaje|safe }}
-             
-            <button onclick="location.href='/inicio'"  type="button" class=" btncampobosco mt-3">🤙Bienvenid@s✌️</button>
+
+            <img src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="Logo Campobosco"
+                style="max-width: 70%; height: auto;">
+            <div id="idhora"></div>
+
+            <button onclick="location.href='/inicio'" type="button" class=" btncampobosco mt-3">🤙Bienvenid@s✌️</button>
 
             <button type="button" class="btn3 mt-3" style="background-color: #66b352; color: #361439; padding: 10px;"
                 id="cache-btn">🌐Descargar<br>toda la página💻</button>
             {% if device == "WEB" %}
             {% else %}
-            <button type="button" class="mt-3 btn2" style="color: black;" onclick="location.href='/comoagregar'">🤳¿Cómo agregar<br>al inicio en {{device}}? 📲</button>
+            <button type="button" class="mt-3 btn2" style="color: black;" onclick="location.href='/comoagregar'">🤳¿Cómo
+                agregar<br>al inicio en {{device}}? 📲</button>
             {% endif %}
             <a type="button" class="btn mt-3" style="background-color: #361439; color: aliceblue; padding: 10px;"
-            onclick="pepe()">Creditos</a>
+                onclick="pepe()">Creditos</a>
 
-            
+
         </div>
 
         <!-- Spinner de carga -->
@@ -57,12 +58,12 @@
     </footer>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
-    <script> 
+    <script>
         function pepe() {
             Swal.fire({
                 title: "Equipo de Liturgia",
                 text: "Trabajo realizado por el equipo de liturgia\nCualquier cosa que necesiten, no duden en buscarnos en el campamento.",
-                
+
             });
         }
 
@@ -198,6 +199,32 @@
                 });
         }
 
+    </script>
+
+    <script>
+        function determinarMomentoDelDia() {
+            const horaActual = new Date().getHours();  // Obtiene la hora actual
+
+            if (6 <= horaActual && horaActual < 8) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>";
+            } else if (8 <= horaActual && horaActual < 13) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🪚</h3>";
+            } else if (13 <= horaActual && horaActual < 14) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>";
+            } else if (14 <= horaActual && horaActual < 18) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>";
+            } else if (horaActual === 19) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>";
+            } else if (20 <= horaActual && horaActual < 21) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>";
+            } else if (21 <= horaActual && horaActual < 24) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>";
+            } else {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>";
+            }
+        }
+
+        document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
 
 

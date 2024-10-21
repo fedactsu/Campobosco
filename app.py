@@ -142,33 +142,33 @@ def mapa():
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')
 def cancionero():
-    cancionero = [[0,"Himno CAMPOBOSCO"],
-                [1,"Creemos en el Dios que ama a los jóvenes"],
-                  [2,"Don Bosco Amigo"],
-                  [3,"Haz cantar tu vida"],
-                  [4,"Señor ten piedad (C.  Fones)"],
-                  [5,"Oh Señor, ten  piedad"],
-                  [6,"Kyrie eleison"],
-                  [7,"Gloria a Dios (C. Fones)"],
-                  [8,"Gloria a ti eterno amor"],
-                  [9,"Dios está aquí"],
-                  [10,"Margaritas"],
-                  [11,"Aleluya, gloria  aleluya"],
-                  [12,"Aleluya vivo estás"],
-                  [13,"En Ti Señor"],
-                  [14,"Donde hay amor"],
-                  [15,"Tomad, Señor y recibid"],
-                  [16,"En tus manos hoy"],
-                  [17,"Santo (C. Fones)"],
-                  [18,"Santo continental"],
-                  [19,"Cordero juvenil"],
-                  [20,"Cordero de Dios"],
-                  [21,"Don Bosco  enséñanos"],
-                  [22,"Procura  hacerte amar"],
-                  [23,"Contigo  María"],
-                  [24,"Auxiliadora de don Bosco"],
-                  [25,"María es"],
-                  [26,"María mírame"],
+    cancionero = [[0,"👓Himno CAMPOBOSCO🎶"],
+                  [1,"🙏Creemos en el Dios que ama a los jóvenes👦"],
+                  [2,"🚶Don Bosco Amigo🤸‍♂️"],
+                  [3,"🔊Haz cantar tu vida🎙️"],
+                  [4,"Señor ten piedad🙏 (C. Fones)"],
+                  [5,"Oh Señor, ten  piedad🎼"],
+                  [6,"Kyrie eleison🎵"],
+                  [7,"👦Gloria a Dios 🙏(C. Fones)"],
+                  [8,"🙏Gloria a ti eterno amor💕"],
+                  [9,"⚓Dios está aquí🎶"],
+                  [10,"👩‍🦰Margaritas💐"],
+                  [11,"🎤Aleluya, gloria  aleluya🎶"],
+                  [12,"😁Aleluya vivo estás📍"],
+                  [13,"😊En Ti Señor😉"],
+                  [14,"📌Donde hay amor💞"],
+                  [15,"🥖Tomad, Señor y recibid🍷"],
+                  [16,"En tus manos🤚 hoy"],
+                  [17,"Santo🎶🎵 (C. Fones)"],
+                  [18,"Santo continental🌐"],
+                  [19,"Cordero juvenil👧🧒"],
+                  [20,"Cordero🐑 de Dios"],
+                  [21,"👩‍🏫Don Bosco enséñanos👨‍🏫"],
+                  [22,"👨‍👩‍👧‍👦Procura hacerte amar👩‍👦"],
+                  [23,"Contigo  María👸"],
+                  [24,"👸👩‍👦Auxiliadora de don Bosco"],
+                  [25,"María es👸"],
+                  [26,"María mírame👸🧒👧"],
                   ]
     return render_template('6_cancionero/6_cancionero_general.html',canciones=cancionero )
 
@@ -222,21 +222,21 @@ def determinar_momento_del_dia():
     hora_actual = datetime.now().hour  # Obtiene la hora actual
 
     if 6 <= hora_actual < 8:
-        return "<h3 class='text-center'>Hola buenos días✌️</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>"
     elif 8 <= hora_actual < 13:
-        return "<h3 class='text-center'>Buena jornada 👩‍🏭🪚</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🪚</h3>"
     elif 13<= hora_actual <14:
-        return "<h3 class='text-center'>🍢A comeer!! 🍕</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>"
     elif 14 <= hora_actual < 18:
-        return "<h3 class='text-center'>☀️🫡Buena tarde </h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>"
     elif hora_actual==19:
-        return "<h3 class='text-center'>⛪Vamos a misa ✝️</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>"
     elif 20 <= hora_actual < 21:
-        return "<h3 class='text-center'>vamos a cenar🌃</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>"
     elif 21 <= hora_actual < 24:
-        return "<h3 class='text-center'>Buenas actividades nocturnas🌉🌓🌙</h3>"
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>"
     else:
-        return "<h3 class='text-center'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
+        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)

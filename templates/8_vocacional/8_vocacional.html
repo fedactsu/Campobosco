@@ -17,18 +17,19 @@
 </head>
 
 <body class="amarillobosco">
+    {% include 'estructura/nav.html' %}
     <div class="container my-3">
         <h1 class="text-center">Vocacional</h1>
         <div class="d-flex justify-content-center">
             <a onclick="location.href='/inicio'">
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
-        </div>
+        </div> 
         <br>
-        <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+        <ul class="nav bg-warning nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
             
             <li class="nav-item " role="presentation">
-                <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+                <button class="nav-link  active " id="pills-home-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-salesianos" type="button" role="tab" aria-controls="pills-home"
                     aria-selected="true">Salesianos</button>
             </li>
@@ -42,7 +43,7 @@
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-salesianos" role="tabpanel"
+            <div class="tab-pane fade show active bg-warning" id="pills-salesianos" role="tabpanel"
                 aria-labelledby="pills-home-tab">
                 <!-- SDB------------------------------- -->
                 <div style="padding-left: 5%; padding-right: 5%; ">
@@ -171,7 +172,7 @@
 
             </div>
             <!-- FIN SDB------------------------------- -->
-            <div class="tab-pane fade" id="pills-salesianas" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane fade bg-warning" id="pills-salesianas" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <!-- FMA------------------------------- -->
                 <div style="padding-left: 5%; padding-right: 5%; ">
                     <a href="" target="_blank">
@@ -289,12 +290,12 @@
                         en sus cartas: Más allá de las distancias, “estar unidos en el corazon de Jesús”<br>
                         <a href="https://forms.gle/oEuJ3jLy2rPnJ91a8" target="_blank"> <h5 style="text-align: center;"> ➡️➡️ RECEMOS ⬅️⬅️ </h5></a>
                         
-
                     </p>
+                    <br><br><br>
                 </div>
                 <!-- FIN FMA------------------------------- -->
             </div>
-            <div class="tab-pane fade" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="tab-pane fade bg-warning" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contact-tab">
                 <!-- CONTACTO------------------------------- -->
                 <div class="d-flex justify-content-center">
 

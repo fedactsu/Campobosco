@@ -87,6 +87,7 @@
                     '/static/img/imagenes_CP50/CAMPO/btnviernes.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_cancionero2.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_eucaristia.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_eucaristia_claro.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_liturgia_manana_claro.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_oracion_manana.png',
@@ -99,6 +100,8 @@
                     '/static/img/imagenes_CP50/CAMPO/btn_ibecchi.png',
                     '/static/img/imagenes_CP50/CAMPO/atras.png',
                     '/static/img/imagenes_CP50/CAMPO/vocacional.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_mapa_offline.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_mapa_online.png',
                     '/static/img/imagenes_CP50/CP50/ceferinosinfondo01.png',
                     '/static/img/imagenes_CP50/CP50/circulo_01.png',
                     '/static/img/imagenes_CP50/CP50/dbmm.png',
@@ -121,15 +124,19 @@
                     '/static/img/imagenes_CP50/vocacional/5_fma.png',
                     '/static/img/imagenes_CP50/vocacional/5_sdb.png',
                     '/static/img/imagenes_CP50/vocacional/sdb.png',
+                    '/static/img/imagenes_CP50/mapa/mapa_picarquin.jpeg',
+                    '/static/img/imagenes_CP50/mapa/norte.png',
                     '/static/img/imagenes_CP50/cpb50_sin.png',
                     '/static/img/imagenes_CP50/10240por1024.png',
                     '/static/js/jquery.min.js',
                     '/static/js/leaflet.js',
+                    '/static/js/tamanoletra.js',
                     '/static/js/service-worker.js',
                     '/static/js/sweetalert2.all.min.js',
                     '/static/js/bootjs/bootstrap.min.js',
                     '/static/js/bootjs/bootstrap.min.js.map',
                     '/static/js/bootjs/popper.min.js',
+                    '/static/js/bootjs/jquery.mlens-1.7.min.js',
                     '/inicio',
                     '/miercoles',
                     '/miercoles/laudes',
@@ -152,7 +159,10 @@
                     '/domingo/misa',
                     '/domingo/horario',
                     '/mapalugar',
+                    '/mapalugar/online',
+                    '/mapalugar/offline',
                     '/vocacional',
+                    '/acercade',
                     '/cancionero',
                     '/cancionero/0',
                     '/cancionero/1',
@@ -227,7 +237,7 @@
         document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
 
-
+{% include 'estructura/footer.html' %}
 </body>
 
 </html>

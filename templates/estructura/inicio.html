@@ -83,6 +83,11 @@
                 alt=""
                 width="100%">
             </a>
+            <a href="/acercade" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png')}} " 
+                alt=""
+                width="100%">
+            </a>
             <a onclick="location.href='/'">
             <img 
             class="list-group-item-action"
@@ -122,6 +127,7 @@
 
         document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

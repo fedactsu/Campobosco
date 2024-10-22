@@ -53,6 +53,7 @@
         </div>
 
         <div class="container text-center">
+            {% include 'estructura/botoneshorario.html' %}
             <table class="table table-bordered table-striped table-hover text-center">
                 <thead class="table-dark">
                     <tr>
@@ -423,7 +424,7 @@
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
-
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

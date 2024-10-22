@@ -106,6 +106,8 @@
         </style>
 
         <div class="container text-center">
+            {% include 'estructura/botoneshorariodiv.html' %}
+            
             <div class="row header align-items-start">
                 <div class="col">
                     HORA
@@ -426,7 +428,7 @@
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
-
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

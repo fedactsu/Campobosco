@@ -50,7 +50,7 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-
+        {% include 'estructura/botoneshorario.html' %}
         <div class="container text-center">
             <table class="table table-bordered table-striped table-hover text-center">
                 <thead class="table-danger">
@@ -348,7 +348,7 @@
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
-
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

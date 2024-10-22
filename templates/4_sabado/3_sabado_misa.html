@@ -42,9 +42,10 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <h3 class="text-center"></h3>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
 
-        <h2 style="color:red">Primera lectura</h2>
+        <h2 style="color:black">Primera lectura</h2>
         <h3>Lectura del libro del Apocalipsis 21, 1-5a. 6b-7</h3>
         <p>Yo, Juan, vi un cielo nuevo y una tierra nueva, pues el primer cielo y la primera tierra desaparecieron, y el
             mar ya no existe.<br>
@@ -57,7 +58,7 @@
             principio y el fin. Al que tenga sed yo le daré de la fuente del agua de la vida gratuitamente. El vencedor
             heredará esto: yo seré Dios para él, y él será para mí hijo».</p>
         <p><strong>Palabra de Dios.</strong></p>
-        <h2 style="color:red">Salmo de hoy</h2>
+        <h2 style="color:black">Salmo de hoy</h2>
         <h3>Salmo 24, 6. 7b. 17-18. 20-21 </h3>
         <h3>R/. A ti, Señor, levanto mi alma</h3>
         <p>Recuerda, Señor, que tu ternura<br>
@@ -72,14 +73,14 @@
             no quede yo defraudado de haber acudido a ti.<br>
             La inocencia y la rectitud me protegerán,<br>
             porque espero en ti. <strong>R/.</strong></p>
-        <h2 style="color:red">Segunda lectura</h2>
+        <h2 style="color:black">Segunda lectura</h2>
         <h3>Lectura de la carta del apóstol san Pablo a los Filipenses 3, 20-21</h3>
         <p>Hermanos:<br>
             Nosotros somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.<br>
             Él transformará nuestro cuerpo humilde, según el modelo de su cuerpo glorioso, con esa energía que posee
             para sometérselo todo.</p>
         <p><strong>Palabra de Dios.</strong></p>
-        <h2 style="color:red">Evangelio del día</h2>
+        <h2 style="color:black">Evangelio del día</h2>
         <h3>Lectura del santo evangelio según san Juan 11, 17-27</h3>
         <p>Cuando Jesús llegó a Betania, Lázaro llevaba ya cuatro días enterrado. Betania distaba poco de Jerusalén:
             unos quince estadios; y muchos judíos habían ido a ver a Marta y a María para darles el pésame por su
@@ -108,6 +109,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

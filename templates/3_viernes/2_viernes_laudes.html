@@ -55,7 +55,8 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <h3 class="text-center"></h3>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
         Todos los Santos<br>
         <j>Solemnidad</j>
         <p>
@@ -235,38 +236,33 @@
                 su Padre. Aleluya.</p>
             <p><strong style="color:red">PRECES.</strong></p>
         </center>
-        <dl>
-            <dd>
-                <dl>
-                    <dt>Acudamos, alegres, a nuestro Dios, corona de todos los santos y digámosle:</dt>
-                    <dd>Por intercesión de todos los santos, sálvanos, Señor.</dd>
-                    <dt>&nbsp;</dt>
-                    <dt>Oh Señor, fuente y origen de toda santidad, tú que has hecho resplandecer a los santos con gran
-                        variedad de dones,</dt>
-                    <dd>haz que al contemplarlos sepamos celebrar tu
-                        grandeza.</dd><br>
-                    <dt>&nbsp;</dt>
-                    <dt>Señor todopoderoso, que has querido que los santos fueran imángenes admirables de tu Hijo,</dt>
-                    <dd>concédenos que, por su ejemplo y su intercesión,
-                        vivamos más plenamente unidos a Cristo.</dd><br>
-                    <dt>Rey del cielo, que por medio de los fieles seguidores de Cristo nos estimulas a desear la ciudad
-                        futura, </dt>
-                    <dd>haz que descubramos en los santos el mejor camino que lleva a ti.</dd><br>
-                    <dt>Dios y Señor nuestro que en la celebración de la
-                        eucaristía nos pones en comunión con los santos,</dt>
-                    <dd>concédenos celebrar cada día con mayor perfección tu culto en espíritu y en verdad. </dd><br>
-                    <dt style="color:red">Se pueden añadir algunas intenciones libres </dt><br>
-                    <dd>&nbsp;</dd>
-                    <dt>Con el gozo que nos da sabernos miembros de la gran familia de los santos, digamos al Padre de
-                        todos: Padre nuestro </dt>
-                    <dd>
-                        <dl>
-                            <dt></dt>
-                        </dl>
-                    </dd>
-                </dl>
-            </dd>
-        </dl>
+
+        <p>Acudamos, alegres, a nuestro Dios, corona de todos los santos y digámosle:</p>
+        <p><em><strong>Por intercesión de todos los santos, sálvanos, Señor.</strong></em> </p>
+        <p>Oh Señor, fuente y origen de toda santidad, tú que has hecho resplandecer a los santos con gran
+            variedad de dones,<br>
+            <em>haz que al contemplarlos sepamos celebrar tu
+                grandeza.</em>
+        </p>
+        <p>Señor todopoderoso, que has querido que los santos fueran imángenes admirables de tu Hijo,<br>
+            <em> concédenos que, por su ejemplo y su intercesión,
+                vivamos más plenamente unidos a Cristo.</em><br>
+        </p>
+        <p>Rey del cielo, que por medio de los fieles seguidores de Cristo nos estimulas a desear la ciudad
+            futura, <br>
+            <em> haz que descubramos en los santos el mejor camino que lleva a ti</em>.<br>
+        </p>
+        <p>Dios y Señor nuestro que en la celebración de la
+            eucaristía nos pones en comunión con los santos,<br>
+            <em> concédenos celebrar cada día con mayor perfección tu culto en espíritu y en verdad. </em>
+        </p>
+        <br>
+        <p style="color:red">Se pueden añadir algunas intenciones libres<br>
+        </p>
+        <p style="color:white">Con el gozo que nos da sabernos miembros de la gran familia de los santos, digamos al
+            Padre de
+            todos: Padre nuestro </p>
+
         <center>
             <strong style="color:red">ORACIÓN.</strong>
             <p>Dios todopoderoso y eterno, que nos concedes celebrar los méritos de todos los santos en una misma
@@ -288,6 +284,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

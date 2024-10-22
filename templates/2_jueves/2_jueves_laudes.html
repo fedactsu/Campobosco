@@ -15,6 +15,7 @@
         body {
             background-color: #d1c94d;
         }
+
         p,
         h1,
         h2,
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand " >
+    <nav class="navbar navbar-expand ">
         <div class="nav navbar-nav d-flex justify-content-center w-100">
             <a class="nav-item nav-link" href="/inicio">
                 <h3>🏠</h3>
@@ -57,7 +58,8 @@
             </a>
         </div>
         <h3 class="text-center"></h3>
-
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
 
         <p dir="ltr"><strong>Laudes</strong></p>
         <p dir="ltr"><strong style="color:red">V.</strong> Señor, abre mis labios.<br>
@@ -183,11 +185,11 @@
             contad a los pueblos sus hazañas,<br>
             proclamad que su nombre es excelso.</p>
         <br />
-        Tañed para el Señor, que hizo proezas;<br>
-        anunciadlas a toda la tierra;<br>
-        gritad jubilosos, habitantes de Sión:<br>
-        &quot;¡Qué grande es en medio de ti<br>
-        el Santo de Israel!&quot; <br />
+        <p dir="ltr" Tañed para el Señor, que hizo proezas;<br>
+            anunciadlas a toda la tierra;<br>
+            gritad jubilosos, habitantes de Sión:<br>
+            &quot;¡Qué grande es en medio de ti<br>
+            el Santo de Israel!&quot; <br /></p>
         <p dir="ltr">Gloria al Padre, y al Hijo, y al Espíritu Santo. <br>
             Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
         <br />
@@ -383,6 +385,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

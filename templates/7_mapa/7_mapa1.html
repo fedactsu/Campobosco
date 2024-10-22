@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.css') }}"> -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
 
 
@@ -39,16 +38,26 @@
     {% include 'estructura/nav.html' %}
 
     <div class="container my-3">
-        <h1 class="text-center">Mapa del Lugar</h1>
+        <h1 class="text-center">Mapa Picarquín</h1>
         <div class="d-flex justify-content-center">
-            <a onclick="history.back()">
+            <a onclick="location.href='/inicio'">
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
 
-        <div class="container my-3">
-            <h1 class="text-center">Mapa del Campobasco</h1>
-            <div id="map"></div>
+        <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+            <div class="list-group mt-4">
+                <a href="/mapalugar/offline" class=" list-group-item-action">
+                    <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} "
+                        alt="" width="100%">
+                </a>
+                <a href="/mapalugar/online" class=" list-group-item-action">
+                    <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_online.png')}} " alt=""
+                        width="100%">
+                </a>
+
+
+            </div>
         </div>
 
 
@@ -58,111 +67,10 @@
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
-    <!-- Agrega Leaflet.js -->
-    <script src="{{ url_for('static',filename='js/leaflet.js') }}"></script>
 
 
 
-    <script>
-        var map = L.map('map').setView([-33.9587500, -70.6279700], 13);
-
-        // Agregar los tiles de OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-
-
-        var markers = [
-            {
-                coords: [-33.9612392, -70.6277668],
-                popup: "<b>Zona Turín</b><br><p style='color:purple'>Zona de trabajo 15 años</p>"
-            },
-            {
-                coords: [-33.9602426, -70.6302238],
-                popup: "<b>Zona Nizza</b><br><p style='color:yellow'>Zona de trabajo 18-29 años</p>"
-            },
-            {
-                coords: [-33.9586319, -70.6292582],
-                popup: "<b>Valponasca</b><br>Espacio de oración, capilla"
-            },
-            {
-                coords: [-33.9587500, -70.6279700],
-                popup: "<b>Valdocco</b><br>Escenario central"
-            },
-            {
-                coords: [-33.9581647, -70.6273913],
-                popup: "<b>Zona IBecchi</b><br><p style='color:magenta'>Zona de trabajo 17 años</p>"
-            },
-            {
-                coords: [-33.9592900, -70.6264500],
-                popup: "<b>Zona Roma</b><br><p style='color:red'>Zona de trabajo 16 años</p>"
-            },
-            {
-                coords: [-33.963252, -70.626918],
-                popup: "<b>Francisco Besuco</b><br>CAMPOBOSCO 2024"
-            },
-            {
-                coords: [-33.962923, -70.627784],
-                popup: "<b>Ceferino Namuncurá</b><br>CAMPOBOSCO 2024"
-            },
-            {
-                coords: [-33.962612, -70.629609],
-                popup: "<b>Santo Domingo Savio</b><br>CAMPOBOSCO 2024"
-            },
-            {
-                coords: [-33.962465, -70.631090],
-                popup: "<b>Corina Arrigotti</b><br>CAMPOBOSCO 2024"
-            },
-            {
-                coords: [-33.962741, -70.634177],
-                popup: "<b>Beata Laura Vicuña</b><br>CAMPOBOSCO 2024"
-            },
-            {
-                coords: [-33.960320, -70.631582],
-                popup: "<b>Multi Canchas</b><br>CAMPOBOSCO 2024"
-            },
-
-
-        ];
-
-
-        markers.forEach(function (marker) {
-            L.marker(marker.coords).addTo(map).bindPopup(marker.popup);
-        });
-
-        function mostrarUbicacionActual() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var lat = position.coords.latitude;
-                    var lon = position.coords.longitude;
-                    var userMarker = L.marker([lat, lon]).addTo(map)
-                        .bindPopup("<b>Estás Aquí</b><br>").openPopup();
-
-                    // Centrar el mapa en la ubicación del usuario
-                    map.setView([lat, lon], 13);
-                }, function () {
-                    Swal.fire({
-                        title: "Error",
-                        text: "No se pudo obtener la ubicación.",
-                        icon: "error"
-                    });
-
-                });
-            } else {
-                Swal.fire({
-                        title: "Error",
-                        text: "La geolocalización no es compatible con este navegador.",
-                        icon: "error"
-                    });
-            }
-        }
-
-        // Llamar a la función para mostrar la ubicación actual
-        mostrarUbicacionActual();
-    </script>
-
-
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

@@ -38,7 +38,8 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <h3 class="text-center"></h3>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
 
         <h2 style="color:red">Primera lectura</h2>
         <h3>Lectura del Libro del Deuteronomio 6, 2-6</h3>
@@ -104,6 +105,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

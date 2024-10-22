@@ -57,7 +57,9 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <h3 class="text-center"></h3>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+        
         <p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
         <p dir="ltr"><strong>Lectura de la carta del apóstol san Pablo a los Efesios 6, 10-20</strong></p>
         <p dir="ltr">Hermanos: Buscad vuestra fuerza en el Señor y en su invencible poder. Poneos las armas de Dios,
@@ -112,6 +114,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

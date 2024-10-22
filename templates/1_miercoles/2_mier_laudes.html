@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand " >
+
+    <nav class="navbar navbar-expand ">
         <div class="nav navbar-nav d-flex justify-content-center w-100">
             <a class="nav-item nav-link" href="/inicio">
                 <h3>🏠</h3>
@@ -43,7 +44,7 @@
             </a>
         </div>
     </nav>
-    
+
     <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
         <h1 class="text-center">Laudes:</h1>
         <div class="d-flex justify-content-center">
@@ -51,7 +52,10 @@
                 <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <h3 class="text-center"></h3>
+
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
         <p style="color:red" dir="ltr"><strong>Laudes</strong></p>
         <p dir="ltr"><strong style="color:red">V</strong>. Señor, abre mis labios.<br>
             <strong style="color:red">R. </strong>Y mi boca proclamará tu alabanza.
@@ -391,6 +395,9 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+
+
+    {% include 'estructura/footer.html' %}
 </body>
 
 </html>

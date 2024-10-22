@@ -133,11 +133,22 @@ def domingo_horario():
 @app.route('/vocacional')
 def vocacional():
     return render_template('8_vocacional/8_vocacional.html')
+#-----------------------------------------------------------------------------------------------vocacional
+@app.route('/acercade')
+def acercade():
+    return render_template('9_acercade/9_acercade.html')
 
 #-----------------------------------------------------------------------------------------------mapa
 @app.route('/mapalugar')
 def mapa():
     return render_template('7_mapa/7_mapa1.html')
+
+@app.route('/mapalugar/online')
+def mapaonline():
+    return render_template('7_mapa/7_mapa_online.html')
+@app.route('/mapalugar/offline')
+def mapaoffine():
+    return render_template('7_mapa/7_mapa_offline.html')
 
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')

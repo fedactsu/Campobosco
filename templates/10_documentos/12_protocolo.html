@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        /* Estilo base del lector */
+        .lector-texto {
+            font-size: 16px;
+            /* Tamaño de letra base */
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Botones elegantes */
+        .btn-control {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Diseño adaptable para móviles */
+        @media (max-width: 768px) {
+            .btn-control {
+                font-size: 1rem;
+            }
+        }
+
+        .footnote {
+            font-size: 0.8em;
+            color: rgb(248, 244, 244);
+        }
+
+        .footnote-ref,
+        .back-to-ref {
+            text-decoration: none;
+            color: blue;
+        }
+        body{
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="moradobosco">
+   
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">REGLAMENTO Y PROTOCOLOS PARA CAMPAMENTO CAMPOBOSCO 2024</h3>
+                <div class="d-flex justify-content-center">
+                    <a onclick="history.back()">
+                        <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt=""
+                            width="100px">
+                    </a>
+                </div>
+                <div class="text-center my-3">
+                    <button class="btn btn-danger btn-control" id="btn-disminuir">A-</button>
+                    <button class="btn btn-success btn-control" id="btn-aumentar">A+</button>
+                </div>
+
+                <div id="texto-lector" class="lector-texto">
+                    <ul class="list-group list-group-flush">
+                        <li id="indicearriba" class="list-group-item active">INDICE</li>
+                    </ul>
+                    <div class="list-group">
+                        <a href="#titulo1" id="title1" class="list-group-item list-group-item-action"><strong>1. INTRODUCCIÓN</strong></a>
+                        <a href="#titulo2" id="title2" class="list-group-item list-group-item-action"><strong>2. REGLAMENTACIÓN</strong></a>
+                        <a href="#subtitulo1" id="sub1" class="list-group-item list-group-item-action">2.1 Sobre los(as) participantes del campamento FMA y SDB</a>
+                        <a href="#subtitulo2" id="sub2" class="list-group-item list-group-item-action">2.2 Normativas generales en la celebración de un campamento FMA- SDB.</a>
+                        <a href="#subtitulo3" id="sub3" class="list-group-item list-group-item-action">2.3 Sobre los deberes en el campamento.</a>
+                        <a href="#subtitulo4" id="sub4" class="list-group-item list-group-item-action">2.4 Sobre las prohibiciones en el campamento.</a>
+                        <a href="#subtitulo5" id="sub5" class="list-group-item list-group-item-action">2.5 Mecanismos o canales de comunicación ante situaciones particulares.</a>
+                        <a href="#subtitulo6" id="sub6" class="list-group-item list-group-item-action">2.6 Sobre lo referido a problemas de salud y normas sanitarias.</a>
+                        <a href="#titulo3" id="title3" class="list-group-item list-group-item-action"><strong>3. ANEXOS</strong></a>
+                        <a href="#subtitulo7" id="sub7" class="list-group-item list-group-item-action">3.1 Protocolo ante contagio COVID</a>
+                        <a href="#subtitulo8" id="sub8" class="list-group-item list-group-item-action">3.2 Protocolo ante accidentes u otros problemas de salud</a>
+                        <a href="#subtitulo9" id="sub9" class="list-group-item list-group-item-action">3.3. Protocolo ante situaciones disciplinarias, de maltrato o violencia.</a>
+                        <a href="#subtitulo10" id="sub10" class="list-group-item list-group-item-action">3.4. Protocolo ante situaciones de abuso y hechos de connotacion sexual</a>
+                        <a href="#subtitulo11" id="sub11" class="list-group-item list-group-item-action">3.5 Protocolo de actuación para el reconocimiento de la identidad de género de niños y estudiantes trans.</a>
+                    </div>
+                    {{ texto|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tamaño de letra inicial
+        let fontSize = 16;
+
+        // Referencia al div que contiene el texto
+        const lectorTexto = document.getElementById('texto-lector');
+
+        // Función para aumentar el tamaño de la letra
+        document.getElementById('btn-aumentar').addEventListener('click', function () {
+            fontSize += 2;
+            lectorTexto.style.fontSize = fontSize + 'px';
+        });
+
+        // Función para disminuir el tamaño de la letra
+        document.getElementById('btn-disminuir').addEventListener('click', function () {
+            if (fontSize > 12) { // Evitar que el texto sea demasiado pequeño
+                fontSize -= 2;
+                lectorTexto.style.fontSize = fontSize + 'px';
+            }
+        });
+    </script>
+</body>
+
+</html>

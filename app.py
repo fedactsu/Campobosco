@@ -133,10 +133,22 @@ def domingo_horario():
 @app.route('/vocacional')
 def vocacional():
     return render_template('8_vocacional/8_vocacional.html')
-#-----------------------------------------------------------------------------------------------vocacional
+#-----------------------------------------------------------------------------------------------acercade
 @app.route('/acercade')
 def acercade():
     return render_template('9_acercade/9_acercade.html')
+#-----------------------------------------------------------------------------------------------documentos
+@app.route('/documentos')
+def documentos():
+    return render_template('10_documentos/10_doc_inicial.html')
+
+@app.route('/documentos/carta_identidad')
+def carta_identidad():
+    return render_template('10_documentos/11_carta_identidad.html', texto=can.cancionero().cartaidentidad)
+
+@app.route('/documentos/protocolo_campamento')
+def protocolo_campamento():
+    return render_template('10_documentos/12_protocolo.html',texto = can.cancionero().protocolo)
 
 #-----------------------------------------------------------------------------------------------mapa
 @app.route('/mapalugar')
@@ -181,7 +193,7 @@ def cancionero():
                   [25,"María es👸"],
                   [26,"María mírame👸🧒👧"],
                   ]
-    return render_template('6_cancionero/6_cancionero_general.html',canciones=cancionero )
+    return render_template('6_cancionero/6_cancionero_general.html',canciones=cancionero)
 
 @app.route('/cancionero/<idcancion>', methods=['GET'])
 def cancionparticular(idcancion):

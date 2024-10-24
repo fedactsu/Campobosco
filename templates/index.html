@@ -15,6 +15,7 @@
         body {
             background-color: #361439;
         }
+
         footer {
             padding: 10px;
         }
@@ -71,7 +72,7 @@
         }
 
         document.getElementById('cache-btn').addEventListener('click', () => {
-            caches.open('offline-cache-v2').then(function (cache) {
+            caches.open('offline-cache-v3').then(function (cache) {
                 cache.addAll([
                     '/',
                     '/static/Favicon.png',
@@ -90,9 +91,9 @@
                     '/static/img/imagenes_CP50/CAMPO/btnviernes.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_cancionero2.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_eucaristia.png',
-                    '/static/img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_eucaristia_claro.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_liturgia_manana_claro.png',
+                    '/static/img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png',
                     '/static/img/imagenes_CP50/CAMPO/btn_oracion_manana.png',
                     '/static/img/imagenes_CP50/CAMPO/horario_claro_1.png',
                     '/static/img/imagenes_CP50/CAMPO/horario_rosado_1.png',
@@ -129,16 +130,21 @@
                     '/static/img/imagenes_CP50/vocacional/sdb.png',
                     '/static/img/imagenes_CP50/mapa/mapa_picarquin.jpeg',
                     '/static/img/imagenes_CP50/mapa/norte.png',
+                    '/static/img/imagenes_CP50/documentos/btn_carta_identidad.png',
+                    '/static/img/imagenes_CP50/documentos/btn_documentos_gnral.png',
+                    '/static/img/imagenes_CP50/documentos/btn_protocolo.png',
+                    '/static/img/imagenes_CP50/talleres/btn_talleres.png',
+                    '/static/img/imagenes_CP50/talleres/talleres.jpeg',
                     '/static/img/imagenes_CP50/cpb50_sin.png',
                     '/static/img/imagenes_CP50/10240por1024.png',
                     '/static/js/jquery.min.js',
                     '/static/js/leaflet.js',
-                    '/static/js/tamanoletra.js',
                     '/static/js/service-worker.js',
                     '/static/js/sweetalert2.all.min.js',
                     '/static/js/bootjs/bootstrap.min.js',
                     '/static/js/bootjs/bootstrap.min.js.map',
                     '/static/js/bootjs/popper.min.js',
+                    '/static/js/tamanoletra.js',
                     '/static/js/bootjs/jquery.mlens-1.7.min.js',
                     '/inicio',
                     '/miercoles',
@@ -166,6 +172,10 @@
                     '/mapalugar/offline',
                     '/vocacional',
                     '/acercade',
+                    '/documentos',
+                    '/documentos/carta_identidad',
+                    '/documentos/protocolo_campamento',
+                    '/talleres',
                     '/cancionero',
                     '/cancionero/0',
                     '/cancionero/1',
@@ -216,7 +226,7 @@
 
     <script>
         function determinarMomentoDelDia() {
-            const horaActual = new Date().getHours();  // Obtiene la hora actual
+            const horaActual = new Date().getHours();
 
             if (6 <= horaActual && horaActual < 8) {
                 return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>";
@@ -239,10 +249,10 @@
 
         document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
-<div>
-    <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br>
-    {% include 'estructura/footer.html' %}
-</div>
+    <div>
+        <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br>
+        {% include 'estructura/footer.html' %}
+    </div>
 </body>
 
 </html>

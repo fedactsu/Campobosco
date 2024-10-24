@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+
+
+</head>
+
+<body class="verdebosco">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">Talleres</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="location.href='/inicio'">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <br>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+        <div class="container mt-5">
+            <h1>Selecciona un taller</h1>
+            <select class="form-select" id="textoMod">
+                <option value="">Selecciona un taller</option>
+
+                {% for tller in taller %}
+                <option value="{{tller}}">{{tller[0]}} {{tller[1]}}</option>
+                {% endfor %}
+
+            </select>
+            <br>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Nombre: <b id="nombre"></b></li>
+                <li class="list-group-item">Edad: <b id="edad"></b></li>
+                <li class="list-group-item">Lugar*: <b id="lugar"></b></li>
+            </ul>
+            <br>
+            <a href="/mapalugar/offline" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} "
+                    alt="" width="100%">
+            </a>
+            <p class="form-text text-muted">*Los lugares de los talleres pueden variar, por favor consultar con tu
+                tallerista</p>
+
+        </div>
+
+        <script>
+            document.getElementById('textoMod').addEventListener('change', function () {
+                const seleccionar = this.value;
+                let cadenaLimpia = seleccionar.replace(/[\[\]\'\"]/g, "");
+                let lista = cadenaLimpia.split(",");
+
+                const nombre = document.getElementById('nombre');
+                const lugar = document.getElementById('lugar');
+                const edad = document.getElementById('edad');
+
+                nombre.innerText = lista[0];
+                edad.innerText = lista[1];
+                lugar.innerHTML = lista[2];
+
+                console.log(lista)
+            });
+        </script>
+
+        {% include 'estructura/footer.html' %}
+
+    </div>
+
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+
+</body>
+
+</html>

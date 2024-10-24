@@ -35,13 +35,16 @@
 
         .footnote {
             font-size: 0.8em;
-            color: gray;
+            color: rgb(235, 229, 229);
         }
 
         .footnote-ref,
         .back-to-ref {
             text-decoration: none;
             color: blue;
+        }
+        body{
+            color: white;
         }
     </style>
 </head>
@@ -53,7 +56,7 @@
             <div class="col-12">
                 <h3 class="text-center">Carta de identidad</h3>
                 <div class="d-flex justify-content-center">
-                    <a onclick="history.back()">
+                    <a onclick="location.href='/documentos'">
                         <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt=""
                             width="100px">
                     </a>

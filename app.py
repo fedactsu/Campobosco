@@ -138,7 +138,7 @@ def vocacional():
 def acercade():
     return render_template('9_acercade/9_acercade.html')
 #-----------------------------------------------------------------------------------------------documentos
-@app.route('/documentos')
+@app.route('/documentos') 
 def documentos():
     return render_template('10_documentos/10_doc_inicial.html')
 
@@ -161,6 +161,12 @@ def mapaonline():
 @app.route('/mapalugar/offline')
 def mapaoffine():
     return render_template('7_mapa/7_mapa_offline.html')
+
+#-----------------------------------------------------------------------------------------------talleres
+@app.route('/talleres')
+def talleres():
+    return render_template('11_talleres/11_talleres.html',taller=can.cancionero().talleres)
+
 
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')

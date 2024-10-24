@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-cache-v2';
+const CACHE_NAME = 'offline-cache-v3';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',
@@ -59,6 +59,8 @@ const urlsToCache = [
     '/static/img/imagenes_CP50/documentos/btn_carta_identidad.png',
     '/static/img/imagenes_CP50/documentos/btn_documentos_gnral.png',
     '/static/img/imagenes_CP50/documentos/btn_protocolo.png',
+    '/static/img/imagenes_CP50/talleres/btn_talleres.png',
+    '/static/img/imagenes_CP50/talleres/talleres.jpeg',
     '/static/img/imagenes_CP50/cpb50_sin.png',
     '/static/img/imagenes_CP50/10240por1024.png',
     '/static/js/jquery.min.js',
@@ -99,6 +101,7 @@ const urlsToCache = [
     '/documentos',
     '/documentos/carta_identidad',
     '/documentos/protocolo_campamento',
+    '/talleres',
     '/cancionero',
     '/cancionero/0',
     '/cancionero/1',

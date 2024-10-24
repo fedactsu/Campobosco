@@ -55,380 +55,312 @@
 
 
 
-    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+    <div class="my-3" style="padding-left: 5%; padding-right: 5%;">
         <h3 class="text-center">Jueves:</h3>
         <div class="d-flex justify-content-center">
             <a onclick="history.back()">
-                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt=""
-                    width="100px">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
             </a>
         </div>
-        <style>
-            .container {
-                margin: 0 auto;
-                padding: 20px;
-                max-width: 800px;
-            }
-
-            .row {
-                border-bottom: 1px solid #ddd;
-                padding: 10px 0;
-            }
-
-            .row:nth-child(even) {
-                background-color: #f9f9f9;
-            }
-
-            .col {
-                padding: 5px 10px;
-            }
-
-            .row.header {
-                background-color: #007bff;
-                color: white;
-                font-weight: bold;
-                font-size: 1.1em;
-            }
-
-            .col strong {
-                font-size: 1.2em;
-                color: #333;
-            }
-
-            ul {
-                padding-left: 20px;
-                margin: 0;
-            }
-
-            em {
-                color: #ff6347;
-            }
-        </style>
+       
 
         <div class="container text-center">
             {% include 'estructura/botoneshorariodiv.html' %}
-            
-            <div class="row header align-items-start">
-                <div class="col">
-                    HORA
-                </div>
-                <div class="col">
-                    ACTIVIDAD
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">06:00 a 06:45</div>
-                <div class="col">Levantada adultos</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">07:00</div>
-                <div class="col">Levantada jóvenes</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">07:30</div>
-                <div class="col">
-                    <strong>VALPONASCA</strong>
-                    <ul>
-                        <li>Laudes (participan los que quieran)</li>
-                        <li>Reunión con 1 encargado por cada delegación</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">08:00</div>
-                <div class="col">
-                    Desayuno <br>
-                    <em>*Es importante que las delegaciones locales entreguen en este minuto la colación de la mañana a
-                        sus jóvenes</em>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">08:30</div>
-                <div class="col">
-                    <strong>MATINAL BOSCO MORNING</strong>
-                    <ul>
-                        <li>Inicio traslado hacia Valdocco</li>
-                        <li>Comienzan las transmisiones de Radio Bosco Morning y luego da el pase al Matinal Bosco
-                            Morning</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">09:00</div>
-                <div class="col">Inicia la oración de la mañana en Valdocco</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">09:30</div>
-                <div class="col">
-                    <ul>
-                        <li>Inicio de momento formativo 1</li>
-                        <li>Presentación del capítulo 1 de la serie “Un sueño que hace soñar”</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">10:00</div>
-                <div class="col">
-                    <ul>
-                        <li>Los participantes toman su colación, buscan sus zonas de trabajo y se ubican en sus
-                            subgrupos</li>
-                        <li>Formación entrega materiales a animadores</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">10:30</div>
-                <div class="col">Inicio de trabajo en subgrupos según la planificación entregada en las zonas de
-                    formación</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">12:00</div>
-                <div class="col">Traslado hacia Valdocco</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">12:30</div>
-                <div class="col">
-                    <ul>
-                        <li>Feedback de lo trabajado en la mañana</li>
-                        <li>Cierre del matinal</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">13:00</div>
-                <div class="col">Traslado a zonas de almuerzo</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">13:30</div>
-                <div class="col">Almuerzo</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">14:30</div>
-                <div class="col">
-                    <ul>
-                        <li>Traslado hacia Valdocco</li>
-                        <li>Baile entretenido ACHS en Valdocco</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">15:00</div>
-                <div class="col">
-                    <strong>TARDE ORATORIANA</strong>
-                    <ul>
-                        <li>Baile entretenido ACHS</li>
-                        <li>Inicio de tarde oratoriana</li>
-                        <li>Se retoma la idea formativa del día</li>
-                        <li>Se motiva para las diversas actividades de la tarde, indicando particularmente lugares de
-                            trabajo</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">15:20</div>
-                <div class="col">
-                    <ul>
-                        <li>Traslado a talleres</li>
-                        <li>Entrega de materiales para los talleres</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">15:45</div>
-                <div class="col">Realización de talleres (Cada cual va a su taller donde previamente se inscribió)</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">16:30</div>
-                <div class="col">Fin del taller y traslado a zonas de juegos masivos por edades</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">16:45</div>
-                <div class="col">Juegos masivos (Cada cual se dirige a su zona por edades)</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">17:30</div>
-                <div class="col">Traslado para la once</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">18:00</div>
-                <div class="col">Once</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">18:30</div>
-                <div class="col">Traslado a zonas por edades</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">19:00</div>
-                <div class="col">
-                    Eucaristía por edades
 
 
-                    
-
-                    <div class="list-group mt-4">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <a class=" list-group-item-action">
-                                            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mornese.png')}} "
-                                                alt="" width="100%">
-                                        </a>
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>Verde.<br>Jóvenes de 12 a 14 años</strong><br>
-
-
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">HORA</th>
+                        <th scope="col">ACTIVIDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06:00 a 06:45</td>
+                        <td>Levantada adultos</td>
+                    </tr>
+                    <tr>
+                        <td>07:00</td>
+                        <td>Levantada jóvenes</td>
+                    </tr>
+                    <tr>
+                        <td>07:30</td>
+                        <td>
+                            <strong>VALPONASCA</strong>
+                            <ul>
+                                <li>Laudes (participan los que quieran)</li>
+                                <li>Reunión con 1 encargado por cada delegación</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08:00</td>
+                        <td>
+                            Desayuno <br>
+                            <em>*Es importante que las delegaciones locales entreguen en este minuto la colación de la
+                                mañana a sus jóvenes</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08:30</td>
+                        <td>
+                            <strong>MATINAL BOSCO MORNING</strong>
+                            <ul>
+                                <li>Inicio traslado hacia Valdocco</li>
+                                <li>Comienzan las transmisiones de Radio Bosco Morning y luego da el pase al Matinal
+                                    Bosco Morning</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Inicia la oración de la mañana en Valdocco</td>
+                    </tr>
+                    <tr>
+                        <td>09:30</td>
+                        <td>
+                            <ul>
+                                <li>Inicio de momento formativo 1</li>
+                                <li>Presentación del capítulo 1 de la serie "Un sueño que hace soñar"</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>
+                            <ul>
+                                <li>Los participantes toman su colación, buscan sus zonas de trabajo y se ubican en sus
+                                    subgrupos</li>
+                                <li>Formación entrega materiales a animadores</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Inicio de trabajo en subgrupos según la planificación entregada en las zonas de formación
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Traslado hacia Valdocco</td>
+                    </tr>
+                    <tr>
+                        <td>12:30</td>
+                        <td>
+                            <ul>
+                                <li>Feedback de lo trabajado en la mañana</li>
+                                <li>Cierre del matinal</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>Traslado a zonas de almuerzo</td>
+                    </tr>
+                    <tr>
+                        <td>13:30</td>
+                        <td>Almuerzo</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>
+                            <ul>
+                                <li>Traslado hacia Valdocco</li>
+                                <li>Baile entretenido ACHS en Valdocco</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>
+                            <strong>TARDE ORATORIANA</strong>
+                            <ul>
+                                <li>Baile entretenido ACHS</li>
+                                <li>Inicio de tarde oratoriana</li>
+                                <li>Se retoma la idea formativa del día</li>
+                                <li>Se motiva para las diversas actividades de la tarde, indicando particularmente
+                                    lugares de trabajo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:20</td>
+                        <td>
+                            <ul>
+                                <li>Traslado a talleres</li>
+                                <li>Entrega de materiales para los talleres</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15:45</td>
+                        <td>Realización de talleres (Cada cual va a su taller donde previamente se inscribió)</td>
+                    </tr>
+                    <tr>
+                        <td>16:30</td>
+                        <td>Fin del taller y traslado a zonas de juegos masivos por edades</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>Juegos masivos (Cada cual se dirige a su zona por edades)</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>Traslado para la once</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>Once</td>
+                    </tr>
+                    <tr>
+                        <td>18:30</td>
+                        <td>Traslado a zonas por edades</td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                        <td>        <div class="list-group mt-4">
+                            <b>EUCARISTÍA POR EDADES</b>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                           ZONA MORNESE
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Verde.<br>Jóvenes de 12 a 14 años</strong><br>
+                
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                           ZONA TURIN
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Morado.<br>Jóvenes de 15 años</strong><br>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                           ZONA ROMA
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Rojo<br>Jóvenes de 16 años.</strong><br>
+                
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#colapsocuatro" aria-expanded="false" aria-controls="colapsocuatro">
+                                            ZONA IBECCHI
+                                        </button>
+                                    </h2>
+                                    <div id="colapsocuatro" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Rosado<br>Jóvenes de 17 años.</strong><br>
+                
+                
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#colapsocinco" aria-expanded="false" aria-controls="colapsocinco">
+                                            ZONA NIZZA
+                                        </button>
+                                    </h2>
+                                    <div id="colapsocinco" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Amarillo<br>Jóvenes de 18 a 29 años.</strong><br>
+                
+                
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <a class=" list-group-item-action">
-                                            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_turin.png')}} "
-                                                alt="" width="100%">
-                                        </a>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>Morado.<br>Jóvenes de 15 años</strong><br>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <a class=" list-group-item-action">
-                                            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_roma.png')}} "
-                                                alt="" width="100%">
-                                        </a>
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>Rojo<br>Jóvenes de 16 años.</strong><br>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#colapsocuatro" aria-expanded="false"
-                                        aria-controls="colapsocuatro">
-                                        <a class=" list-group-item-action">
-                                            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_ibecchi.png')}} "
-                                                alt="" width="100%">
-                                        </a>
-                                    </button>
-                                </h2>
-                                <div id="colapsocuatro" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>Rosado<br>Jóvenes de 17 años.</strong><br>
+                
+                
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td>19:45</td>
+                        <td>Traslado para la cena</td>
+                    </tr>
+                    <tr>
+                        <td>20:15</td>
+                        <td>Cena</td>
+                    </tr>
+                    <tr>
+                        <td>21:00</td>
+                        <td>Traslado hacia Valdocco</td>
+                    </tr>
+                    <tr>
+                        <td>21:15</td>
+                        <td>Convocatoria en Valdocco</td>
+                    </tr>
+                    <tr>
+                        <td>21:30</td>
+                        <td>
+                            <ul>
+                                <li>Inicio de show de la noche</li>
+                                <li>Representación nacimiento del MJS</li>
+                                <li>Generación '74</li>
+                                <li>Buenas noches Sor Herlinda Palomino FMA</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22:30</td>
+                        <td>Traslado de Valdocco a zonas de acampada para iniciar el descanso</td>
+                    </tr>
+                    <tr>
+                        <td>23:00</td>
+                        <td>Se inicia el proceso de descanso</td>
+                    </tr>
+                    <tr>
+                        <td>00:00</td>
+                        <td>
+                            <strong>GRAN SILENCIO</strong> <br>
+                            Los participantes se encuentran en sus carpas descansando. Solamente la Comisión de
+                            Convivencia tiene adultos dispuestos a la vigilia y asistencia de la noche.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
 
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#colapsocinco" aria-expanded="false"
-                                        aria-controls="colapsocinco">
-                                        <a class=" list-group-item-action">
-                                            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_nizza.png')}} "
-                                                alt="" width="100%">
-                                        </a>
-                                    </button>
-                                </h2>
-                                <div id="colapsocinco" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <strong>Amarillo<br>Jóvenes de 18 a 29 años.</strong><br>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">19:45</div>
-                <div class="col">Traslado para la cena</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">20:15</div>
-                <div class="col">Cena</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">21:00</div>
-                <div class="col">Traslado hacia Valdocco</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">21:15</div>
-                <div class="col">Convocatoria en Valdocco</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">21:30</div>
-                <div class="col">
-                    <ul>
-                        <li>Inicio de show de la noche</li>
-                        <li>Representación nacimiento del MJS</li>
-                        <li>Generación ‘74</li>
-                        <li>Buenas noches Sor Herlinda Palomino FMA</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">22:30</div>
-                <div class="col">Traslado de Valdocco a zonas de acampada para iniciar el descanso</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">23:00</div>
-                <div class="col">Se inicia el proceso de descanso</div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">00:00</div>
-                <div class="col">
-                    <strong>GRAN SILENCIO</strong> <br>
-                    Los participantes se encuentran en sus carpas descansando. Solamente la Comisión de Convivencia
-                    tiene adultos dispuestos a la vigilia y asistencia de la noche.
-                </div>
-            </div>
 
         </div>
 
-
-
-
-
-
-
-    </div>
-
-    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
-    {% include 'estructura/footer.html' %}
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
+        {% include 'estructura/footer.html' %}
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-cache-v3';
+const CACHE_NAME = 'offline-cache-v5';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',
@@ -65,10 +65,12 @@ const urlsToCache = [
     '/static/img/imagenes_CP50/10240por1024.png',
     '/static/js/jquery.min.js',
     '/static/js/leaflet.js',
+    '/static/js/holder.js',
     '/static/js/service-worker.js',
     '/static/js/sweetalert2.all.min.js',
     '/static/js/bootjs/bootstrap.min.js',
     '/static/js/bootjs/bootstrap.min.js.map',
+    '/static/js/bootjs/bootstrap.bundle.min.js',
     '/static/js/bootjs/popper.min.js',
     '/static/js/tamanoletra.js',
     '/static/js/bootjs/jquery.mlens-1.7.min.js',
@@ -138,6 +140,23 @@ self.addEventListener('install', (event) => {
             .then((cache) => {
                 return cache.addAll(urlsToCache);
             })
+    );
+});
+
+// Activación del Service Worker y eliminación de cachés antiguos
+self.addEventListener('activate', function (event) {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.map(function (cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        console.log('Eliminando caché antiguo:', cacheName);
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
     );
 });
 

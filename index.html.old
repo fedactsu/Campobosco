@@ -72,7 +72,7 @@
         }
 
         document.getElementById('cache-btn').addEventListener('click', () => {
-            caches.open('offline-cache-v5').then(function (cache) {
+            caches.open('offline-cache-v3').then(function (cache) {
                 cache.addAll([
                     '/',
                     '/static/Favicon.png',
@@ -139,12 +139,10 @@
                     '/static/img/imagenes_CP50/10240por1024.png',
                     '/static/js/jquery.min.js',
                     '/static/js/leaflet.js',
-                    '/static/js/holder.js',
                     '/static/js/service-worker.js',
                     '/static/js/sweetalert2.all.min.js',
                     '/static/js/bootjs/bootstrap.min.js',
                     '/static/js/bootjs/bootstrap.min.js.map',
-                    '/static/js/bootjs/bootstrap.bundle.min.js',
                     '/static/js/bootjs/popper.min.js',
                     '/static/js/tamanoletra.js',
                     '/static/js/bootjs/jquery.mlens-1.7.min.js',
@@ -216,31 +214,12 @@
         });
 
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-                    console.log('ServiceWorker registrado con éxito:', registration);
-
-                    registration.onupdatefound = function () {
-                        const installingWorker = registration.installing;
-                        installingWorker.onstatechange = function () {
-                            if (installingWorker.state === 'installed') {
-                                if (navigator.serviceWorker.controller) {
-                                    // Nueva versión encontrada, se actualiza todo
-                                    console.log('Nuevo contenido disponible, actualizando...');
-                                    if (confirm("Hay una nueva versión disponible. ¿Deseas actualizar?")) {
-                                        window.location.reload();  // Recarga la página para cargar los nuevos recursos
-                                    }
-                                } else {
-                                    // El contenido está cacheado para usar sin conexión por primera vez
-                                    console.log('Contenido cacheado para usar sin conexión');
-                                }
-                            }
-                        };
-                    };
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('CAMPOBOSCO ok:', registration.scope);
                 }).catch(function (error) {
-                    console.log('Error al registrar el ServiceWorker:', error);
+                    console.log('CAMPOBOSCO no-ok:', error);
                 });
-            });
         }
 
     </script>

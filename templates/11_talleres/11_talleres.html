@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
-
+    <style>
+        .table-custom {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+        .table-custom th, .table-custom td {
+          vertical-align: middle;
+        }
+      </style>
 
 </head>
 
@@ -87,7 +97,7 @@
 
                         $('#resultado').empty()
                         let tabla = ""
-                        tabla = '<table class="table table-bordered table-striped table-hover" border="1"><thead class="table-dark"><tr><th>Nombre</th><th>Procedencia</th></tr><thead>';
+                        tabla = '<table class="table table-bordered table-striped table-hover table-custom" border="1"><thead class="table-dark"><tr><th>Nombre</th><th>Procedencia</th></tr><thead>';
                         tabla += '<tbody>'
                         data.integrantes.forEach(function (integrante) {
                             tabla += `<tr><td>${integrante[0]}</td><td>${integrante[1]}</td></tr>`;

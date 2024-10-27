@@ -68,13 +68,13 @@
                 title: "Equipo de Liturgia",
                 html: `Trabajo realizado por el equipo de liturgia<br>
                Cualquier cosa que necesiten, no duden en buscarnos en el campamento.<br>
-               V. 1.26.20.37`,
+               V. 1.27.03.08`,
 
             });
         }
 
         document.getElementById('cache-btn').addEventListener('click', () => {
-            caches.open('offline-cache-v6').then(function (cache) {
+            caches.open('offline-cache-v7').then(function (cache) {
                 cache.addAll([
                     '/',
                     '/static/Favicon.png',
@@ -208,6 +208,7 @@
                     '/cancionero/24',
                     '/cancionero/25',
                     '/cancionero/26',
+                    '/consultar_taller',
                 ]);
             });
             Swal.fire({

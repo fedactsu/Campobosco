@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-cache-v6';
+const CACHE_NAME = 'offline-cache-v7';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',
@@ -132,6 +132,7 @@ const urlsToCache = [
     '/cancionero/24',
     '/cancionero/25',
     '/cancionero/26',
+    '/consultar_taller',
 ];
 
 self.addEventListener('install', (event) => {

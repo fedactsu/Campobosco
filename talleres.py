@@ -73,7 +73,8 @@ class talleres():
                 "todas las edades (12 - 29)", " Sector enfermería"],
             [55, "Primeros auxilios psicológico",
                 "todas las edades (12 - 29)", " Sector enfermería"],
-            [56, "Primeros auxilios comunitarios", "todas las edades (12 - 29)", " Sector enfermería"]]
+            [56, "Primeros auxilios comunitarios", "todas las edades (12 - 29)", " Sector enfermería"],
+            [57,"Fútbol Femenino","Todas las edades","Costado Miguel Magone"]]
 
     def main(self, id):
         if id == 1:
@@ -184,6 +185,12 @@ class talleres():
             return self.animereligion()
         if id == 54:
             return self.whasprevention()
+        if id == 55:
+            return self.primerosauxiliospsicologicos()
+        if id == 56:
+            return self.primerosauxilioscomunitarios()
+        if id == 57:
+            return self.futbolfemenino()
 
     def futbol1829(self):
         id_taller = 1
@@ -774,6 +781,7 @@ class talleres():
                         ["matias claveria","la serena"],
                         ["FELIPE IGNACIO TRONCOSO OLEARTE","VALDIVIA"],
                         ["Nicolás Tiznado","Concepción"]]
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
 
     def Escultismo(self): 
         id_taller = 16 
@@ -2088,4 +2096,101 @@ class talleres():
 
 
         
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def primerosauxiliospsicologicos(self): 
+        id_taller = 55
+        nombre_taller = "Primeros auxilios psicológico"
+        edad =  "todas las edades (12 - 29)"
+        lugar = "Zona enfermería"
+        tallerista = "Cruz Roja"
+        integrantes =[["Martina Alveal ","Santiago "],
+                        ["Constanza Cortés ","Santiago "],
+                        ["Eduarda Navarro ","Molina"],
+                        ["Nicolás Campos ","Linares "],
+                        ["Monserrath Tapia","Santiago"],
+                        ["Matilda vejar ","Concepción "],
+                        ["Nicolas Palma ","Santiago "],
+                        ["Martina Opazo","Santiago"],
+                        ["Martín Lizana","Santiago"],
+                        ["Trinidad Valenzuela ","Santiago "],
+                        ["Javiera Muñoz ","Concepción "],
+                        ["Fernando Aguayo","Concepcion"],
+                        ["Eduardo Ignacio Morán Muñoz","Talca"],
+                        ["Juan Pablo Bachmann Saldivia ","Santiago "],
+                        ["Beatriz Retamales","Santiago"],
+                        ["Felipe Salinas","Santiago de Chile"],
+                        ["Fernando Bastian González Droguett ","Santiago "],
+                        ["Benjamin Carter","San ramon"],
+                        ["María José Núñez ","Santiago "],
+                        ["Sebastián Vargas","San Ramón"]]
+        
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def primerosauxilioscomunitarios(self): 
+        id_taller = 56
+        nombre_taller = "Primeros auxilios comunitarios"
+        edad =  "todas las edades (12 - 29)"
+        lugar = "Zona enfermería"
+        tallerista = "Cruz Roja"
+        integrantes =[["Isidora Riquelme ","Santiago "],
+                    ["Amelia Caneo ","Santiago "],
+                    ["Francisca Miranda reyes","Santiago "],
+                    ["Benjamín Montalbán ","Antofagasta "],
+                    ["Sofia Nuñez C","Linares "],
+                    ["Ari Espinoza","Linares "],
+                    ["Luisa Ruiz","Puerto Natales"],
+                    ["Trinidad castro","Santiago "],
+                    ["Trinidad Chavol ","Santiago "],
+                    ["Francisca Pinto ","Santiago "],
+                    ["Alejandra Muñoz ","Santiago"],
+                    ["Antonia Olguin ","Santiago"],
+                    ["VALENTINA CONTRERAS","Santiago"],
+                    ["Giselle jofre","Santiago "],
+                    ["Mathías Piña","Santiago"]]
+
+        
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def futbolfemenino(self): 
+        id_taller = 57
+        nombre_taller = "Fútbol Femenino"
+        edad =  "Todas las edades"
+        lugar = "Costado Miguel Magone"
+        tallerista = "Natalia Ponce "
+        integrantes = [["Isidora calderon","Los andes"],
+                        ["Francisca Rudolph","Talca"],
+                        ["Pia Vidal","Punta Arenas"],
+                        ["victoria paredes","santa cruz"],
+                        ["Agustina Parraguez","Santa cruz"],
+                        ["Fernanda Arce Cabrera","Santa cruz"],
+                        ["Constanza Oval","Punta Arenas"],
+                        ["María José Rojas Rodríguez","Linares"],
+                        ["Francisca Mella","Punta Arenas"],
+                        ["Sophia Gonzalez","Puerto montt"],
+                        ["Pascal Escobar","Linares"],
+                        ["conzuelo caro","linares"],
+                        ["Martina Becerra","Linares"],
+                        ["Renata nuche","Linares"],
+                        ["Constanza Vasquez","Linares"],
+                        ["Lindsay Rodriguez","Punta Arenas"],
+                        ["Dayana libuy","Santiago"],
+                        ["Josefa areyte","Santiago"],
+                        ["Camila marquez","Santiago"],
+                        ["Pascuala Castillo","Santiago"],
+                        ["Catalina Jorquera","Santiago centro"],
+                        ["agustina cuevas","santiago"],
+                        ["Sofia Cobo","Santiago"],
+                        ["Emilia Espinosa","Linares"],
+                        ["Barbara castillo","Linares"],
+                        ["Samantha Pardo","Antofagasta"],
+                        ["Daniela Gallardo","Santa Cruz"],
+                        ["Catalina Santibañez","Santiago"],
+                        ["Belen Sandoval","alto hospicio"],
+                        ["Karol Cuero","Alto Hospicio"],
+                        ["Luz Mery Duran","Calama"],
+                        ["Fernanda Hernández","Linares"],
+                        ["Isidora Alarcón","Linares"],
+                        ["Martina Caballería","Valparaiso"],
+                        ["tábata canales","valparaiso"]]
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes

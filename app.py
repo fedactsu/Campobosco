@@ -169,13 +169,16 @@ def talleres():
     tller = ttlr.talleres().talleres
     return render_template('11_talleres/11_talleres.html',taller=tller) 
 
-@app.route('/consultar_taller', methods=['POST'])
-def consultar_taller():
-    data = request.json
-    iddata = data.get('id')
-    taller= ttlr.talleres().main(int(iddata))
-    id_taller, nombre_taller, edad, lugar, tallerista, integrantes = taller
-    return jsonify({"taller":nombre_taller,"edad":edad,"tallerista":tallerista,"integrantes":integrantes,"lugar":lugar})
+
+@app.route('/taller/<idtaller>',methods=['GET'])
+def taller_get(idtaller):
+    try:
+        taller= ttlr.talleres().main(int(idtaller))
+        id_taller, nombre_taller, edad, lugar, tallerist, integrantes = taller
+        return render_template('11_talleres/12_talleres_esp.html', nombretaller=nombre_taller,tallerista=tallerist,edad=edad, lugar=lugar,integrantes=integrantes)
+    except:
+        return render_template('estructura/inicio.html', mensaje=determinar_momento_del_dia())
+
 
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')

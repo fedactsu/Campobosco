@@ -152,6 +152,38 @@ class talleres():
             return self.danzaContemporanea()
         if id == 38:
             return self.danzaContemporanea2()
+        if id == 39:
+            return self.Salsa()
+        if id == 40:
+            return self.Reciclaje()
+        if id == 41:
+            return self.Agroecologia()
+        if id == 42:
+            return self.Jardineria()
+        if id == 43:
+            return self.TalladoEnMadera()
+        if id == 44:
+            return self.Encuadernacion()
+        if id == 45:
+            return self.Electricidad()
+        if id == 46:
+            return self.introLiturgia()
+        if id == 47:
+            return self.Animacion()
+        if id == 48:
+            return self.Malabarismo()
+        if id == 49:
+            return self.mimossketch()
+        if id == 50:
+            return self.matetruco()
+        if id == 51:
+            return self.lengua()
+        if id == 52:
+            return self.magia()
+        if id == 53:
+            return self.animereligion()
+        if id == 54:
+            return self.whasprevention()
 
     def futbol1829(self):
         id_taller = 1
@@ -1576,12 +1608,484 @@ class talleres():
 
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
     
-    def Reciclaje(self): 
+    def Agroecologia(self): 
         id_taller = 41
-        nombre_taller =  
-        edad =  
-        lugar =  
-        tallerista =  
-        integrantes =  
+        nombre_taller = "Agroecología y plantación sustentable" 
+        edad =  "12 - 16 años"
+        lugar =  "Zona Nizza"
+        tallerista = "María Garrido"
+        integrantes =  [["Antonela Tobar ","Santa Cruz"],
+                        ["Sofia Romero","Santa Cruz "],
+                        ["Catalina Díaz ","Santiago"],
+                        ["Francisco Quezada","Santiago "],
+                        ["Dylan almonte ","Antofagasta"],
+                        ["Almendra elias ","Santiago "],
+                        ["Benjamín Becerra ","Valdivia "],
+                        ["Yamil Arancibia Caballero","IQUIQUE"],
+                        ["Benjamin Pizarro","La Serena"],
+                        ["Luciano zenteno","La serena"],
+                        ["Alexander Severino ","La serena "],
+                        ["Luciano rodriguez","La serena"],
+                        ["Constanza Monzalve ","Puerto Montt "],
+                        ["Vicente Suazo ","Puerto montt"],
+                        ["Leandro bustamante ","Puerto Montt "],
+                        ["Daniel Vargas","Puerto Montt "],
+                        ["César Vidal","Puerto Montt"],
+                        ["Fernanda Oyarzun","Puerto Montt"],
+                        ["Maite Cabrera ","Santiago "],
+                        ["Matilde Vera","Santiago "],
+                        ["Cristobal galleguillos","La serena"],
+                        ["Vicente Valenzuela ","Concepcion "],
+                        ["Alexia Ampuero ","Puerto Montt "],
+                        ["Joaquin Carvajal ","La serena"],
+                        ["Vicente Peña","Alto hospicio"],
+                        ["Monserrath Muñoz ","Alto hospicio "],
+                        ["Maximiliano Keim","Puerto Montt"],
+                        ["Valentina Mora Rocco","Santiago "],
+                        ["Marcos gonzalez","Alto hospicio"],
+                        ["Lucas Matías Andrés Zárate ","La serena "]]
 
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def Jardineria(self): 
+        id_taller = 42 
+        nombre_taller = "Jardinería"
+        edad =  "12 - 20 años"
+        lugar = "Zona Mornese"
+        tallerista = "Natalie Miranda"
+        integrantes =  [["Adrian Maldonadl","Santa Cruz"],
+                        ["María Ximena Pavez Galaz ","Santa Cruz "],
+                        ["Kamilah Toledo ","Santa Cruz "],
+                        ["Miranda Moras ","Santa cruz "],
+                        ["Teresita Isabel Silva Vera ","Puerto Montt"],
+                        ["Tamara González Vargas ","Puerto Montt "],
+                        ["Maite Miranda Vargas","Linares"],
+                        ["Karola moncerat pinto González ","Talca "],
+                        ["Fernanda Astorga","Valparaíso "],
+                        ["Emilia Urrutia","Linares"],
+                        ["Diana Carolina Valdés Jorquera","Talca, comuna de Maule"],
+                        ["Isidora Muñoz ","Punta Arenas "],
+                        ["Francisca Trujillo","Punta Arenas"],
+                        ["Derly Zúñiga ","Santiago "],
+                        ["Pablo Castillo ","Calama "],
+                        ["Darien flandes","Valdivia "],
+                        ["Nikita pascale mira canales ","Santiago "],
+                        ["María Jesús Lazcano Maturana","Santiago"],
+                        ["isidora zamora","santiago"],
+                        ["mia lopez","santiago"],
+                        ["Martin Alonso Morales Gutiérrez ","Linares "],
+                        ["Sarita Rodríguez ","Linares"],
+                        ["Antonella Pereira ","Copiapó "],
+                        ["Francisco Bravo ","Copiapo "],
+                        ["Martina lopez ","Copiapó "],
+                        ["Pablo Valderrama ","Copiapo "],
+                        ["YOSHEF AGUIRRE JELVES","ANTOFAGASTA"],
+                        ["Colomba González","Copiapo"],
+                        ["Pola Delgado Ochoa","Puerto Montt"],
+                        ["Jorge Monge","PUERTO MONTT"]]
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def TalladoEnMadera(self): 
+        id_taller = 43
+        nombre_taller =  "Tallado en madera"
+        edad = "12 - 17 años"
+        lugar = "Patio Techado Bartolomé Garelli"
+        tallerista = "Elizabeth Pérez"
+        integrantes = [["Sofía Mauna","Los Andes"],
+                        ["Macarena Órdenes ","Santa cruz "],
+                        ["Catalina Medina Mardones","Santa Cruz"],
+                        ["Emilia Sapiains ","Los Andes "],
+                        ["francisca florencia monsalvez cid","Puerto Natales"],
+                        ["Martina Rodriguez ","Los Andes"],
+                        ["Julieta Pulgar Urtubia ","Los Andes "],
+                        ["Constanza sepulveda","iquique "],
+                        ["Marianela Constanza Aravena Lobos","Linares"],
+                        ["Catalina Delgado","Iquique"],
+                        ["Martin Herrera ","Valparaíso "],
+                        ["Catalina Rodríguez ","Maule "],
+                        ["Luciel muñoz","Valparaiso"],
+                        ["sofia briceño","Valparaíso "],
+                        ["Nayareth Cáceres ","Linares"],
+                        ["Constanza Escalona ","Linares "],
+                        ["Lucas Siade","Valparaiso "],
+                        ["Aleshka Cruz ","Valparaiso "],
+                        ["Catalina Vega ","Valparaiso "],
+                        ["Ema levill","Santiago de chile"],
+                        ["Martina Acuña ","Valparaiso "],
+                        ["Constanza Pérez ","Santiago"],
+                        ["Vicente Soto ","Valparaíso "],
+                        ["Mia Mejias","Valparaíso "],
+                        ["Madellyne ravest ","Valparaíso "],
+                        ["Julián Precht ","Valparaíso "],
+                        ["Antonella tapia","Valparaiso"],
+                        ["Ángel Embry","Valparaíso "],
+                        ["Dagna Chacón ","Calama "],
+                        ["Dulce Barrientos Zarpán ","Calama"]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def Encuadernacion(self): 
+        id_taller = 44
+        nombre_taller = "Encuadernación"
+        edad = "17 - 29 años"
+        lugar = "Sala 2 Emma Ferrero"
+        tallerista = "Carlos Cornejo"
+        integrantes = [["Martina Donoso ","Santiago "],
+                    ["Catalina Araya","Santiago"],
+                    ["Dayris Roa","Maule"],
+                    ["Oscar Castro","Iquique "],
+                    ["Fernanda Valenzuela ","Santiago"],
+                    ["Jhon Carrasco ","Puerto Montt"],
+                    ["Natalia Salomó ","Santiago "],
+                    ["Francisca Rodríguez Gacitúa ","Santiago "],
+                    ["Lissett Vidal Alarcón","Puerto Montt"],
+                    ["Maria Jose Velásquez ","Concepcion "],
+                    ["Nicolás Andrades ","Santiago"],
+                    ["Barbara Manzano","Santiago Centro"],
+                    ["Alejandra Riquelme Ávila. ","Valparaíso"],
+                    ["Valentina Vásquez Castillo ","Linares "],
+                    ["Rafaela Pino Gaete","Santa Cruz"],
+                    ["Sebastian Neira ","Concepción "],
+                    ["Enrique Caro","Santiago"],
+                    ["Monserrat Rodríguez ","Santiago"],
+                    ["Paloma Rodriguez ","Santiago "],
+                    ["Francisco González ","Catemu "],
+                    ["Emily Reyes ","Catemu "]]
+
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def Electricidad(self): 
+        id_taller = 45
+        nombre_taller ="Electricidad domiciliaria"
+        edad = "15 - 20 años"
+        lugar = "Sala 1 Miguel Magone"
+        tallerista = "Mario Salazar"
+        integrantes =[["Jonathan domenes","Punta arenas"],
+                    ["Benjamín Ignacio Castillo Gajardo ","Talca"],
+                    ["Anahí Sanchez ","Puerto Montt "],
+                    ["Benjamin caceres ","Talca "],
+                    ["Emanuel Oliva ","Santiago"],
+                    ["Bastian Pizarro","Santiago"],
+                    ["Natanael Sanhueza ","Santiago "],
+                    ["Matías Geraldo ","IQUIQUE"],
+                    ["Jordan araya","La serena"],
+                    ["Martin bugueño ","La serena"],
+                    ["Dylan yanes","La serena"],
+                    ["Diego Fajardo ","La Serena "],
+                    ["Martin zarate","La serena"],
+                    ["Alex dubo","La serena"],
+                    ["Alexander Alarcón ","La serena "],
+                    ["Raúl González ","La serena"],
+                    ["Alfredo Abraham Castillo Díaz ","La Serena "],
+                    ["Martin Seron","Puerto Montt"],
+                    ["Sebastián Muñoz ","Puerto montt"],
+                    ["Tomás Zúñiga ","Puerto montt"],
+                    ["Sofia Subiabre","Puerto montt"],
+                    ["Benjamin Hernandez","Santiago"],
+                    ["Agustin jorquera ","La serena "],
+                    ["Felipe valenzuela ","La serena "],
+                    ["Eduard Suazo ","Chile "],
+                    ["Sebastian Benavides ","Valdivia"],
+                    ["Yerko araya","Coquimbo"],
+                    ["Santiago Andres Jaramillo Parga","Punta Arenas"],
+                    ["angel fuentes ","Punta arenas "]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def introLiturgia(self): 
+        id_taller = 46
+        nombre_taller = "Introducción a la liturgia"
+        edad = "todas las edades (12 - 29)"
+        lugar = "Sector Valponasca"
+        tallerista = "Francisco Sumonte"
+        integrantes = [["Joaquin alexis valdebenito arriagada ","Concepción "],
+                        ["Joaquin Bravo","Talca"],
+                        ["Tamara Garcia ","Concepción "]]
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def Animacion(self): 
+        id_taller = 47
+        nombre_taller =  "Animación"
+        edad =  "15 - 20 años"
+        lugar = "Sector Comedor"
+        tallerista = "Elías Contreras"
+        integrantes = [["María Esperanza Martínez Brizuela ","Los Andes"],
+                        ["Maite Araceli Lemus Olivares ","Los Andes "],
+                        ["Sofia celpa","Los andes"],
+                        ["Javiera Sánchez ","Valparaiso "],
+                        ["Florencia baack ","Valparaíso "],
+                        ["Anais Maita","Iquique"],
+                        ["Daniel Herrera","Iquique"],
+                        ["Matias Zuleta","Iquique"],
+                        ["Matias Navia Bustos","Iquique"],
+                        ["Constanza Sanhueza","Santiago de Chile"],
+                        ["Alan Saez ","Antofagasta"],
+                        ["Matias Marambio ","Iquique "],
+                        ["Genesis Segura Contreras","Puerto Montt"],
+                        ["Martin Subiabre ","Puerto Montt "],
+                        ["Silvia Frutos ","Asunción "],
+                        ["Javier Arturo Pucheu Córdova ","Concepción "],
+                        ["Francisca Hernandez ","Puerto Natales"],
+                        ["Tomas Muñoz ","La serena "],
+                        ["Rodrigo Castillo","La serena"],
+                        ["Cristopher Hernández","Puerto Natales"],
+                        ["Simon merino","Concepción "],
+                        ["Martina González","Concepción "],
+                        ["Diego San Martin ","Concepción "],
+                        ["Ruben alonso valladares romero ","Linares "],
+                        ["Eduardo Chandía","Concepcion"],
+                        ["Cristóbal alegría ","Punta arenas "],
+                        ["Axel rozas ","Punta arenas "],
+                        ["Francisca Zúñiga ","Linares"],
+                        ["Martin lopez ","Punta Arenas "],
+                        ["sebastián huenumán","Punta Arenas"]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def Malabarismo(self): 
+        id_taller = 48
+        nombre_taller = "Malabarismo artístico"  
+        edad =  "todas las edades (12 - 29)"
+        lugar =  "Zona Roma"
+        tallerista = "Julian Prech"
+        integrantes =  [["Martina Vargas","Puerto Montt"],
+                        ["Estefania Katerine Peralta Peralta","Maule"],
+                        ["Javiera Sánchez","Valparaiso"],
+                        ["Florencia baack","Valparaíso"],
+                        ["Benjamín Núñez","Santiago"],
+                        ["Paz Cottenie Vargas","Puerto Montt"],
+                        ["Sebastian Delgado","Puerto Natales"],
+                        ["Casandra Olivares","Punta Arenas"],
+                        ["Andree Hormazabal Norambuena","Linares"],
+                        ["Mayta Conejeros","Valdivia"],
+                        ["Benjamin Inostroza","Concepción"],
+                        ["Matias alonso verdugo bravo","Talca"],
+                        ["Magaly Rodríguez","La serena"],
+                        ["Guido Torres","La Serena"],
+                        ["Jeferson Rampos","Santiago"],
+                        ["Mariana Salazar","Santiago"],
+                        ["Giselle Jofre","Santiago"],
+                        ["Cristóbal Ortega","Santiago"],
+                        ["Joan Gutiérrez","Antofagasta"],
+                        ["Nancy García","Santiago"],
+                        ["Diego Mora Michea","Copiapo"],
+                        ["Guillermo Henriquez","Talca"],
+                        ["Diego Antonio Domingo Alfaro Wagner","Linares"],
+                        ["Martin Reveco Villagra","Linares"]]
+
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def mimossketch(self): 
+        id_taller = 49
+        nombre_taller = "Mimos / Sketches"
+        edad =  "todas las edades (12 - 29)"
+        lugar = "Zona Turín"
+        tallerista = "Manuel Aguilar"
+        integrantes =  [["Matías Ignacio Barriga Contreras","Santiago de Chile"],
+                        ["Vicente Basaure","Santiago de Chile"],
+                        ["Sthephano nathano banchieri Suárez ","Santiago de chile"],
+                        ["Kevin Gutiérrez López ","Copiapó "],
+                        ["Ian Andrés Vilches Órdenes","Copiapó."],
+                        ["Alexander pozo","Santiago "],
+                        ["Dylan ","Talca"],
+                        ["Emilio Ramirez Leiva","Santiago"],
+                        ["Alexander Mustafa","Santiago"],
+                        ["Valery Castro","santiago"],
+                        ["Nicolás Cherme ","Antofagasta "],
+                        ["Anyelo mancilla ","Puerto natales "],
+                        ["Tomas calisaya alfaro","Alto hospicio"],
+                        ["Karol Lobos ","Villa alemana"],
+                        ["Carla Flores","Petorquita"],
+                        ["Amaro Lobos ","Valparaíso "],
+                        ["Rosa Carolina MUÑOZ","TALCA"],
+                        ["Franz Yamil Quispe Alave ","La Paz"]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def matetruco(self): 
+        id_taller = 50
+        nombre_taller = "Mate y truco"
+        edad = "todas las edades (12 - 29)"
+        lugar = "Zona Mornese"
+        tallerista = "Kevin Raibaud"
+        integrantes = [["Erwin Velasquez","Punta Arenas"],
+                        ["Matías Cardenas isla","Punta Arenas"],
+                        ["vicente oyarzo","punta arenas"],
+                        ["Emily Cáceres","Alto hospicio"],
+                        ["Carlos Aranda Badilla","Santiago"],
+                        ["Jose luis canuman cardenas","Natales"],
+                        ["Sebastián Ferreira Varela","Concepción"],
+                        ["Agustín armando Mendoza roman","Concepción"],
+                        ["Pablo ojeda ojeda","Punta arenas"],
+                        ["Vicente Ferreira","Concepcion"],
+                        ["Mariel Raposo","Concepción"],
+                        ["Nicolas Fernandez","Alto Hospicio"],
+                        ["Cristian Cid","Concepcion"],
+                        ["Javier Ignacio Allende Diaz","Concepción"],
+                        ["Maximilliano Cuevas","Punta arenas"],
+                        ["David Alonso","Punta arenas, LSj"],
+                        ["Fernando pizarro","punta arenas"],
+                        ["Gabriel Mellado","Punta Arenas"],
+                        ["Ditter maximiliano Samuel Cabrera carrasco","Alto hospicio"],
+                        ["diego chacana","punta arenas"],
+                        ["Juan Pablos Villalba muñoz","Concepción"],
+                        ["Ian Chanquey","Punta Arenas"],
+                        ["Amaro Carvajal","Concepción"],
+                        ["Jorge Cano","Concepción"],
+                        ["Benjamín Mora","Concepción"],
+                        ["Diego Andrade","Valdivia"],
+                        ["Benjamín Pérez","Punta Arenas"],
+                        ["Maximiliano González","Santiago"],
+                        ["Samuel Moreno Vargas","Punta Arenas"],
+                        ["Pedro Ceballos","Punta Arenas"]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def lengua(self): 
+        id_taller = 51
+        nombre_taller = "Lengua de Señas"
+        edad = "16 - 29 años"
+        lugar = "Costado de Miguel Magone"
+        tallerista = "Constanza Domínguez"
+        integrantes = [["Beatriz Barrera Munita","Los Andes"],
+                        ["Camila Alfaro ","Santiago "],
+                        ["Guilianna Rosas","Los Andes "],
+                        ["Michelle Goldschmidt ","Valparaíso "],
+                        ["Francisca Julio","Valparaíso"],
+                        ["Karolayn Cardenas ","Punta Arenas"],
+                        ["Tiare caiguan","Punta Arenas"],
+                        ["Fernanda Merino ","Santiago "],
+                        ["Ana Cumare","Punta Arenas"],
+                        ["Sebastián Alexis Paredes Altamirano ","Punta Arenas"],
+                        ["Raimundo Cruz Corvalán","Santiago de Chile"],
+                        ["Ignacio Andres Anabalón Mella","Santiago de Chile"],
+                        ["Matías Ortiz","Santiago"],
+                        ["Maria Ignacia Villalobos Zúñiga ","Talca"],
+                        ["Franco Peñaloza","Santiago"],
+                        ["Aaron Gallardo ","Santiago"],
+                        ["Alonso Orellana","Santiago"],
+                        ["Felipe Mendez","Santiago"],
+                        ["martina andrade ","copiapó "],
+                        ["Agustín Quijada ","Linares"],
+                        ["Martín Díaz Pizarro ","Copiapó "],
+                        ["MANUEL BARRIA","PUERTO MONTT"],
+                        ["Blety Rivera ","Santiago "],
+                        ["Anais Aros","Puerto Montt"],
+                        ["Fernanda Lagos U. ","Puerto montt"],
+                        ["Amaya Vargas","Puerto Montt"],
+                        ["Anais Aros","Puerto Montt"],
+                        ["Constanza Castillo ","Santiago "],
+                        ["Loreto Chepilla ","Copiapó "],
+                        ["Fernando maximiliano alcota Alfaro ","Copiapo "]]
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def magia(self): 
+        id_taller = 52
+        nombre_taller = "Magia"
+        edad = "12 - 16 años"
+        lugar = "Costado Bartolomé Garelli"
+        tallerista = "Romedil Ilufi"
+        integrantes = [["Rocio Cárcamo ","Talca "],
+                        ["Gabriella Carbone","Puerto Montt"],
+                        ["Jake Hernández","Puerto Montt"],
+                        ["Florencia Vergara","Talca"],
+                        ["Yoisce Serón ","Puerto Montt "],
+                        ["Trinidad Vidal","Puerto Montt"],
+                        ["Scarlett Fuentes ","Puerto Montt"],
+                        ["Giovanny Opazo","Santiago Centro"],
+                        ["Jose Vera","PUERTO MONTT"],
+                        ["David Villarroel ","Puerto Montt"],
+                        ["Vicente Nuñez","Puerto Montt"],
+                        ["Christopher Ávila","Alto Hospicio"],
+                        ["Nahún Cantillano","Alto Hospicio"],
+                        ["Giuliana Saez","Santiago "],
+                        ["Remigio Maidana Arancibia ","Iquique "],
+                        ["Kostis opazo","Antofagasta"],
+                        ["Ángel Embry","Valparaíso "],
+                        ["Anibal Asencio","Puerto montt"],
+                        ["José Vera","Puerto Montt"],
+                        ["Matias carilao","Puerto natales"],
+                        ["Mathias Alfaro","Alto Hospicio"],
+                        ["Ruben Segura","La serena"],
+                        ["Simon fernandez Sasso","La serena"],
+                        ["Tomás Vera","La serena "],
+                        ["Sebastián Solís ","Puerto Montt "],
+                        ["Sofia","Santiago"],
+                        ["Carlos manzano ","Santiago "],
+                        ["Tomas Samas","Santiago"],
+                        ["Valentina Dinamarca","santiago"],
+                        ["Enzo mancilla ","Valdivia "]]
+
+
+
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def animereligion(self): 
+        id_taller = 53
+        nombre_taller = "Animé y religión"
+        edad =  "todas las edades (12 - 29)"
+        lugar =  "Costado Emma Ferrero"
+        tallerista = "Matías Cifuentes"
+        integrantes =  [["Catalina Valdés","Talca"],
+                        ["Constanza Díaz ","Antofagasta "],
+                        ["Alexander Lemus","Antofagasta"],
+                        ["Martin Guerra ","Antofagasta "],
+                        ["JORGE ALVAREZ","copiapo"],
+                        ["Ignacio Yañez ","Santiago"],
+                        ["Juan Paulo Raposo","Concepción"],
+                        ["Joaquín Huamanga ","Santiago "],
+                        ["Pedro pizarro","Santiago "],
+                        ["Martín Valdés ","Santiago"],
+                        ["Franco Muñoz","Santiago "],
+                        ["Francisco Perez Aceituno","Santiago"],
+                        ["Matilda vejar ","Concepción "],
+                        ["Alessandro D'Angelo ","Santiago "],
+                        ["Justin Arostica ","Copiapó "]]
+
+        
+        return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
+    
+    def whasprevention(self): 
+        id_taller = 54
+        nombre_taller = "Wash Prevention"
+        edad =  "todas las edades (12 - 29)"
+        lugar = "Zona enfermería"
+        tallerista = "Cruz Roja"
+        integrantes =[["Maximiliano Barrios","Antofagasta"],
+                    ["Javier Sanhueza Gutiérrez","Concepción"],
+                    ["Justin Arostica","Copiapó"],
+                    ["Diego Mora Michea","Copiapo"],
+                    ["Emilio Sepulveda","Santiago centro"],
+                    ["Valentina Bravo","Santiago"],
+                    ["Martín Letelier","Talca"],
+                    ["Emilia Taucan","santiago"],
+                    ["Antonella Diaz Castillo","Valparaíso"],
+                    ["Aleshka Cruz","Valparaiso"],
+                    ["Mayra Anacona","Valparaiso"],
+                    ["Pascale Pérez","Valparaíso"],
+                    ["Danae Álvarez","Valparaiso"],
+                    ["Pascale Pérez","Valparaíso"],
+                    ["Anaís Echeverría","Valparaíso"],
+                    ["Paola Espinoza","Valparaíso"],
+                    ["Anaís Cabezas Vera","Valparaíso"],
+                    ["Sofia Fernández Jiménez","Valparaíso"],
+                    ["Martina Aguirre","Valparaíso"],
+                    ["Fernanda Astorga","Valparaíso"]]
+
+
+        
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes

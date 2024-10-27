@@ -258,6 +258,10 @@ def page_not_found(error):
 def service_worker():
     return app.send_static_file('js/service-worker.js')
 
+@app.route('/cache-version.json')
+def cache_config():
+    return jsonify({"cacheVersion": "V1.27.10.2024.12.54"})
+
 
 def determinar_momento_del_dia():
     hora_actual = datetime.now().hour  # Obtiene la hora actual
@@ -280,4 +284,4 @@ def determinar_momento_del_dia():
         return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5001)
+    app.run(debug=False,port=5001)

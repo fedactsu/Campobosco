@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'V1.27.10.2024.12.54';
+const CACHE_NAME = 'offline-cache-v8';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',
@@ -193,62 +193,39 @@ const urlsToCache = [
 
 ];
 
-async function updateCacheIfNeeded() {
-    try {
-        // Obtén la versión del caché desde el servidor
-        const response = await fetch('/cache-version.json');
-        const config = await response.json();
-
-        // Compara la versión en el servidor con la versión local
-        if (config.cacheVersion !== CACHE_VERSION) {
-            console.log(`Nueva versión de caché detectada: ${config.cacheVersion}. Actualizando...`);
-
-            // Limpia el caché antiguo
-            const cacheNames = await caches.keys();
-            await Promise.all(
-                cacheNames.map(cacheName => caches.delete(cacheName))
-            );
-
-            // Crea un nuevo caché
-            const cache = await caches.open(config.cacheVersion);
-            await cache.addAll(urlsToCache);
-
-            console.log('Caché actualizado con éxito');
-        }
-    } catch (error) {
-        console.log('Error al actualizar el caché:', error);
-    }
-}
-
-// Evento de instalación
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open(CACHE_VERSION)
-            .then((cache) => cache.addAll(urlsToCache))
+        caches.open(CACHE_NAME)
+            .then((cache) => {
+                return cache.addAll(urlsToCache);
+            })
     );
 });
 
-// Evento de activación: Actualiza el caché si hay una nueva versión
-self.addEventListener('activate', (event) => {
-    event.waitUntil(updateCacheIfNeeded());
+// Activación del Service Worker y eliminación de cachés antiguos
+self.addEventListener('activate', function (event) {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.map(function (cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        console.log('Eliminando caché antiguo:', cacheName);
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
 });
 
-// Evento fetch para interceptar las solicitudes
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
-            .then((response) => response || fetch(event.request))
-    );
-
-    // Intenta actualizar el caché en cada fetch si hay conexión
-    event.waitUntil(
-        fetch('/cache-version.json')
-            .then(response => response.json())
-            .then(config => {
-                if (config.cacheVersion !== CACHE_VERSION) {
-                    return updateCacheIfNeeded();
-                }
+            .then((response) => {
+                return response || fetch(event.request);
             })
-            .catch(error => console.log("Sin conexión. Usando caché existente.", error))
     );
 });
+
+

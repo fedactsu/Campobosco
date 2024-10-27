@@ -22,7 +22,7 @@ class cancionero():
                         a ese encuentro me asomo feliz <br>
                         ¡Cristo y los jóvenes son mi lugar! </p>
                         """
-        self.dbamigo= """
+        self.dbamigo = """
                         <h3>Don Bosco amigo</h3>
                         <p>Hoy cantemos alegres<br>
                         la  fiesta del siglo <br>
@@ -46,7 +46,7 @@ class cancionero():
                             la vida que Él te da.</p>
                             <p><strong>Yo creo en Dios que  canta Que la vida hace cantar. (bis)</strong></p>
                             """
-        self.senortenpiedad= """"<h3><strong>Señor ten piedad </strong><strong>(C.  Fones)</strong><strong> </strong></h3>
+        self.senortenpiedad = """"<h3><strong>Señor ten piedad </strong><strong>(C.  Fones)</strong><strong> </strong></h3>
                             <p>Tú que has sido enviado a sanar<br>
                             los corazones afligidos<br>
                             <strong>Señor ten piedad de nosotros</strong><br>
@@ -62,14 +62,14 @@ class cancionero():
                             <strong>Señor ten piedad de nosotros</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.ohsenortenpiedad= """<h3>Oh Señor, ten  piedad</h3>
+        self.ohsenortenpiedad = """<h3>Oh Señor, ten  piedad</h3>
                             <p><strong>Oh  Señor</strong>, ten piedad,<br>
                             de  nosotros ten piedad (bis) </p>
                             <p><strong>Cristo,</strong> ten piedad<br>
                             de  nosotros ten piedad (bis)</p>
                             <p><strong>Oh  Señor</strong>, ten piedad,<br>
                             de  nosotros ten piedad (bis)</p>"""
-        self.kyrieeleison= """<h3><strong>Kyrie eleison</strong></h3>
+        self.kyrieeleison = """<h3><strong>Kyrie eleison</strong></h3>
                             <p>Como una oveja pérdida <br>
                             por el pecado herida<br>
                             yo suplico perdón<br>
@@ -127,7 +127,7 @@ class cancionero():
                             <p><strong>Gloria a Dios en el cielo…</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.gloriatieternoamor="""<h3>Gloria a ti eterno amor </h3>
+        self.gloriatieternoamor = """<h3>Gloria a ti eterno amor </h3>
                             <p><strong>Gloria  a ti, oh Dios</strong><br>
                             <strong>En el cielo y en la tierra por tu  inmenso amor, te bendecimos,</strong><br>
                             <strong>Por tu inmenso amor.</strong></p>
@@ -150,14 +150,14 @@ class cancionero():
                             <p><strong>Gloria  a ti, oh Dios…</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.diosestaaqui= """<h3>Dios está aquí</h3>
+        self.diosestaaqui = """<h3>Dios está aquí</h3>
                             <p>Dios está aquí <br>
                             tan cierto como el  aire que respiro<br>
                             tan cierto como la  mañana se levanta<br>
                             tan cierto como yo le hablo<br>
                             y Él me puede oír.</p>
                             """
-        self.margaritas= """<h3>Margaritas </h3>
+        self.margaritas = """<h3>Margaritas </h3>
                             <p><br>
                             Margaritas comenzaron a salir<br>
                             y me anunciaron lo que está por venir.<br>
@@ -168,22 +168,22 @@ class cancionero():
                             serán los tiempos de la tranquilidad,<br>
                             serán los tiempos de la felicidad,<br>
                             y florecerán como las margaritas.</p>"""
-        self.aleluya1=       """<h3>Aleluya, gloria  aleluya</h3>
+        self.aleluya1 = """<h3>Aleluya, gloria  aleluya</h3>
                             <p>Aleluya, gloria aleluya (bis) <br>
                             aleluya, gloria(bis) aleluya Aleluya, gloria (bis)  aleluya</p>
                             """
-        self.aleluya2=      """<h3>Aleluya vivo estás</h3>
+        self.aleluya2 = """<h3>Aleluya vivo estás</h3>
                             <p>Aleluya, aleluya<br>
                             vivo estás Señor Jesús Aleluya,  aleluya<br>
                             para siempre eres la luz.</p>
                             """
-        self.entisenor=     """<h3>En Ti Señor</h3>
+        self.entisenor = """<h3>En Ti Señor</h3>
                             <p>En Ti, en Ti, en Ti Señor<br>
                             Hemos puesto nuestra fe.<br>
                             En Ti, en Ti, en Ti Señor<br>
                             Hemos puesto nuestra fe.</p>
-                            """    
-        self.dondehayanmor= """<h3>Donde hay amor</h3>
+                            """
+        self.dondehayanmor = """<h3>Donde hay amor</h3>
                             <p>Donde hay amor y caridad<br>
                             Donde hay amor, <br>
                             Dios ahí está (bis)</p>
@@ -212,7 +212,7 @@ class cancionero():
                             transforma nuestras vidas y nuestro hogar.</p>
                             <p>&nbsp;</p>
                             """
-        self.tomadyrecibir="""<h3><strong>Tomad, Señor y recibid</strong></h3>
+        self.tomadyrecibir = """<h3><strong>Tomad, Señor y recibid</strong></h3>
                             <p>Tomad Señor  y recibid<br>
                             la ofrenda  que traigo:<br>
                             pan y vino  al altar.<br>
@@ -239,8 +239,8 @@ class cancionero():
                             les des de  tu paz.<br>
                             Tomad Señor  y recibid...</p>
                             <p>&nbsp;</p>
-                            """    
-        self.entusmanoshoy="""<h3>En tus manos hoy</h3>
+                            """
+        self.entusmanoshoy = """<h3>En tus manos hoy</h3>
                             <p>Nuestras vidas,  nuestros dones, <br>
                             nuestro amor<br>
                             Son regalos que  ponemos<br>
@@ -260,7 +260,7 @@ class cancionero():
                             <p><strong>&nbsp;</strong></p>
                             <p><strong>&nbsp;</strong></p>
                             """
-        self.santofones=    """<h3><strong>Santo </strong><strong>(C. Fones)</strong><strong> </strong></h3>
+        self.santofones = """<h3><strong>Santo </strong><strong>(C. Fones)</strong><strong> </strong></h3>
                             <p><strong>Santo,  Santo, </strong><br>
                             <strong>Santo  es el Señor</strong><br>
                             <strong>Dios  del universo,</strong><br>
@@ -281,7 +281,7 @@ class cancionero():
                             <strong>Santo  es el Señor.</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.santocontinental="""<h3><strong>Santo continental</strong></h3>
+        self.santocontinental = """<h3><strong>Santo continental</strong></h3>
                             <p>Santo, Santo, Santo<br>
                             el Señor Dios del universo<br>
                             el cielo y la tierra<br>
@@ -294,7 +294,7 @@ class cancionero():
                             <strong>hosanna en lo alto del cielo (bis)</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.corderojuvenil="""<h3><strong>Cordero juvenil</strong></h3>
+        self.corderojuvenil = """<h3><strong>Cordero juvenil</strong></h3>
                             <p>Cordero  de Dios que quitas <br>
                             el  pecado del mundo<br>
                             <strong>ten piedad, ten piedad </strong></p>
@@ -306,7 +306,7 @@ class cancionero():
                             <p><strong>danos la paz,  danos la paz danos la paz.</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.corderodios=   """<h3><strong>Cordero de Dios</strong></h3>
+        self.corderodios = """<h3><strong>Cordero de Dios</strong></h3>
                             <p>Cordero de Dios<br>
                             tú que quitas<br>
                             el pecado del  mundo<br>
@@ -323,7 +323,7 @@ class cancionero():
                             ven y danos la paz.</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.donboscoensenanos ="""<h3>Don Bosco  enséñanos</h3>
+        self.donboscoensenanos = """<h3>Don Bosco  enséñanos</h3>
                             <p>Cuántos sueños has tenido, <br>
                             cuánta esperanza en ti guardada. <br>
                             Es que el Señor<strong> </strong>confió en  ti su misión: <br>
@@ -357,7 +357,7 @@ class cancionero():
                             <strong>y lo demás… llévalo&rdquo;</strong>. </p>
                             <p>&nbsp;</p>
                             """
-        self.procurahacerteamar="""<h3><strong>Procura  hacerte amar</strong></h3>
+        self.procurahacerteamar = """<h3><strong>Procura  hacerte amar</strong></h3>
                             <p>La vida de ustedes<br>
                             es el más precioso bien<br>
                             me basta que seas joven<br>
@@ -391,7 +391,7 @@ class cancionero():
                             <strong>milagros haz de ver</strong></p>
                             <h1>&nbsp;</h1>
                             """
-        self.contigomaria="""<h3><strong>Contigo  María</strong></h3>
+        self.contigomaria = """<h3><strong>Contigo  María</strong></h3>
                             <p>Quiero caminar contigo María<br>
                             pues Tú  eres mi madre eres mi guía<br>
                             tú eres para mí <br>
@@ -428,7 +428,7 @@ class cancionero():
                             <strong>Hoy yo te ofrezco toda mi vida. </strong></p>
                             <p>&nbsp;</p>
                             """
-        self.auxiliadoradonbosco="""<h3><strong>Auxiliadora de don Bosco</strong></h3>
+        self.auxiliadoradonbosco = """<h3><strong>Auxiliadora de don Bosco</strong></h3>
                             <p>Eres María Madre nuestra<br>
                             esclava humilde del Señor<br>
                             eres purísima doncella<br>
@@ -455,7 +455,7 @@ class cancionero():
                             <strong>¡Ave, ave María ave!</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.mariaes="""<h3><strong>María es</strong></h3>
+        self.mariaes = """<h3><strong>María es</strong></h3>
                             <p>Hace unos días me han preguntado: <br>
                             ¿Quién es María y porque aún hay tantos <br>
                             que a ella acuden y en ella esperan<br>
@@ -481,7 +481,7 @@ class cancionero():
                             <strong>Muy dentro tuyo hallarás respuesta</strong></p>
                             <p>&nbsp;</p>
                             """
-        self.mariamirame="""<h3><strong>María mírame</strong></h3>
+        self.mariamirame = """<h3><strong>María mírame</strong></h3>
                             <p>María mírame, María mírame<br>
                             Si tú me miras, Él también me mirará <br>
                             Madre mía mírame, de la&nbsp;mano llévame <br>
@@ -499,7 +499,7 @@ class cancionero():
                             Madre mía mírame, de la&nbsp;mano llévame <br>
                             Muy cerca de Él, que ahí me quiero quedar</p>
                             <p><strong>En tus brazos quiero, descansar.</strong><strong> </strong></p>"""
-        self.himnodonbosco="""
+        self.himnodonbosco = """
                             <h3 dir="ltr">NO PARES DE SOÑAR</h3>
                             <p dir="ltr">Don Bosco<br>
                             ¡no pares de soñar!<br>
@@ -546,7 +546,7 @@ class cancionero():
                             los sueños se hacen realidad</strong><br>
                             </p>
                             """
-        self.cartaidentidad="""
+        self.cartaidentidad = """
                         <p id="titulo1" ><strong>1. SALUDOS INSPECTOR SDB Y PROVINCIAL FMA</strong></p>
 <p>La realidad del Movimiento Juvenil Salesiano (MJS) va tomando renovada consistencia insieme en nuestra Inspectoría. Las diversas intervenciones de los Rectores Mayores, Don Pascual Chávez y Don Ángel Fernández, Madre Antonia Colombo y Madre Ivonne Reungoat, han ido apoyando la consolidación del protagonismo y compromiso juvenil en el MJS, con el acompañamiento de Salesianos e Hijas de María Auxiliadora.</p>
 <p>Es una experiencia que conocemos de cerca, por sus orígenes, y que ha reflexionado la identidad y la coordinación de los diversos grupos de jóvenes que existen en nuestros ambientes educativo-pastorales. Esta reflexión sobre la experiencia vivida invita a caminar siempre más hacia un único movimiento que, igualmente, vaya animando y moviendo los procesos e itinerarios formativos en los diversos grupos.</p>
@@ -717,7 +717,7 @@ P. Alberto Lorenzelli, SDB</em></strong></p>
     y honrados ciudadanos&rdquo; en la sociedad.</p>
     <a href="#title1" class="back-to-ref" style="font-size:30px">⤴️</a>
                             """
-        self.protocolo="""
+        self.protocolo = """
 <br><br>
 <h3 id="titulo1"><strong>1. INTRODUCCIÓN</strong></h3>
 <p>El presente documento se propone como un sencillo y práctico instrumento para acompañar la experiencia que, nuestras
@@ -1246,67 +1246,13 @@ P. Alberto Lorenzelli, SDB</em></strong></p>
             class="volverarriba">Volver</a></p>
 </section>
                     """
-        self.talleres = [
-    ["Fútbol", "18 - 29 años", " Cancha 1 del sector acampada"],
-    ["Fútbol", "12 - 17 años"," Cancha 2 del sector acampada"],
-    ["Volleyball femenino", "12 - 17 años", " Costado módulo 1 "],
-    ["Volleyball", "18 - 29 años", " Costado módulo 2 "],
-    ["Volleyball", "18 - 29 años", " Multicancha "],
-    ["Basketball", "14 - 22 años", " Multicancha"],
-    ["Quemadas", "12 - 16 años", " Costado módulo 2"],
-    ["Tenis de Campo", "12 - 16 años", " Rotonda / cerca de turín"],
-    ["Pesca con mosca", "12 - 16 años", " Costado módulo 3"],
-    ["Trekking", "17 - 29 años", " Zona Nizza"],
-    ["Taekwondo", "15 - 20 años", " Costado módulo 1"],
-    ["Cheerleader", "15 - 20 años", " Costado módulo 2"],
-    ["Acondicionamiento Físico", "15 - 20 años", " Costado módulo 3"],
-    ["Orientación Terrestre", "todas las edades (12 - 29)","Zona Mornese"],
-    ["Nudos", "todas las edades (12 - 29)"," Costado comedor "],
-    ["Escultismo", "todas las edades (12 - 29)"," Costado comedor"],
-    ["Coro Litúrgico", "17 - 29 años", " Zona Turín "],
-    ["Coro Litúrgico", "17 - 29 años", " Zona Turín "],
-    ["Coro", "12 - 16 años", " Zona Turín "],
-    ["Canto", "12 - 16 años", " Zona Nizza "],
-    ["Canto", "17 - 22 años", " Zona Nizza"],
-    ["Manualidades", "todas las edades (12 - 29)", " Patio techado módulo 1"],
-    ["Manualidades", "todas las edades (12 - 29)", " Sala 2 (módulo 1)"],
-    ["Manualidades", "12 - 16 años", " Sala 1 (módulo 2) "],
-    ["Manualidades", "12 - 16 años", "Sala 2 (módulo 2) "],
-    ["Mandalas", "todas las edades (12 - 29)", " Sala 1 (módulo 3)"],
-    ["Dibujo con patrones en tiza", "12 - 16 años", " Sector capilla"],
-    ["Origami", "12 - 16 años", " Patio techado módulo 1"],
-    ["Origami", "17 - 29 años", " Patio techado módulo 2"],
-    ["Fotografía e I.A.", "todas las edades (12 - 29)", " Zona Roma"],
-    ["Fotografía", "12 - 16 años", " Zona Roma "],
-    ["Autoconocimiento", "17 - 29 años", " Zona Roma"],
-    ["Desarrollo Personal", "17 - 29 años", " Zona Ibecchi"],
-    ["Liderazgo", "12 - 18 años", " Patio techado módulo 3"],
-    ["Cueca", "todas las edades (12 - 29)", " Zona Mornese"],
-    ["Cueca", "todas las edades (12 - 29)", " Zona Roma"],
-    ["Danza contemporánea", "todas las edades (12 - 29)", " Zona Mornese"],
-    ["Danza contemporánea", "12 - 16 años", " Zona Ibecchi"],
-    ["Salsa", "12 - 16 años", " Zona Turín"],
-    ["Reciclaje", "12 - 16 años", " Patio techado módulo 3"],
-    ["Agroecología y plantación sustentable", "12 - 16 años", " Zona Nizza"],
-    ["Jardinería", "12 - 20 años", " Zona Mornese"],
-    ["Tallado en madera", "12 - 17 años", " Patio techado módulo 2"],
-    ["Encuadernación", "17 - 29 años", " Sala 2 (módulo 3)"],
-    ["Electricidad domiciliaria", "15 - 20 años", " Sala 1 (módulo 1)"],
-    ["Introducción a la liturgia",
-        "todas las edades (12 - 29)", " Capilla del encuentro"],
-    ["Animación", "15 - 20 años", " Sector comedor"],
-    ["Malabarismo artístico", "todas las edades (12 - 29)", " Zona Roma "],
-    ["Mimos / Sketches", "todas las edades (12 - 29)", " Zona Turín "],
-    ["Mate y truco", "todas las edades (12 - 29)", " Zona Mornese "],
-    ["Lengua de Señas", "16 - 29 años", " Costado módulo 1"],
-    ["Magia", "12 - 16 años", " Costado módulo 2"],
-    ["Animé y religión", "todas las edades (12 - 29)", " Costado módulo 3"],
-    ["Wash Prevention", "todas las edades (12 - 29)", " Sector enfermería"],
-    ["Primeros auxilios psicológico",
-        "todas las edades (12 - 29)", " Sector enfermería"],
-    ["Primeros auxilios comunitarios", "todas las edades (12 - 29)", " Sector enfermería"]]
 
     def getCan1(self):
         return self.Creemos
+
     def getCan2(self):
         return self.dbamigo
+
+
+
+

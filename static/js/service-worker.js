@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-cache-v5';
+const CACHE_NAME = 'offline-cache-v6';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',

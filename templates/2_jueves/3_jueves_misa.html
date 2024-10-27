@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand " >
+    <nav class="navbar navbar-expand ">
         <div class="nav navbar-nav d-flex justify-content-center w-100">
             <a class="nav-item nav-link" href="/inicio">
                 <h3>🏠</h3>
@@ -59,7 +59,128 @@
         </div>
         {% include 'estructura/botones.html' %}
         <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
-        
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Servicios litúrgicos
+            </a>
+
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h2 class="text-center">Distribución por Edades y Servicios Litúrgicos</h2>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Edades y lugar<sup>1</sup></th>
+                            <th>Sacerdotes</th>
+                            <th>Servicios litúrgicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>12-14 años</strong><br>
+                                <small>(430 personas aprox)</small><br>
+                                <em>En Mornese</em>
+                            </td>
+                            <td>
+                                <strong>P. David Rivera (Preside)</strong><br>
+                                P. Andrés Morales<br>
+                                P. Francisco Miranda<br>
+                                P. Hugo Strasburger<br>
+                                P. Eduardo Oviedo<br>
+                                Diácono Fabián Tabilo
+                            </td>
+                            <td>
+                                Iquique: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Victoria Romero
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>15 años</strong><br>
+                                <small>(310 personas aprox)</small><br>
+                                <em>Turín</em>
+                            </td>
+                            <td>
+                                <strong>P. Miguel Ramírez (Preside)</strong><br>
+                                P. Mauricio Jacques<br>
+                                P. Adrián Botta<br>
+                                P. Sebastián Muñoz<br>
+                                P. José Ruiz<br>
+                                Diácono Peter Vu Duc Duy
+                            </td>
+                            <td>
+                                Puerto Montt: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Hno Felipe González
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>16 años</strong><br>
+                                <small>(370 personas aprox)</small><br>
+                                <em>Roma</em>
+                            </td>
+                            <td>
+                                <strong>P. Dario Navarro (Preside)</strong><br>
+                                P. Juan Pablo Lyon<br>
+                                P. Héctor Hernández<br>
+                                P. Osvaldo Valenzuela<br>
+                                Diácono Romedil Ilufi
+                            </td>
+                            <td>
+                                Talca: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Jesús Rojas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>17 años</strong><br>
+                                <small>(330 personas aprox)</small><br>
+                                <em>I Becchi</em>
+                            </td>
+                            <td>
+                                <strong>P. Marcelo Rojas (Preside)</strong><br>
+                                P. Marco Vergara<br>
+                                P. Heriberto Cabrera<br>
+                                P. Miguel Rojas<br>
+                                P. Marcos López
+                            </td>
+                            <td>
+                                Salesianos Alameda y José Miguel Infante<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> María Gabriela
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>18 - 29 años</strong><br>
+                                <small>(390 personas aprox)</small><br>
+                                <em>Nizza</em>
+                            </td>
+                            <td>
+                                <strong>P. José Toledo (Preside)</strong><br>
+                                P. Sergio Astorga<br>
+                                P. Daniel Cerda<br>
+                                P. Juan Paredes<br>
+                                P. Manuel Fajardo
+                            </td>
+                            <td>
+                                Valparaíso: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Anita Aguilar y Favio Fatigante
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
         <p dir="ltr"><strong>Lectura de la carta del apóstol san Pablo a los Efesios 6, 10-20</strong></p>
         <p dir="ltr">Hermanos: Buscad vuestra fuerza en el Señor y en su invencible poder. Poneos las armas de Dios,
@@ -94,16 +215,14 @@
             y salvas a David, tu siervo, de la espada maligna. <strong>R/.</strong></p>
         <br />
         <p dir="ltr"><strong style="color:red">Evangelio</strong></p>
-        <p dir="ltr"><strong>Lectura del santo evangelio según san Lucas 13, 31-35</strong></p>
-        <p dir="ltr">En aquel día, se acercaron unos fariseos a decir a Jesús:&nbsp; «Sal y marcha de aquí, porque
-            Herodes quiere matarte». Jesús les dijo:<br>
-            «Id y decid a ese zorro: &ldquo;Mira, yo arrojo demonios y realizo curaciones hoy y mañana, y al tercer día
-            mi obra quedará consumada. Pero es necesario que camine hoy y mañana y pasado, porque no cabe que un profeta
-            muera fuera de Jerusalén&rdquo;. ¡Jerusalén, Jerusalén, que matas a los profetas y apedreas a los que se te
-            envían! Cuántas veces he querido reunir a tus hijos, como la gallina reúne a sus polluelos bajo las alas, y
-            no habéis querido.<br>
-            Mirad, vuestra casa va a ser abandonada. Os digo que no me veréis hasta el día en que digáis:
-            &ldquo;¡Bendito el que viene en nombre del Señor!&rdquo;». <strong>Palabra del Señor. </strong></p>
+        <p><strong>† EVANGELIO DE NUESTRO SEÑOR JESUCRISTO SEGÚN SAN MATEO</strong> 18, 1-5</p>
+        <p>En aquel momento los discípulos se acercaron a Jesús para preguntarle: «¿Quién es el más grande en el Reino
+            de los Cielos?» Jesús llamó a un niño, lo puso en medio de ellos y dijo: «Les aseguro que, si ustedes no
+            cambian o no se hacen como niños, no entrarán en el Reino de los Cielos. Por lo tanto, el que se haga
+            pequeño como este niño, será el más grande en el Reino de los Cielos. El que recibe a uno de estos pequeños
+            en mi Nombre, me recibe a mí mismo».</p>
+
+        <p><strong>Palabra del Señor</strong></p>
         <br><br><br>
 
     </div>
@@ -112,8 +231,11 @@
     </div>
 
 
-    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script>
+
+    </script>
     {% include 'estructura/footer.html' %}
 </body>
 

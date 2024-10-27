@@ -53,6 +53,144 @@
         {% include 'estructura/botones.html' %}
         <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
 
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Servicios litúrgicos
+            </a>
+
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h2 class="text-center">Distribución por Edades y Servicios Litúrgicos</h2>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Zonas</th>
+                            <th>Sacerdotes</th>
+                            <th>Servicios litúrgicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Zona Norte</strong><br>
+                                <em>En Mornese</em><br>
+                                <small>(Aprox 400 jóvenes):</small><br>
+                                Bolivia - Alto Hospicio<br>
+                                Iquique - Antofagasta<br>
+                                Calama - Copiapó - La Serena
+                            </td>
+                            <td>
+                                <strong>P. David Rivera (Preside)</strong><br>
+                                P. José Toledo<br>
+                                P. Marco Vergara<br>
+                                P. Andrés Morales<br>
+                                P. Miguel Rojas<br>
+                                P. Hugo Strasburger<br>
+                                P. Manuel Fajardo
+                            </td>
+                            <td>
+                                Copiapó<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Victoria Romero
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro Norte</strong><br>
+                                <em>En Turín</em><br>
+                                <small>(Colombia):</small><br>
+                                Los Andes - Valparaíso<br>
+                                Catemu - Santiago: Laura Vicuña<br>
+                                La Cisterna - Alameda - Patrocinio San José - Casa Salesiana
+                            </td>
+                            <td>
+                                <strong>P. Juan Pablo Moreno (Preside)</strong><br>
+                                P. Néstor Muñoz<br>
+                                P. Marcelo Rojas<br>
+                                P. Daniel Cerda
+                            </td>
+                            <td>
+                                Valparaíso SDB y Laura Vicuña La Cisterna<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> P. Daniel y Favio Fatigante
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro</strong><br>
+                                <em>En Roma</em><br>
+                                <small>(Aprox 390 jóvenes):</small><br>
+                                Paraguay - Colín - Santiago:<br>
+                                Oratorio Don Bosco - COM - María Aux.<br>
+                                Matta - San Joaquín - San Miguel,<br>
+                                Domingo Savio (San Ramón) - José Miguel Infante - Jesús el Señor - LAB
+                            </td>
+                            <td>
+                                <strong>P. Francisco Miranda (Preside)</strong><br>
+                                P. Juan Bustamante<br>
+                                P. Sergio Astorga<br>
+                                P. Osvaldo Valenzuela<br>
+                                P. Juan Paredes<br>
+                                P. Dario Navarro<br>
+                                P. Eduardo Oviedo<br>
+                                Diác. Fabián Tabilo
+                            </td>
+                            <td>
+                                María Aux. Matta y Oratorio Don Bosco<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Constanza Toro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro Sur</strong><br>
+                                <em>En I Becchi</em><br>
+                                <small>(Aprox 410 jóvenes):</small><br>
+                                Molina - Talca - Linares<br>
+                                Santa Cruz - Concepción
+                            </td>
+                            <td>
+                                <strong>P. Héctor Hernández (Preside)</strong><br>
+                                P. Mauricio Jacques<br>
+                                P. Sebastián Muñoz<br>
+                                P. Juan Pablo Lyon<br>
+                                P. José Ruiz<br>
+                                Diác. Romedil Ilufi
+                            </td>
+                            <td>
+                                Concepción y Santa Cruz<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Jesús Rojas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Sur</strong><br>
+                                <em>Nizza</em><br>
+                                <small>(Aprox 390 jóvenes):</small><br>
+                                Argentina - Valdivia<br>
+                                Puerto Montt - Punta Arenas - Puerto Natales
+                            </td>
+                            <td>
+                                <strong>P. Marcos López (Preside)</strong><br>
+                                P. Miguel Ramírez<br>
+                                P. Adrián Botta<br>
+                                Diác. Peter Vu Duc
+                            </td>
+                            <td>
+                                Valdivia SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Anita Aguilar
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
         <p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
         <p dir="ltr"><strong>Lectura del libro del Apocalipsis 7, 2-4. 9-14</strong></p>
         <p dir="ltr">Yo, Juan, vi a otro ángel que subía del oriente llevando el sello del Dios vivo. Gritó con voz
@@ -120,7 +258,8 @@
             porque de ellos es el reino de los cielos.<br>
             Bienaventurados vosotros cuando os insulten y os persigan y os calumnien de cualquier modo por mi causa.
             <br>
-            Alegraos y regocijaos, porque vuestra recompensa será grande en el cielo».</p>
+            Alegraos y regocijaos, porque vuestra recompensa será grande en el cielo».
+        </p>
         <p dir="ltr"><strong>Palabra del Señor.</strong></p>
         <br>
 
@@ -130,7 +269,7 @@
     </div>
 
 
-    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     {% include 'estructura/footer.html' %}
 </body>

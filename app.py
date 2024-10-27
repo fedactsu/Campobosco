@@ -1,7 +1,8 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask import render_template
 import configuracion as c
 import cancionero as can
+import talleres as ttlr
 from user_agents import parse
 from datetime import datetime
 
@@ -165,8 +166,16 @@ def mapaoffine():
 #-----------------------------------------------------------------------------------------------talleres
 @app.route('/talleres')
 def talleres():
-    return render_template('11_talleres/11_talleres.html',taller=can.cancionero().talleres)
+    tller = ttlr.talleres().talleres
+    return render_template('11_talleres/11_talleres.html',taller=tller) 
 
+@app.route('/consultar_taller', methods=['POST'])
+def consultar_taller():
+    data = request.json
+    iddata = data.get('id')
+    taller= ttlr.talleres().main(int(iddata))
+    id_taller, nombre_taller, edad, lugar, tallerista, integrantes = taller
+    return jsonify({"taller":nombre_taller,"edad":edad,"tallerista":tallerista,"integrantes":integrantes,"lugar":lugar})
 
 #-----------------------------------------------------------------------------------------------cancionero
 @app.route('/cancionero')

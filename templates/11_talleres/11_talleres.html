@@ -25,7 +25,7 @@
             </a>
         </div>
         <br>
-       
+
 
         <div class="container mt-5">
             <h1>Selecciona un taller</h1>
@@ -33,7 +33,7 @@
                 <option value="">Selecciona un taller</option>
 
                 {% for tller in taller %}
-                <option value="{{tller}}">{{tller[0]}} {{tller[1]}}</option>
+                <option value="{{tller}}">{{tller[1]}} {{tller[2]}}</option>
                 {% endfor %}
 
             </select>
@@ -44,14 +44,20 @@
                 <li class="list-group-item">Lugar*: <b id="lugar"></b></li>
             </ul>
             <br>
+
+            <div class="container my-4">
+                <div id="resultado"></div>
+            </div>
+
             <a href="/mapalugar/offline" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} "
-                    alt="" width="100%">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} " alt=""
+                    width="100%">
             </a>
             <p class="form-text text-muted">*Los lugares de los talleres pueden variar, por favor consultar con tu
                 tallerista</p>
 
         </div>
+
 
         <script>
             document.getElementById('textoMod').addEventListener('change', function () {
@@ -63,11 +69,42 @@
                 const lugar = document.getElementById('lugar');
                 const edad = document.getElementById('edad');
 
-                nombre.innerText = lista[0];
-                edad.innerText = lista[1];
-                lugar.innerHTML = lista[2];
 
-                console.log(lista)
+
+                console.log(lista[0])
+                $.ajax({
+                    url: '/consultar_taller',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ id: lista[0] }),
+                    success: function (data) {
+                        console.log(data);
+
+                        nombre.innerText = data.taller;
+                        edad.innerText = lista[2];
+                        lugar.innerHTML = data.lugar;
+
+
+                        $('#resultado').empty()
+                        let tabla = ""
+                        tabla = '<table class="table table-bordered table-striped table-hover" border="1"><thead class="table-dark"><tr><th>Nombre</th><th>Procedencia</th></tr><thead>';
+                        tabla += '<tbody>'
+                        data.integrantes.forEach(function (integrante) {
+                            tabla += `<tr><td>${integrante[0]}</td><td>${integrante[1]}</td></tr>`;
+                        });
+                        tabla += '</tbody></table>';
+
+                        // Agrega la tabla al resultado
+                        $('#resultado').append(tabla);
+
+
+
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("error", error)
+                    }
+
+                })
             });
         </script>
 
@@ -79,6 +116,7 @@
 
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
 
 </body>

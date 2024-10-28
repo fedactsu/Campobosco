@@ -789,7 +789,7 @@ class talleres():
         nombre_taller = "Escultismo"
         edad = "todas las edades (12 - 29)"
         lugar = "Sector Comedor"
-        tallerista = "Valentina Rifo "
+        tallerista = "Maximiliano Aravena"
         integrantes =  [["Amelia Camila caneo","Santiago la cisterna"],
                         ["Sofia Millahual","Santiago"],
                         ["Laura Cancino","Santiago"],
@@ -1297,7 +1297,8 @@ class talleres():
                         ["Catalina Romero","Valparaiso "],
                         ["Fernando Coello","Iquique"],
                         ["Pascal Pasten","Talca"],
-                        ["Josefa Mercado ","Linares "]]
+                        ["Josefa Mercado ","Linares "],
+                        ["Sol valdes ","Puerto natales "]]
 
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
     

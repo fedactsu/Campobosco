@@ -337,7 +337,8 @@ class talleres():
                        ["Fernanda Parra", ""],
                        ["Esteban Valenzuela", ""],
                        ["Benjamin Vilche", ""],
-                       ["Francisco Santibáñez", "Concepción"]]
+                       ["Francisco Santibáñez", "Concepción"],
+                       ["Fernanda Gutiérrez","Santiago"]]
 
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
 
@@ -901,7 +902,7 @@ class talleres():
         nombre_taller = "Canto 2"
         edad = "17 - 22 años"
         lugar = "Zona Nizza"
-        tallerista = " "
+        tallerista = "Christianne Neira"
         integrantes = [["Alisson Sánchez Pizarro","Talca"],
                     ["Nicolas Gallardo","Maule"],
                     ["Manuel David Cordova Calcina","Calama"],
@@ -2062,7 +2063,8 @@ class talleres():
                         ["Francisco Perez Aceituno","Santiago"],
                         ["Matilda vejar ","Concepción "],
                         ["Alessandro D'Angelo ","Santiago "],
-                        ["Justin Arostica ","Copiapó "]]
+                        ["Justin Arostica ","Copiapó "],
+                        ["Sebastián Abarza","Santiago "]]
 
         
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
@@ -2156,8 +2158,8 @@ class talleres():
         id_taller = 57
         nombre_taller = "Fútbol Femenino"
         edad =  "Todas las edades"
-        lugar = "Costado Miguel Magone"
-        tallerista = "Natalia Ponce "
+        lugar = "Canchas Patio Central"
+        tallerista = "Ana Castro"
         integrantes = [["Isidora calderon","Los andes"],
                         ["Francisca Rudolph","Talca"],
                         ["Pia Vidal","Punta Arenas"],

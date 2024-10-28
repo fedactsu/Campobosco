@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask import render_template
 import configuracion as c
 import cancionero as can
+import cacheserivicio as ccservice
 import talleres as ttlr
 from user_agents import parse
 from datetime import datetime
@@ -260,7 +261,8 @@ def service_worker():
 
 @app.route('/cache-version.json')
 def cache_config():
-    return jsonify({"cacheVersion": "V1.27.10.2024.12.54"})
+    version, files = ccservice.CacheVersion().obtenercosos()
+    return jsonify({"version":version,"files":files})
 
 
 def determinar_momento_del_dia():

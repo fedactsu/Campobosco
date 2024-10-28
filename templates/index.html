@@ -58,8 +58,6 @@
             <p>Guardando la página en caché, por favor espera...</p>
         </div>
     </main>
-    <footer>
-    </footer>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
     <script>
@@ -73,64 +71,40 @@
             });
         }
 
-        // document.getElementById('cache-btn').addEventListener('click', () => {
-        //     Swal.fire({
-        //         title: "Éxitos",
-        //         text: "Página guardada correctamente",
-        //         icon: "success"
-        //     });
-        // });
 
-        // Registro del service worker
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', async function () {
-                try {
-                    if (!navigator.onLine) {
-                        console.log("Sin conexión a Internet, usando versión en caché.");
-                        return;
-                    }
-
-                    const registration = await navigator.serviceWorker.register('/service-worker.js');
-                    console.log('ServiceWorker registrado con éxito:', registration);
-
-                    registration.onupdatefound = async function () {
-                        const installingWorker = registration.installing;
-                        installingWorker.onstatechange = async function () {
-                            if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                const serverCacheVersion = await fetch('/cache-version.json')
-                                    .then(response => response.json())
-                                    .then(data => data.cacheVersion);
-
-                                if (serverCacheVersion !== localStorage.getItem('cacheVersion')) {
-                                    if (confirm("Nueva versión disponible. ¿Actualizar ahora?")) {
-                                        localStorage.setItem('cacheVersion', serverCacheVersion);
-                                        window.location.reload();
-                                    }
-                                } else {
-                                    console.log("La versión en caché está actualizada.");
-                                }
+            navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+                registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            if (confirm('Nueva versión disponible. ¿Deseas actualizar?')) {
+                                newWorker.postMessage('skipWaiting');
                             }
-                        };
-                    };
-                } catch (error) {
-                    console.log('Error al registrar el ServiceWorker:', error);
-                }
+                        }
+                    });
+                });
+
+                navigator.serviceWorker.addEventListener('message', (event) => {
+                    if (event.data === 'updateAvailable') {
+                        if (confirm('Nueva versión de caché disponible. ¿Deseas actualizar?')) {
+                            registration.update();
+                        }
+                    }
+                });
+
+                document.getElementById('cache-btn').addEventListener('click', () => {
+                    caches.keys().then((names) => {
+                        return Promise.all(names.map((name) => caches.delete(name)));
+                    }).then(() => {
+                        alert('Caché eliminado. Actualiza para cargar la nueva versión.');
+                        registration.update();
+                    });
+                });
             });
         }
 
-        // Función para borrar el caché y actualizar
-        async function clearCacheAndReload() {
-            document.getElementById('loading').style.display = 'block';
-
-            if ('caches' in window) {
-                const cacheNames = await caches.keys();
-                await Promise.all(cacheNames.map(cache => caches.delete(cache)));
-                console.log("Caché borrado exitosamente.");
-                window.location.reload();
-            }
-        }
-
-        document.getElementById('cache-btn').addEventListener('click', clearCacheAndReload);
+        // document.getElementById('cache-btn').addEventListener('click', clearCacheAndReload);
 
 
     </script>

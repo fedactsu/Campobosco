@@ -1614,7 +1614,9 @@ class talleres():
                         ["Ozzy Cataldo","Quintero"],
                         ["Juan franke","Copiapo"],
                         ["Agustín Vera ","Talca"],
-                        ["Alex espinosa","Catemu"]]
+                        ["Alex espinosa","Catemu"],
+                        ["Jherson Robles ","Copiapó "],
+                        ["Elias cancino","Quintero"]]
 
         return id_taller, nombre_taller, edad, lugar, tallerista, integrantes
     

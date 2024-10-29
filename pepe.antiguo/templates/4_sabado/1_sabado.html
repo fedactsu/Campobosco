@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #ff6600;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link active" style="font-size: 14px;" href="/inicio"><h3>🏠</h3></a>
+            <a class="nav-item nav-link" href="/miercoles"><h3>3️⃣0️⃣</h3></a>
+            <a class="nav-item nav-link" href="/jueves"><h3>3️⃣1️⃣</h3></a>
+            <a class="nav-item nav-link" href="/viernes"><h3>0️⃣1️⃣</h3></a>
+            <a class="nav-item nav-link active" href="/sabado"><h3>0️⃣2️⃣</h3></a>
+            <a class="nav-item nav-link" href="/domingo"><h3>0️⃣3️⃣</h3></a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Domingo Savio</h1>
+        <h3 class="text-center">Sábado:</h3>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <div class="list-group mt-4">
+            <a href="/sabado/laudes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_oracion_manana.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/sabado/misa" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_eucaristia.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/sabado/horario" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/horario_rosado_1.png')}} " alt=""
+                    width="100%">
+            </a>
+            <h4 id="1">Biografía Domingo Savio</h4>
+            <p>Domingo Savio tuvo una vida muy sencilla, pero en poco tiempo recorrió un largo camino de santidad, obra
+                maestra del Espíritu Santo y fruto de la pedagogía de san Juan Bosco.</p>
+            <p>Había nacido en San Giovanni di Riva (cerca de Chieri, provincia de Turín) en una familia pobre de bienes
+                materiales, pero rica de fe. </p>
+            <p>Su niñez quedó marcada por la primera comunión, hecha con fervor a los siete años, y se distingue por el
+                cumplimiento del deber. </p>
+            <p>A sus doce años tuvo lugar un acontecimiento decisivo: el encuentro con San Juan Bosco, que lo acoge,
+                como padre y guía, en Valdocco (Turín) para cursar los estudios secundarios.</p>
+            <p>Al descubrir entonces los altos horizontes de su vida como hijo de Dios, apoyándose en su amistad con
+                Jesús y María se lanza a la aventura de la santidad, entendida como entrega total a Dios por amor. Reza,
+                pone empeño en los estudios, es el compañero más amable. </p>
+            <p>Sensibilizado en el ideal del Da mihi ánimas de san Juan Bosco, quiere salvar el alma de todos y funda la
+                compañía de la Inmaculada, de la que saldrán los mejores, de la que saldrán los mejores colaboradores
+                del fundador de los salesianos.</p>
+            <p>Habiendo enfermado de gravedad a los 15 años, regresa al hogar paterno de Mondonio (provincia de Asti),
+                donde muere serenamente el 9 de marzo de 1857 con la alegría de ir al encuentro del Señor. </p>
+            <p>Pío XII lo proclamó santo el 12 de junio de 1954.</p>
+            <h4 id="1">&nbsp;</h4>
+
+
+            <a class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CP50/domingosavio01.png')}} " alt=""
+                    width="100%">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

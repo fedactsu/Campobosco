@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #361439;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link " href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link " href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Eucaristía:</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Servicios litúrgicos
+            </a>
+
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h2 class="text-center">Distribución por Edades y Servicios Litúrgicos</h2>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Zonas</th>
+                            <th>Sacerdotes</th>
+                            <th>Servicios litúrgicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Zona Norte</strong><br>
+                                <em>En Mornese</em><br>
+                                <small>(Aprox 400 jóvenes):</small><br>
+                                Bolivia - Alto Hospicio<br>
+                                Iquique - Antofagasta<br>
+                                Calama - Copiapó - La Serena
+                            </td>
+                            <td>
+                                <strong>P. David Rivera (Preside)</strong><br>
+                                P. José Toledo<br>
+                                P. Marco Vergara<br>
+                                P. Andrés Morales<br>
+                                P. Miguel Rojas<br>
+                                P. Hugo Strasburger<br>
+                                P. Manuel Fajardo
+                            </td>
+                            <td>
+                                Copiapó<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Victoria Romero
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro Norte</strong><br>
+                                <em>En Turín</em><br>
+                                <small>(Colombia):</small><br>
+                                Los Andes - Valparaíso<br>
+                                Catemu - Santiago: Laura Vicuña<br>
+                                La Cisterna - Alameda - Patrocinio San José - Casa Salesiana
+                            </td>
+                            <td>
+                                <strong>P. Juan Pablo Moreno (Preside)</strong><br>
+                                P. Néstor Muñoz<br>
+                                P. Marcelo Rojas<br>
+                                P. Daniel Cerda
+                            </td>
+                            <td>
+                                Valparaíso SDB y Laura Vicuña La Cisterna<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> P. Daniel y Favio Fatigante
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro</strong><br>
+                                <em>En Roma</em><br>
+                                <small>(Aprox 390 jóvenes):</small><br>
+                                Paraguay - Colín - Santiago:<br>
+                                Oratorio Don Bosco - COM - María Aux.<br>
+                                Matta - San Joaquín - San Miguel,<br>
+                                Domingo Savio (San Ramón) - José Miguel Infante - Jesús el Señor - LAB
+                            </td>
+                            <td>
+                                <strong>P. Francisco Miranda (Preside)</strong><br>
+                                P. Juan Bustamante<br>
+                                P. Sergio Astorga<br>
+                                P. Osvaldo Valenzuela<br>
+                                P. Juan Paredes<br>
+                                P. Dario Navarro<br>
+                                P. Eduardo Oviedo<br>
+                                Diác. Fabián Tabilo
+                            </td>
+                            <td>
+                                María Aux. Matta y Oratorio Don Bosco<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Constanza Toro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Centro Sur</strong><br>
+                                <em>En I Becchi</em><br>
+                                <small>(Aprox 410 jóvenes):</small><br>
+                                Molina - Talca - Linares<br>
+                                Santa Cruz - Concepción
+                            </td>
+                            <td>
+                                <strong>P. Héctor Hernández (Preside)</strong><br>
+                                P. Mauricio Jacques<br>
+                                P. Sebastián Muñoz<br>
+                                P. Juan Pablo Lyon<br>
+                                P. José Ruiz<br>
+                                Diác. Romedil Ilufi
+                            </td>
+                            <td>
+                                Concepción y Santa Cruz<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Jesús Rojas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zona Sur</strong><br>
+                                <em>Nizza</em><br>
+                                <small>(Aprox 390 jóvenes):</small><br>
+                                Argentina - Valdivia<br>
+                                Puerto Montt - Punta Arenas - Puerto Natales
+                            </td>
+                            <td>
+                                <strong>P. Marcos López (Preside)</strong><br>
+                                P. Miguel Ramírez<br>
+                                P. Adrián Botta<br>
+                                Diác. Peter Vu Duc
+                            </td>
+                            <td>
+                                Valdivia SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Anita Aguilar
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
+        <p dir="ltr"><strong>Lectura del libro del Apocalipsis 7, 2-4. 9-14</strong></p>
+        <p dir="ltr">Yo, Juan, vi a otro ángel que subía del oriente llevando el sello del Dios vivo. Gritó con voz
+            potente a los cuatro ángeles encargados de dañar a la tierra y al mar diciéndoles: «No dañéis a la tierra ni
+            al mar ni a los árboles hasta que sellemos en la frente a los siervos de nuestro Dios». Oí también el número
+            de los sellados, ciento cuarenta y cuatro mil, de todas las tribus de Israel. Después de esto vi una
+            muchedumbre inmensa, que nadie podría contar, de todas las naciones, razas, pueblos y lenguas, de pie
+            delante del trono y delante del Cordero, vestidos con vestiduras blancas y con palmas en sus manos. Y gritan
+            con voz potente:<br>
+            «¡La victoria es de nuestro Dios, que está sentado en el trono, y del Cordero!».
+            Y todos los ángeles que estaban de pie alrededor del trono y de los ancianos y de los cuatro vivientes
+            cayeron rostro a tierra ante el trono, y adoraron a Dios, diciendo: «Amén. La alabanza y la gloria y la
+            sabiduría y la acción de gracias y el honor y el poder y la fuerza son de nuestro Dios, por los siglos de
+            los siglos. Amén». Y uno de los ancianos me dijo: «Estos que están vestidos con vestiduras blancas, ¿quiénes
+            son y de dónde han venido?». Yo le respondí: «Señor mío, tú lo sabrás». Él me respondió: «Estos son los que
+            vienen de la gran tribulación: han lavado y blanqueado sus vestiduras en la sangre del Cordero».
+            <strong>Palabra de Dios.</strong><br />
+            <br />
+        </p>
+        <p dir="ltr"><strong>Salmo 23</strong></p>
+        <p dir="ltr"><strong>R/. Esta es la generación que busca tu rostro, Señor.</strong></p>
+        <p dir="ltr">Del Señor es la tierra y cuanto la llena,<br>
+            el orbe y todos sus habitantes:<br>
+            él la fundó sobre los mares,<br>
+            él la afianzó sobre los ríos. <strong>R/.</strong></p>
+        <br />
+        <p dir="ltr">¿Quién puede subir al monte del Señor?<br>
+            ¿Quién puede estar en el recinto sacro?<br>
+            El hombre de manos inocentes y puro corazón,<br>
+            que no confía en los ídolos. <strong>R/.</strong></p>
+        <br />
+        <p dir="ltr">Ese recibirá la bendición del Señor,<br>
+            le hará justicia el Dios de salvación.<br>
+            Este es el grupo que busca al Señor,<br>
+            que busca tu rostro, Dios de Jacob. <strong>R/.</strong></p>
+        <br />
+        <p dir="ltr" style="color:red"><strong>Segunda lectura</strong></p>
+        <p dir="ltr"><strong>Lectura de la primera carta del apóstol san Juan 3, 1-3</strong></p>
+        <p dir="ltr">Queridos hermanos:</p>
+        <p dir="ltr">Mirad qué amor nos ha tenido el Padre para llamarnos hijos de Dios, pues ¡lo somos! El mundo no nos
+            conoce porque no lo conoció a él. Queridos, ahora somos hijos de Dios y aún no se ha manifestado lo que
+            seremos. Sabemos que, cuando él se manifieste, seremos semejantes a él, porque lo veremos tal cual es. Todo
+            el que tiene esta esperanza en él se purifica a sí mismo, como él es puro. <strong>Palabra de Dios.</strong>
+        </p>
+        <br />
+        <p dir="ltr" style="color:red"><strong>Evangelio</strong></p>
+        <p dir="ltr"><strong>Lectura del santo evangelio según san Mateo 5, 1-12a</strong></p>
+        <p dir="ltr">En aquel tiempo, al ver Jesús el gentío, subió al monte, se sentó y se acercaron sus discípulos; y,
+            abriendo su boca, les enseñaba diciendo:<br>
+            «Bienaventurados los pobres en el espíritu,<br>
+            porque de ellos es el reino de los cielos.<br>
+            Bienaventurados los mansos,<br>
+            porque ellos heredarán la tierra.<br>
+            Bienaventurados los que lloran,<br>
+            porque ellos serán consolados.<br>
+            Bienaventurados los que tienen hambre y sed de la justicia,<br>
+            porque ellos quedarán saciados.<br>
+            Bienaventurados los misericordiosos,<br>
+            porque ellos alcanzarán misericordia.<br>
+            Bienaventurados los limpios de corazón,<br>
+            porque ellos verán a Dios.<br>
+            Bienaventurados los que trabajan por la paz,<br>
+            porque ellos serán llamados hijos de Dios.<br>
+            Bienaventurados los perseguidos por causa de la justicia,<br>
+            porque de ellos es el reino de los cielos.<br>
+            Bienaventurados vosotros cuando os insulten y os persigan y os calumnien de cualquier modo por mi causa.
+            <br>
+            Alegraos y regocijaos, porque vuestra recompensa será grande en el cielo».
+        </p>
+        <p dir="ltr"><strong>Palabra del Señor.</strong></p>
+        <br>
+
+    </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

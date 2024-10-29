@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        .table-custom {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+        .table-custom th, .table-custom td {
+          vertical-align: middle;
+        }
+      </style>
+
+</head>
+
+<body class="verdebosco">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">Talleres</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="location.href='/inicio'">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <br>
+
+
+        <div class="container mt-5">
+            <h1>Selecciona un taller</h1>
+            <div class="list-group mt-4">
+                {% for ee in taller %}
+                <a href="/taller/{{ee[0]}}" class="list-group-item list-group-item-action"> <b>{{ ee[1] }}</b> {{ee[2]}} </a>
+                 {% endfor %}
+            </div>
+
+            <a href="/mapalugar/offline" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} " alt=""
+                    width="100%">
+            </a>
+            <p class="form-text text-muted">*Los lugares de los talleres pueden variar, por favor consultar con tu
+                tallerista</p>
+
+        </div>
+
+
+        <script>
+            // document.getElementById('textoMod').addEventListener('change', function () {
+            //     const seleccionar = this.value;
+            //     let cadenaLimpia = seleccionar.replace(/[\[\]\'\"]/g, "");
+            //     let lista = cadenaLimpia.split(",");
+
+            //     const nombre = document.getElementById('nombre');
+            //     const lugar = document.getElementById('lugar');
+            //     const edad = document.getElementById('edad');
+
+
+
+            //     console.log(lista[0])
+            //     $.ajax({
+            //         url: '/consultar_taller',
+            //         type: 'POST',
+            //         contentType: 'application/json',
+            //         data: JSON.stringify({ id: lista[0] }),
+            //         success: function (data) {
+            //             console.log(data);
+
+            //             nombre.innerText = data.taller;
+            //             edad.innerText = lista[2];
+            //             lugar.innerHTML = data.lugar;
+
+
+            //             $('#resultado').empty()
+            //             let tabla = ""
+            //             tabla = '<table class="table table-bordered table-striped table-hover table-custom" border="1"><thead class="table-dark"><tr><th>Nombre</th><th>Procedencia</th></tr><thead>';
+            //             tabla += '<tbody>'
+            //             data.integrantes.forEach(function (integrante) {
+            //                 tabla += `<tr><td>${integrante[0]}</td><td>${integrante[1]}</td></tr>`;
+            //             });
+            //             tabla += '</tbody></table>';
+
+            //             // Agrega la tabla al resultado
+            //             $('#resultado').append(tabla);
+
+
+
+            //         },
+            //         error: function (xhr, status, error) {
+            //             console.error("error", error)
+            //         }
+
+            //     })
+            // });
+        </script>
+
+        {% include 'estructura/footer.html' %}
+
+    </div>
+
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+
+</body>
+
+</html>

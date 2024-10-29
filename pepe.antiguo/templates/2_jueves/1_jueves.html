@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #d1c94d;
+
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand " >
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link " href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Laura Vicuña</h1>
+        <h3 class="text-center">Jueves:</h3>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <div class="list-group mt-4">
+            <a href="/jueves/laudes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_oracion_manana.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/jueves/misa" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_eucaristia.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/jueves/horario" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/horario_rosado_1.png')}} " alt=""
+                    width="100%">
+            </a>
+            <h4 id="1">Biografía Laura Vicuña</h4>
+            <p dir="ltr">Laura Carmen Vicuña nació en Santiago de Chile el 5 de abril de 1891. Educada según el Sistema
+                Preventivo de san Juan Bosco en el colegio «María Auxiliadora», de los Andes argentinos, esta ejemplar
+                adolescente no tardó en ser modelo de amistad. con Jesús, de caridad apostólica entre sus compañeras y
+                de fidelidad a sus deberes cotidianos.</p>
+            <p dir="ltr">Llena de confianza, soportó con heroica fortaleza sufrimientos físicos y morales superiores a
+                su edad. Fiel a la inspiración del Espíritu Santo, no vaciló en ofrecerse como víctima para que su madre
+                volviera al camino de la salvación. Murió el 22 de enero de 1904 en Junín de los Andes (Argentina). Juan
+                Pablo II la beatificó el 3 de septiembre de 1988 en la Colina de las bienaventuranzas juveniles de
+                Castelnuovo Don Bosco (provincia de Asti, Italia).</p>
+            <br>
+
+            <a href="#" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CP50/laurasinfondo01.png')}} " alt=""
+                    width="100%">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

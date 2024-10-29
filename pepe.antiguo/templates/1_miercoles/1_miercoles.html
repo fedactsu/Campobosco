@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #54bdc4;
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand ">
+            <div class="nav navbar-nav d-flex justify-content-center w-100">
+                <a class="nav-item nav-link" href="/inicio">
+                    <h3>🏠</h3>
+                </a>
+                <a class="nav-item nav-link active" href="/miercoles">
+                    <h3>3️⃣0️⃣</h3>
+                </a>
+                <a class="nav-item nav-link" href="/jueves">
+                    <h3>3️⃣1️⃣</h3>
+                </a>
+                <a class="nav-item nav-link" href="/viernes">
+                    <h3>0️⃣1️⃣</h3>
+                </a>
+                <a class="nav-item nav-link" href="/sabado">
+                    <h3>0️⃣2️⃣</h3>
+                </a>
+                <a class="nav-item nav-link" href="/domingo">
+                    <h3>0️⃣3️⃣</h3>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Ceferino Namuncurá</h1>
+        <h3 class="text-center">Miércoles:</h3>
+        <div class="d-flex justify-content-center">
+            <a onclick="location.href='/inicio'">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+
+        <div class="list-group mt-4">
+            <a href="/miercoles/laudes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_liturgia_manana_claro.png')}} "
+                    alt="" width="100%">
+            </a>
+            <a href="/miercoles/misa" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_eucaristia_claro.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/miercoles/horario" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/horario_claro_1.png')}} " alt=""
+                    width="100%">
+            </a>
+            <h4 id="1">Nacimiento y escuela en Buenos Aires</h4>
+            <p>Ceferino Namuncurá nació el 26 de agosto de 1886 en Chimpay, a orillas del Río Negro. Su padre, Manuel,
+                el último gran cacique de las tribus indígenas araucanas, se había rendido tres años antes a las tropas
+                de la República Argentina. Después de once años de vida rural libre, Manuel Namuncurá envía a Ceferino a
+                estudiar a Buenos Aires, para que en un mañana pueda defender a los de su raza. El ambiente de familia
+                que se respiraba en el colegio salesiano lo hizo enamorarse de Don Bosco.</p>
+            <h4 id="2">Crecimiento espiritual</h4>
+            <p>Creció en él la dimensión espiritual y comenzó a desear el llegar a ser sacerdote salesiano para
+                evangelizar a su gente. Eligió a Domingo Savio como modelo, y durante cinco años, a través de su
+                extraordinario esfuerzo por inserirse en una cultura totalmente nueva, él mismo se convirtió en otro
+                Domingo Savio. Fue ejemplar su empeño en la piedad, en la caridad, en los deberes diarios y en el
+                ejercicio ascético.</p>
+            <h4 id="3">Aspirante salesiano</h4>
+            <p>Este muchacho, a quien le resultaba difícil "alinearse" u "obedecer a la campana", gradualmente se
+                convirtió en un verdadero modelo. Era exacto en el cumplimiento de sus deberes de estudio y oración,
+                como quería Don Bosco. Era el árbitro en las recreaciones: su palabra era bien recibida por los
+                compañeros en disputa. Impresionaba la calma con la que hacía la señal de la cruz, como si estuviera
+                meditando cada palabra; con su ejemplo corregía a sus compañeros enseñándoles a hacerlo lentamente y con
+                devoción. En l903 (contando él con dieciséis años y medio, su padre fue bautizado a la edad de ochenta
+                años), Mons. Cagliero lo acepta en el grupo de aspirantes en Viedma, capital del Vicariato Apostólico,
+                para comenzar el latín.</p>
+            <h4 id="4">Italia</h4>
+            <p>Debido a su precaria salud, el obispo salesiano decide llevarlo a Italia para que continúe sus estudios
+                de una manera más seria y en un clima que parece más adecuado. En Italia se encuentra con Don Rua y con
+                el Papa Pío X, quien lo bendice con emoción. Asistió a la escuela en Turín y más tarde en el colegio
+                salesiano de Villa Sora, en Frascati. Él estudia con tanto empeño que llega a ser el segundo de la
+                clase.</p>
+            <h4 id="5">La Muerte</h4>
+            <p>Pero un mal no diagnosticado a tiempo, tal vez porque nunca se quejaba, lo socavó: la tuberculosis. El 28
+                de marzo de 1905 fue trasladado al hospital de los hermanos juaninos en la isla Tiberina de Roma. Fue
+                demasiado tarde. Murió allí, pacíficamente, el 11 de mayo. Desde 1924 sus restos mortales descansaron en
+                su tierra natal, en Fortín Mercedes, hasta que en 2009 fueron trasladados a Chinpay, donde multitudes de
+                peregrinos van a venerarlo.</p>
+            <p>Venerable el 22 de junio de 1972; beatificado el 11 de noviembre de 2007 bajo el pontificado de Benedicto
+                XVI.</p>
+
+            <a class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CP50/ceferinosinfondo01.png')}} " alt=""
+                    width="100%">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

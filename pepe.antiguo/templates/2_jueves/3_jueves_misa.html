@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #d1c94d;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link " href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Eucaristía:</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Servicios litúrgicos
+            </a>
+
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h2 class="text-center">Distribución por Edades y Servicios Litúrgicos</h2>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Edades y lugar<sup>1</sup></th>
+                            <th>Sacerdotes</th>
+                            <th>Servicios litúrgicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>12-14 años</strong><br>
+                                <small>(430 personas aprox)</small><br>
+                                <em>En Mornese</em>
+                            </td>
+                            <td>
+                                <strong>P. David Rivera (Preside)</strong><br>
+                                P. Andrés Morales<br>
+                                P. Francisco Miranda<br>
+                                P. Hugo Strasburger<br>
+                                P. Eduardo Oviedo<br>
+                                Diácono Fabián Tabilo
+                            </td>
+                            <td>
+                                Iquique: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Victoria Romero
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>15 años</strong><br>
+                                <small>(310 personas aprox)</small><br>
+                                <em>Turín</em>
+                            </td>
+                            <td>
+                                <strong>P. Miguel Ramírez (Preside)</strong><br>
+                                P. Mauricio Jacques<br>
+                                P. Adrián Botta<br>
+                                P. Sebastián Muñoz<br>
+                                P. José Ruiz<br>
+                                Diácono Peter Vu Duc Duy
+                            </td>
+                            <td>
+                                Puerto Montt: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Hno Felipe González
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>16 años</strong><br>
+                                <small>(370 personas aprox)</small><br>
+                                <em>Roma</em>
+                            </td>
+                            <td>
+                                <strong>P. Dario Navarro (Preside)</strong><br>
+                                P. Juan Pablo Lyon<br>
+                                P. Héctor Hernández<br>
+                                P. Osvaldo Valenzuela<br>
+                                Diácono Romedil Ilufi
+                            </td>
+                            <td>
+                                Talca: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Jesús Rojas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>17 años</strong><br>
+                                <small>(330 personas aprox)</small><br>
+                                <em>I Becchi</em>
+                            </td>
+                            <td>
+                                <strong>P. Marcelo Rojas (Preside)</strong><br>
+                                P. Marco Vergara<br>
+                                P. Heriberto Cabrera<br>
+                                P. Miguel Rojas<br>
+                                P. Marcos López
+                            </td>
+                            <td>
+                                Salesianos Alameda y José Miguel Infante<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> María Gabriela
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>18 - 29 años</strong><br>
+                                <small>(390 personas aprox)</small><br>
+                                <em>Nizza</em>
+                            </td>
+                            <td>
+                                <strong>P. José Toledo (Preside)</strong><br>
+                                P. Sergio Astorga<br>
+                                P. Daniel Cerda<br>
+                                P. Juan Paredes<br>
+                                P. Manuel Fajardo
+                            </td>
+                            <td>
+                                Valparaíso: SDB y FMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Anita Aguilar y Favio Fatigante
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <p dir="ltr"><strong style="color:red">Primera lectura</strong></p>
+        <p dir="ltr"><strong>Lectura de la carta del apóstol san Pablo a los Efesios 6, 10-20</strong></p>
+        <p dir="ltr">Hermanos: Buscad vuestra fuerza en el Señor y en su invencible poder. Poneos las armas de Dios,
+            para poder afrontar las asechanzas del diablo, porque nuestra lucha no es contra hombres de carne y hueso
+            sino contra los principados, contra las potestades, contra los dominadores de este mundo de tinieblas,
+            contra los espíritus malignos del aire.<br />
+            Por eso, tomad las armas de Dios para poder resistir en el día malo y manteneros firmes después de haber
+            superado todas las pruebas. Estad firmes; ceñid la cintura con la verdad, y revestid la coraza de la
+            justicia; calzad los pies con la prontitud para el evangelio de la paz. Embrazad el escudo de la fe, donde
+            se apagarán las flechas incendiarias del maligno. Poneos el casco de la salvación y empuñad la espada del
+            Espíritu que es la palabra de Dios.<br />
+            Siempre en oración y súplica, orad en toda ocasión en el Espíritu, velando juntos con constancia, y
+            suplicando por todos los santos. Pedid también por mí, para que cuando abra mi boca, se me conceda el don de
+            la palabra, y anuncie con valentía el misterio del Evangelio, del que soy embajador en cadenas, y tenga
+            valor para hablar de él como debo. <strong>Palabra de Dios.</strong></p>
+        <br />
+        <p dir="ltr"><strong>Salmo 143<br>
+                R/. ¡Bendito el Señor, mi alcázar!
+            </strong></p>
+        <p dir="ltr">Bendito el Señor, mi Roca,<br>
+            que adiestra mis manos para el combate,<br>
+            mis dedos para la pelea. <strong>R/.</strong><br />
+        </p>
+        <p dir="ltr">Mi bienhechor, mi alcázar,<br>
+            baluarte donde me pongo a salvo,<br>
+            mi escudo y refugio,<br>
+            que me somete los pueblos. <strong>R/.</strong><br />
+        </p>
+        <p dir="ltr">Dios mío, te cantaré un cántico nuevo,<br>
+            tocaré para ti el arpa de diez cuerdas:<br>
+            para ti que das la victoria a los reyes,<br>
+            y salvas a David, tu siervo, de la espada maligna. <strong>R/.</strong></p>
+        <br />
+        <p dir="ltr"><strong style="color:red">Evangelio</strong></p>
+        <p><strong>† EVANGELIO DE NUESTRO SEÑOR JESUCRISTO SEGÚN SAN MATEO</strong> 18, 1-5</p>
+        <p>En aquel momento los discípulos se acercaron a Jesús para preguntarle: «¿Quién es el más grande en el Reino
+            de los Cielos?» Jesús llamó a un niño, lo puso en medio de ellos y dijo: «Les aseguro que, si ustedes no
+            cambian o no se hacen como niños, no entrarán en el Reino de los Cielos. Por lo tanto, el que se haga
+            pequeño como este niño, será el más grande en el Reino de los Cielos. El que recibe a uno de estos pequeños
+            en mi Nombre, me recibe a mí mismo».</p>
+
+        <p><strong>Palabra del Señor</strong></p>
+        <br><br><br>
+
+    </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script>
+
+    </script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

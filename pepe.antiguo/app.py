@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask import render_template
 import configuracion as c
 import cancionero as can
+import cacheserivicio as ccservice
 import talleres as ttlr
 from user_agents import parse
 from datetime import datetime
@@ -258,6 +259,11 @@ def page_not_found(error):
 def service_worker():
     return app.send_static_file('js/service-worker.js')
 
+@app.route('/cache-version.json')
+def cache_config():
+    version, files = ccservice.CacheVersion().obtenercosos()
+    return jsonify({"version":version,"files":files})
+
 
 def determinar_momento_del_dia():
     hora_actual = datetime.now().hour  # Obtiene la hora actual
@@ -280,4 +286,4 @@ def determinar_momento_del_dia():
         return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5001)
+    app.run(debug=False,port=5001)

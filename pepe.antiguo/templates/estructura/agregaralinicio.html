@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> CampoBOSCO 2024 Liturgia </title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #361439;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        
+        <div class="d-flex justify-content-center" style="padding: 10%;">
+            <a onclick="location.href='/'">
+                <H3>🏠INICIO</H3>
+            </a>
+        </div>
+        {% if device == "WEB" %}
+
+        {% else %}
+        <h3 class="text-center" style="padding: 5%;">¿Cómo agregar al inicio en {{ device }}?</h3>
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="First slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="1"
+                    aria-label="Second slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="2"
+                    aria-label="Third slide"
+                ></li>
+                <li
+                    data-bs-target="#carouselId"
+                    data-bs-slide-to="3"
+                    aria-label="Cuarta slide"
+                ></li>
+            </ol>
+            {% if device == "Android" %}
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/1_android.png')}} "
+                        class="w-100 d-block"
+                        alt="First slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Abrir el menú</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/2_android.png')}} "
+                        class="w-100 d-block"
+                        alt="Second slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Agregar al inicio / Add to Home Screen</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/3_android.png')}} "
+                        class="w-100 d-block"
+                        alt="Third slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Agregar al inicio</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/4_android.png')}} "
+                        class="w-100 d-block"
+                        alt="Cuarto slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+
+            {% elif device == "iPhone" %}
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/10_iPhone.png')}} "
+                        class="w-100 d-block"
+                        alt="First slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Abrir el menú</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/11_iPhone.png')}} "
+                        class="w-100 d-block"
+                        alt="Second slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Agregar al inicio / Add to Home Screen</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/12_iPhone.png')}} "
+                        class="w-100 d-block"
+                        alt="Third slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Agregar al inicio</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="{{ url_for('static', filename='img/comoiniciar/13_iPhone.png')}} "
+                        class="w-100 d-block"
+                        alt="Cuarto slide"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            {% else %}
+
+            {% endif %}
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        {% endif %}
+        
+
+    </main>
+    <footer>
+    </footer>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

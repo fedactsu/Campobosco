@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <script src="{{ url_for('static',filename='js/holder.js') }}"></script>
+
+
+</head>
+
+<body class="verdebosco" style="color:white">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">Acerca del CAMPOBOSCO</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="location.href='/inicio'">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <br>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+        <section class="container my-5">
+            <!-- Sección: Texto Bíblico -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">Texto Bíblico</h2>
+                    <p class="text-center"><strong>Juan 10, 1-18</strong></p>
+                </div>
+            </div>
+    
+            <!-- Sección: Objetivo General -->
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <h2 class="text-center">Objetivo General</h2>
+                    <p class="text-center">Celebrar los 50 años del MJS a través de una experiencia comunitaria que renueve nuestro compromiso con Cristo e identidad carismática en la Iglesia y nos aliente a seguir soñando como lo hicieron Don Bosco y Madre Mazzarello.</p>
+                </div>
+            </div>
+    
+            <!-- Sección: Objetivos Específicos -->
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <h2 class="text-center">Objetivos Específicos</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Celebrar carismáticamente los 50 años del MJS, fruto del sueño de Dios puesto en el corazón de Don Bosco y Madre Mazzarello, y que continúa expandiéndose en los sueños de los jóvenes de hoy.</li>
+                        <li class="list-group-item">Profundizar la experiencia de Juanito Bosco en el Sueño de los 9 años, que nos invita a descubrir el sueño que Dios tiene para cada uno de nosotros.</li>
+                        <li class="list-group-item">Fortalecer la adhesión al carisma Salesiano, a través de experiencias comunitarias que nos invitan a comprometernos vocacionalmente con Cristo en la sociedad.</li>
+                        <li class="list-group-item">Potenciar la integración de los grupos asociados al MJS, para consolidar su comunión y aporte carismático en la Iglesia.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Sección: Fecha y Lugar -->
+            <div class="row my-4">
+                <div class="col-md-12">
+                    <h2 class="text-center">Fecha y Lugar</h2>
+                    <p class="text-center">Del 30 de octubre al 3 de noviembre. Picarquín. Acogida desde las 10:00 AM del 30 de octubre. <strong>Personas de las comisiones deben estar el 29 de octubre.</strong></p>
+                </div>
+            </div>
+        </section>
+    {% include 'estructura/footer.html' %}
+
+    </div>
+
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+
+</body>
+
+</html>

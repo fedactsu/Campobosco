@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        /* Estilo base del lector */
+        .lector-texto {
+            font-size: 16px;
+            /* Tamaño de letra base */
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Botones elegantes */
+        .btn-control {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Diseño adaptable para móviles */
+        @media (max-width: 768px) {
+            .btn-control {
+                font-size: 1rem;
+            }
+        }
+
+        .footnote {
+            font-size: 0.8em;
+            color: rgb(235, 229, 229);
+        }
+
+        .footnote-ref,
+        .back-to-ref {
+            text-decoration: none;
+            color: blue;
+        }
+        body{
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="moradobosco">
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Carta de identidad</h3>
+                <div class="d-flex justify-content-center">
+                    <a onclick="location.href='/documentos'">
+                        <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt=""
+                            width="100px">
+                    </a>
+                </div>
+                <div class="text-center my-3">
+                    <button class="btn btn-danger btn-control" id="btn-disminuir">A-</button>
+                    <button class="btn btn-success btn-control" id="btn-aumentar">A+</button>
+                </div>
+
+                <div id="texto-lector" class="lector-texto">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item active">INDICE</li>
+                    </ul>
+                    <div class="list-group">
+                        <a href="#titulo1" id="title1" class="list-group-item list-group-item-action">1. SALUDOS
+                            INSPECTOR SDB Y PROVINCIAL FMA</a>
+                        <a href="#titulo2" id="title2" class="list-group-item list-group-item-action">2. PRESENTACIÓN DE
+                            LOS JÓVENES 3.RESEÑA HISTÓRICA</a>
+                        <a href="#titulo3" id="title3" class="list-group-item list-group-item-action">3. RESEÑA
+                            HISTÓRICA</a>
+                        <a href="#titulo4" id="title4" class="list-group-item list-group-item-action">4. NUESTRA
+                            IDENTIDAD</a>
+                        <a href="#titulo5" id="title5" class="list-group-item list-group-item-action">5. OPCIÓN
+                            FORMATIVA</a>
+                        <a href="#titulo6" id="title6" class="list-group-item list-group-item-action">6. NUESTRA
+                            ANIMACIÓN y ORGANIZACIÓN</a>
+                        <a href="#titulo7" id="title7" class="list-group-item list-group-item-action">7. NUESTRO
+                            LOGO</a>
+                    </div>
+                    {{ texto|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tamaño de letra inicial
+        let fontSize = 16;
+
+        // Referencia al div que contiene el texto
+        const lectorTexto = document.getElementById('texto-lector');
+
+        // Función para aumentar el tamaño de la letra
+        document.getElementById('btn-aumentar').addEventListener('click', function () {
+            fontSize += 2;
+            lectorTexto.style.fontSize = fontSize + 'px';
+        });
+
+        // Función para disminuir el tamaño de la letra
+        document.getElementById('btn-disminuir').addEventListener('click', function () {
+            if (fontSize > 12) { // Evitar que el texto sea demasiado pequeño
+                fontSize -= 2;
+                lectorTexto.style.fontSize = fontSize + 'px';
+            }
+        });
+    </script>
+</body>
+
+</html>

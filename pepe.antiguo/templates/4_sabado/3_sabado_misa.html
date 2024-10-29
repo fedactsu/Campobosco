@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #ff6600;
+
+        }
+
+        h3 {
+            color: #ffffff;
+            font-family: Arial;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link active" style="font-size: 14px;" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link" href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Eucaristía:</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#tablaCollapse" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Servicios litúrgicos
+            </a>
+
+        </p>
+        <div class="collapse" id="tablaCollapse">
+            <div class="table-responsive card card-body">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Grupos y lugar</th>
+                            <th>Sacerdotes</th>
+                            <th>Servicios litúrgicos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>En Mornese</strong><br>
+                                CAS (93)<br>
+                                ALVI (93)<br>
+                                352 personas
+                            </td>
+                            <td>
+                                <strong>P. Juan Bustamante (Preside)</strong><br>
+                                P. Miguel Ramírez<br>
+                                P. Andrés Morales<br>
+                                P. Francisco Miranda<br>
+                                Diac. Fabián Tabilo
+                            </td>
+                            <td>
+                                COM y ALVI Los Andes<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo:</strong> Sor Victoria Romero
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>En Turín</strong><br>
+                                CDS<br>
+                                Infancia y Adolescencia Misionera - IAM (166)<br>
+                                Total: 351 personas
+                            </td>
+                            <td>
+                                <strong>P. Sebastián Muñoz (Preside)</strong><br>
+                                P. Daniel Cerda<br>
+                                P. Marcos López<br>
+                                P. Juan Paredes<br>
+                                Diac. Romedil Ilufi
+                            </td>
+                            <td>
+                                Patrocinio de San José y San Joaquín<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Jesús Rojas y P. Daniel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>En Roma</strong><br>
+                                Scout (144) Encuentros en el Espíritu<br>
+                                EJE (155) Voluntariado<br>
+                                Escoje (155) Voluntariado<br>
+                                Otros grupos (78)<br>
+                                MJS de otro país (73)<br>
+                                Total: 392 personas
+                            </td>
+                            <td>
+                                <strong>P. Adrián Botta (Preside)</strong><br>
+                                P. Mauricio Jacques<br>
+                                P. Héctor Hernández<br>
+                                P. Manuel Fajardo<br>
+                                Diac. Peter Vu Duc Duy
+                            </td>
+                            <td>
+                                Voluntariado salesiano<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Constanza Toro y Mario Correa
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>En I Becchi</strong><br>
+                                Pastoral Sacramental - Bautizos, Primera Comunión, etc.<br>
+                                (12) Grupos Juveniles (106) - CMS (105)<br>
+                                Total: 323
+                            </td>
+                            <td>
+                                <strong>P. Heriberto Cabrera (Preside)</strong><br>
+                                P. Marco Vergara<br>
+                                P. Dario Navarro<br>
+                                P. Miguel Rojas<br>
+                                P. Osvaldo Valenzuela
+                            </td>
+                            <td>
+                                Punta Arenas SDB y FMA<br>
+                                Voluntariado salesiano<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> María Gabriela, Christiansen y Hno. Felipe
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Nizza</strong><br>
+                                Pastores de Curso - JSAM<br>
+                                CEDIMA (73) Grupos Musical (75)<br>
+                                Grupos Culturales (20) Acólitos (20)<br>
+                                Total: 315 personas
+                            </td>
+                            <td>
+                                <strong>P. David Rivera (Preside)</strong><br>
+                                P. Sergio Astorga<br>
+                                P. José Toledo<br>
+                                P. José Ruiz<br>
+                                P. Miguel Rojas<br>
+                                P. Juan Pablo Lyon
+                            </td>
+                            <td>
+                                CEDIMA<br>
+                                Coro, guías y sacristía<br>
+                                <strong>Referente equipo liturgia:</strong> Sor Anita Aguilar
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+    <h2 style="color:black">Primera lectura</h2>
+    <h3>Lectura de la primera carta del apóstol san Pablo a los cristianos de Corinto 15, 51-57</h3>
+
+
+    <p>Hermanos: Les voy a revelar un misterio: No todos vamos a morir, pero todos seremos transformados. En un
+        instante, en un abrir y cerrar de ojos, cuando suene la trompeta final –porque esto sucederá– los muertos
+        resucitarán incorruptibles y nosotros seremos transformados. Lo que es corruptible debe revestirse de la
+        incorruptibilidad y lo que es mortal debe revestirse de la inmortalidad.</p>
+    <p>Cuando lo que es corruptible se revista de la incorruptibilidad y lo que es mortal se revista de la
+        inmortalidad, entonces se cumplirá la palabra de la Escritura: “La muerte ha sido vencida. ¿Dónde está,
+        muerte, tu victoria? ¿Dónde está tu aguijón?” Porque lo que provoca la muerte es el pecado y lo que da
+        fuerza al pecado es la Ley.</p>
+    <p>¡Demos gracias a Dios, que nos ha dado la victoria por nuestro Señor Jesucristo!</p>
+    <p><strong>Palabra de Dios.</strong></p>
+
+    <h3 style="color: black;"><strong>Salmo responsorial</strong> 129, 1-8</h3>
+
+    <p><strong>R. ¡Desde lo más profundo te invoco, Señor!</strong></p>
+
+    <p>Desde lo más profundo te invoco, Señor,<br>
+        ¡Señor, oye mi voz!<br>
+        Estén tus oídos atentos<br>
+        al clamor de mi plegaria. <strong>R.</strong></p>
+
+    <p>Si tienes en cuenta las culpas, Señor,<br>
+        ¿Quién podrá subsistir?<br>
+        Pero en ti se encuentra el perdón,<br>
+        para que seas temido. <strong>R.</strong></p>
+
+    <p>Mi alma espera en el Señor,<br>
+        y yo confío en su palabra.<br>
+        Mi alma espera al Señor,<br>
+        más que el centinela la aurora. <strong>R.</strong></p>
+
+    <p>Como el centinela espera la aurora,<br>
+        espere Israel al Señor,<br>
+        porque en Él se encuentra la misericordia<br>
+        y la redención en abundancia:<br>
+        Él redimirá a Israel de todos sus pecados. <strong>R.</strong></p>
+
+    <h2 style="color:black">Segunda lectura</h2>
+    <h3>Lectura de la carta del apóstol san Pablo a los Filipenses 3, 20-21</h3>
+    <p>Hermanos:<br>
+        Nosotros somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.<br>
+        Él transformará nuestro cuerpo humilde, según el modelo de su cuerpo glorioso, con esa energía que posee
+        para sometérselo todo.</p>
+    <p><strong>Palabra de Dios.</strong></p>
+
+
+    <h2 style="color:black">Evangelio del día</h2>
+    <h3><strong>† EVANGELIO DE NUESTRO SEÑOR JESUCRISTO SEGÚN SAN JUAN</strong> 11, 17-27</h3>
+
+    <p>Al llegar a Betania, Jesús se encontró con que Lázaro estaba sepultado desde hacía cuatro días. Betania
+        distaba de Jerusalén sólo unos tres kilómetros. Muchos judíos habían ido a consolar a Marta y a María, por
+        la muerte de su hermano. Al enterarse de que Jesús llegaba, Marta salió a su encuentro, mientras María
+        permanecía en la casa. Marta dijo a Jesús: «Señor, si hubieras estado aquí, mi hermano no habría muerto.
+        Pero yo sé que aun ahora, Dios te concederá todo lo que le pidas».</p>
+
+    <p>Jesús le dijo: «Tu hermano resucitará».<br>
+        Marta le respondió: «Sé que resucitará en la resurrección del último día».</p>
+
+    <p>Jesús le dijo: «Yo soy la Resurrección y la Vida. El que cree en mí, aunque muera, vivirá; y todo el que vive
+        y cree en mí, no morirá jamás. ¿Crees esto?».</p>
+
+    <p>Ella le respondió: «Sí, Señor, creo que Tú eres el Mesías, el Hijo de Dios, el que debía venir al mundo».</p>
+
+    <p><strong>Palabra del Señor</strong></p>
+    <br><br><br>
+
+    </div>
+
+</div>
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMPOBOSCO 2024</title>
+  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+  <style>
+    body {
+      background-color: #54bdc4;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p
+    .col {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand ">
+    <div class="nav navbar-nav d-flex justify-content-center w-100">
+      <a class="nav-item nav-link" href="/inicio">
+        <h3>🏠</h3>
+      </a>
+      <a class="nav-item nav-link active" href="/miercoles">
+        <h3>3️⃣0️⃣</h3>
+      </a>
+      <a class="nav-item nav-link" href="/jueves">
+        <h3>3️⃣1️⃣</h3>
+      </a>
+      <a class="nav-item nav-link" href="/viernes">
+        <h3>0️⃣1️⃣</h3>
+      </a>
+      <a class="nav-item nav-link" href="/sabado">
+        <h3>0️⃣2️⃣</h3>
+      </a>
+      <a class="nav-item nav-link" href="/domingo">
+        <h3>0️⃣3️⃣</h3>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+    <h3 class="text-center">Miércoles:</h3>
+
+
+    <div class="d-flex justify-content-center">
+      <a onclick="history.back()">
+        <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+      </a>
+    </div>
+
+    <div class="list-group mt-4">
+      
+      {% include 'estructura/botoneshorario.html' %}
+     
+      <div class="container">
+        <table class="table table-bordered table-striped table-hover text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>HORA</th>
+              <th>ACTIVIDAD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="align-middle">06:00 a 06:45</td>
+              <td class="align-middle">Levantada adultos (comisión organizadora o adultos responsables de delegaciones
+                que ya hayan llegado)</td>
+            </tr>
+            <tr>
+              <td class="align-middle">07:00</td>
+              <td class="align-middle">Levantada jóvenes (los que estén como participantes)</td>
+            </tr>
+            <tr>
+              <td class="align-middle">07:30</td>
+              <td class="align-middle">Laudes (participan los que quieran)</td>
+            </tr>
+            <tr>
+              <td class="align-middle">08:00</td>
+              <td class="align-middle">Desayuno</td>
+            </tr>
+            <tr>
+              <td class="align-middle">08:30</td>
+              <td class="align-middle">Cada miembro de las comisiones se va a sus labores</td>
+            </tr>
+            <tr>
+              <td class="align-middle">09:30</td>
+              <td class="align-middle text-start">
+                <ul class="text-start">
+                  <li>Inicia la acogida de las delegaciones y se las traslada a sus zonas de acampada</li>
+                  <li>Animación estará en Radio “Bosco Morning” y entrada, dando la bienvenida</li>
+                  <li>Convivencia estará indicando las zonas de acampada</li>
+                  <li>Se anima al armado de zona de acampada</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">12:30</td>
+              <td class="align-middle">Traslado a zonas de almuerzo</td>
+            </tr>
+            <tr>
+              <td class="align-middle">13:00</td>
+              <td class="align-middle">Almuerzo</td>
+            </tr>
+            <tr>
+              <td class="align-middle">14:15</td>
+              <td class="align-middle text-start">
+                <ul class="text-start">
+                  <li>Reunión de asesores de cada comunidad junto con los coordinadores de comisiones y Equipo
+                    Coordinador</li>
+                  <li>Se entregan los últimos avisos generales o se refuerzan ideas</li>
+                  <li>Entrega de kits a comunidades que no lo tienen</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">15:30</td>
+              <td class="align-middle">Propuestas recreativas masivas para todos los participantes (actividades variadas
+                y libres para que los jóvenes puedan distraerse, disfrutar y compartir con otros)</td>
+            </tr>
+            <tr>
+              <td class="align-middle">16:30</td>
+              <td class="align-middle">Traslado a zonas de acampada</td>
+            </tr>
+            <tr>
+              <td class="align-middle">17:00</td>
+              <td class="align-middle">Once</td>
+            </tr>
+            <tr>
+              <td class="align-middle">17:30</td>
+              <td class="align-middle">Inicio de traslado a Valdocco (escenario central)</td>
+            </tr>
+            <tr>
+              <td class="align-middle">18:00</td>
+              <td class="align-middle text-start">
+                <strong>LA PREVIA</strong>
+                <ul class="text-start">
+                  <li>Convocatoria en Valdocco</li>
+                  <li>Animación y dinámicas mientras se convocan</li>
+                  <li>Presentación del Himno del Campamento y coreografía</li>
+                  <li>Presentación ACHS (mimo y baile entretenido)</li>
+                  <li>Presentación y saludos delgados PJ SDB/FMA</li>
+                  <li>Avisos varios o presentaciones (enfermería, coordinador de ambiente)</li>
+                  <li>Presentación lugar: “Valponasca”</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">19:30</td>
+              <td class="align-middle">Traslado para cenar</td>
+            </tr>
+            <tr>
+              <td class="align-middle">20:00</td>
+              <td class="align-middle">Cena</td>
+            </tr>
+            <tr>
+              <td class="align-middle">20:50</td>
+              <td class="align-middle">Traslado hacia Valdocco</td>
+            </tr>
+            <tr>
+              <td class="align-middle">21:15</td>
+              <td class="align-middle text-start">
+                <strong>NOCHE INAUGURAL</strong> <br>Transmisión en vivo
+                <ul class="text-start">
+                  <li>Convocatoria en Valdocco</li>
+                  <li>Noche inaugural: Presentación y saludo de los inspectores SDB/FMA (Mensaje) + Invitados FMA/SDB
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="align-middle">22:30</td>
+              <td class="align-middle">Traslado de Valdocco a zonas de acampada para iniciar el descanso</td>
+            </tr>
+            <tr>
+              <td class="align-middle">23:00</td>
+              <td class="align-middle">Se inicia el proceso de descanso</td>
+            </tr>
+            <tr>
+              <td class="align-middle">00:00</td>
+              <td class="align-middle text-start">
+                <strong>GRAN SILENCIO</strong> <br>
+                Todos los participantes se encuentran en sus carpas descansando. Solamente la Comisión de Convivencia
+                tiene adultos dispuestos a la vigilia y asistencia de la noche.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+  <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/bootjs/popper.min.js') }}"></script>
+
+  {% include 'estructura/footer.html' %}
+</body>
+
+</html>

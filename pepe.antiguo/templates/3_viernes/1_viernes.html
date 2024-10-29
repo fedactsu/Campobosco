@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #361439;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand " >
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link " href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link " href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Todos los santos</h1>
+        <h3 class="text-center">Viernes:</h3>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <div class="list-group mt-4">
+            <a href="/viernes/laudes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_oracion_manana.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/viernes/misa" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_eucaristia.png')}} " alt=""
+                    width="100%">
+            </a>
+            <a href="/viernes/horario" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/horario_rosado_1.png')}} " alt=""
+                    width="100%">
+            </a>
+            <h2 style="color:white"><strong>El significado de la solemnidad</strong></h2>
+            <p>La memoria litúrgica dedica un día especial a todos aquellos que están unidos a Cristo en la gloria y que
+                no sólo son indicados como arquetipos, sino también invocados como protectores de nuestras acciones. Los
+                Santos son los hijos de Dios que han alcanzado la meta de la salvación y que viven en la eternidad esa
+                condición de bienaventuranza bien expresada por Jesús en el discurso de la montaña narrado en el
+                Evangelio (Mt 5, 1-12). Los Santos son también los que nos acompañan en el camino de la imitación de
+                Jesús, que nos conduce a ser la piedra angular en la construcción del Reino de Dios.</p>
+            <h2><strong>La Comunión de los santos</strong></h2>
+            <p>En nuestra Profesión de Fe afirmamos que creemos en la Comunión de los Santos: con esto queremos decir
+                tanto la vida como la contemplación eterna de Dios, que es la razón y el propósito de esta comunión,
+                pero también queremos decir la comunión con las "cosas" santas. Si, en efecto, los bienes terrenales, en
+                cuanto son limitados, dividen a las personas en el espacio y en el tiempo, las gracias, los dones que
+                Dios hace son infinitos y de ellos todos pueden participar. Especialmente el don de la Eucaristía nos
+                permite vivir ya ahora la anticipación de esa liturgia que el Señor celebra en el santuario celestial
+                con todos los santos. La grandeza de la redención se mide por el fruto, es decir, por los que han sido
+                redimidos y han madurado en la santidad. La Iglesia contempla en sus rostros su vocación, la condición
+                de humanidad transfigurada en el camino hacia el Reino.</p>
+            <h2><strong>Orígenes e historia de la fiesta</strong></h2>
+            <p>Esta fiesta de la esperanza, que nos recuerda el objetivo de nuestra vida, tiene raíces antiguas: en el
+                siglo IV comienza a celebrarse la conmemoración de los mártires, común a varias Iglesias. Los primeros
+                vestigios de esta celebración se encontraron en Antioquía el domingo siguiente a Pentecostés y San Juan
+                Crisóstomo ya hablaba de ello. Entre los siglos VIII y IX, la fiesta comenzó a extenderse por toda
+                Europa, y en Roma específicamente en el siglo IX: aquí el Papa Gregorio III (731-741) eligió como fecha
+                del 1 de noviembre para coincidir con la consagración de una capilla en San Pedro dedicada a las
+                reliquias "de los santos apóstoles y de todos los santos mártires y confesores, y de todos los justos
+                perfeccionados que descansan en paz en todo el mundo". En la época de Carlomagno, esta fiesta ya era
+                ampliamente conocida como la ocasión en que la Iglesia, que todavía peregrina y sufre en la Tierra,
+                miraba al cielo, donde residen sus hermanos y hermanas más gloriosos.</p>
+            <h4 id="1">&nbsp;</h4>
+
+
+            <a class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CP50/santos_salesianos.png')}} " alt=""
+                    width="100%">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

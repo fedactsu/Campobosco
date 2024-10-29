@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        .table-custom {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .table-custom th,
+        .table-custom td {
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+
+<body class="verdebosco">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">Talleres</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        
+        <div class="container mt-5">
+            <label for="nn" style="color: white;" >Nombre Taller</label>
+            <h4 id="nn" class="form-control">{{nombretaller}}</h4>
+
+            <label for="tt" style="color: white;" >Nombre Tallerista</label>
+            <h4 id="tt"  class="form-control">{{ tallerista }}</h4>
+
+            <label for="ee" style="color: white;" >Edades</label>
+            <h4 id="ee" class="form-control"> {{edad}} </h4>
+            
+            <label for="zz" style="color: white;" >Zona de trabajo</label>
+            <h4 id="zz" class="form-control"> {{lugar}} </h4>
+            <h4 class="text-center mb-4">Lista de participantes</h4>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-custom">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Procedencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for vuelta in integrantes %}
+                        <tr>
+                            <td>{{ vuelta[0] }}</td>
+                            <td>{{ vuelta[1] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="/mapalugar/offline" class=" list-group-item-action">
+            <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_mapa_offline.png')}} " alt=""
+                width="100%">
+        </a>
+        <p class="form-text text-muted">*Los lugares de los talleres pueden variar, por favor consultar con tu
+            tallerista</p>
+
+
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+    </div>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

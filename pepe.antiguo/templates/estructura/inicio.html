@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #361439;
+            font-family: 'tipoCampo', sans-serif;
+        }
+
+        h1,
+        h3,h2 {
+            color: #ffffff;
+        }
+
+        .list-group-item {
+            font-size: 1.2em;
+        }
+
+        #cache-btn {
+            font-size: 1.1em;
+        }
+    </style>
+
+</head>
+
+<body>
+   
+        {% include 'estructura/nav.html' %}
+    
+    <div class="container my-3">
+        <div id="idhora"></div>
+        <h1 class="text-center">Selecciona el Día:</h1>
+
+        <div class="list-group mt-4">
+            <a href="/cancionero" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_cancionero2.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+
+            <a href="/miercoles" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnmiercoles.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/jueves" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnjueves.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/viernes" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnviernes.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/sabado" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnsabado.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/domingo" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btndomingo.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/talleres" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/talleres/btn_talleres.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+
+            <a href="/vocacional" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/vocacional.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+
+            <a href="/mapalugar" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnMapa01.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/documentos" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/documentos/btn_documentos_gnral.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/acercade" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a onclick="location.href='/'">
+            <img 
+            class="list-group-item-action"
+            src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="" width="50%">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+
+    <script>
+         function determinarMomentoDelDia() {
+            const horaActual = new Date().getHours();  // Obtiene la hora actual
+
+            if (6 <= horaActual && horaActual < 8) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>";
+            } else if (8 <= horaActual && horaActual < 13) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🌴</h3>";
+            } else if (13 <= horaActual && horaActual < 14) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>";
+            } else if (14 <= horaActual && horaActual < 19) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>";
+            } else if (horaActual === 19) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>";
+            } else if (20 <= horaActual && horaActual < 21) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>";
+            } else if (21 <= horaActual && horaActual < 24) {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>";
+            } else {
+                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>";
+            }
+        }
+
+        document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
+    </script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

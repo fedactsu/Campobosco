@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #66b352;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand " >
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link" href="/inicio">
+                <h3>🏠</h3>
+            </a>
+            <a class="nav-item nav-link active" href="/miercoles">
+                <h3>3️⃣0️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/jueves">
+                <h3>3️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/viernes">
+                <h3>0️⃣1️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/sabado">
+                <h3>0️⃣2️⃣</h3>
+            </a>
+            <a class="nav-item nav-link" href="/domingo">
+                <h3>0️⃣3️⃣</h3>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Eucaristía:</h1>
+
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <h3 class="text-center"></h3>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+        <p dir="ltr"><strong>Lecturas miércoles 30 de octubre.<br>
+            </strong><strong style="color:red">Primera lectura</strong><br>
+            <strong> Lectura de la carta del apóstol san Pablo a los Efesios 6,1-9:</strong>
+        </p>
+        <p dir="ltr">Hijos, obedeced a vuestros padres en el Señor, porque eso es justo.<br>
+            «Honra a tu padre y a tu madre» es el primer mandamiento al que se añade una promesa: «Te irá bien y vivirás
+            largo tiempo en la tierra». Padres, no exasperéis a vuestros hijos; criadlos educándolos y corrigiéndolos
+            según el Señor. Esclavos, obedeced a vuestros amos de la tierra con respeto y temor, con la sencillez de
+            vuestro corazón, como a Cristo. No por las apariencias, para quedar bien ante los hombres, sino como
+            esclavos de Cristo que hacen, de corazón, lo que Dios quiere, de buena gana, como quien sirve al Señor y no
+            a hombres. Sabed que lo que uno haga de bueno, sea esclavo o libre, se lo pagará el Señor.&nbsp; Amos,
+            comportaos también vosotros del mismo modo, dejándoos de amenazas; sabéis que ellos y vosotros tenéis un amo
+            en el cielo y que ese no es parcial con nadie.</p>
+        <p dir="ltr"><strong>Palabra de Dios.</strong><br />
+        </p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>Salmo 144&nbsp;<br />
+                R/. El Señor es fiel a sus palabras</strong></p>
+        <p dir="ltr">Que todas tus criaturas te den gracias, Señor,<br>
+            que te bendigan tus fieles.<br>
+            Que proclamen la gloria de tu reinado,<br>
+            que hablen de tus hazañas. <strong>R/.</strong><br />
+        </p>
+        <p dir="ltr">Explicando tus hazañas a los hombres,<br>
+            la gloria y majestad de tu reinado.<br>
+            Tu reinado es un reinado perpetuo,<br>
+            tu gobierno va de edad en edad. <strong>R/.</strong><br />
+        </p>
+        <p dir="ltr">El Señor es fiel a sus palabras,<br>
+            bondadoso en todas sus acciones.<br>
+            El Señor sostiene a los que van a caer,<br>
+            endereza a los que ya se doblan. <strong>R/.</strong></p>
+        <br />
+        <p dir="ltr"><strong style="color:red">Evangelio del día<br>
+            </strong><strong>Lectura del santo evangelio según san Lucas 13,22-30</strong></p>
+        <p dir="ltr">En aquel tiempo, Jesús pasaba por ciudades y aldeas enseñando y se encaminaba hacia Jerusalén. Uno
+            le preguntó: «Señor, ¿son pocos los que se salvan?». Él les dijo: «Esforzaos en entrar por la puerta
+            estrecha, pues os digo que muchos intentarán entrar y no podrán. Cuando el amo de la casa se levante y
+            cierre la puerta, os quedaréis fuera y llamaréis a la puerta diciendo: &ldquo;Señor, ábrenos&rdquo;; pero él
+            os dirá: &ldquo;No sé quiénes sois&rdquo;. Entonces comenzaréis a decir: <br>
+            &ldquo;Hemos comido y bebido contigo, y tú has enseñado en nuestras plazas&rdquo;.<br>
+            Pero él os dirá: &ldquo;No sé de dónde sois. Alejaos de mí todos los que obráis la iniquidad&rdquo;.<br>
+            Allí será el llanto y el rechinar de dientes, cuando veáis a Abrahán, a Isaac y a Jacob y a todos los
+            profetas en el reino de Dios, pero vosotros os veáis arrojados fuera. Y vendrán de oriente y occidente, del
+            norte y del sur, y se sentarán a la mesa en el reino de Dios.<br>
+            Mirad: hay últimos que serán primeros, y primeros que serán últimos».</p>
+        <p dir="ltr"><strong>Palabra del Señor.</strong></p>
+        <br>
+
+    </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

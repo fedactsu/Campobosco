@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        body {
+            background-color: #8B268C;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand ">
+        <div class="nav navbar-nav d-flex justify-content-center w-100">
+            <a class="nav-item nav-link active" style="font-size: 14px;" href="/inicio"><h3>🏠</h3></a>
+            <a class="nav-item nav-link" href="/miercoles"><h3>3️⃣0️⃣</h3></a>
+            <a class="nav-item nav-link" href="/jueves"><h3>3️⃣1️⃣</h3></a>
+            <a class="nav-item nav-link" href="/viernes"><h3>0️⃣1️⃣</h3></a>
+            <a class="nav-item nav-link" href="/sabado"><h3>0️⃣2️⃣</h3></a>
+            <a class="nav-item nav-link active" href="/domingo"><h3>0️⃣3️⃣</h3></a>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
+        <h1 class="text-center">Eucaristía:</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        {% include 'estructura/botones.html' %}
+        <script src="{{ url_for('static',filename='js/tamanoletra.js') }}"></script>
+
+        <h2 style="color:red">Primera lectura</h2>
+        <h3>Lectura del Libro del Deuteronomio 6, 2-6</h3>
+        <p>Moisés habló al pueblo diciendo:<br>
+            «Teme al Señor, tu Dios, tú, tus hijos y nietos, y observa todos sus mandatos y preceptos, que yo te mando,
+            todos los días de tu vida, a fin de que se prolonguen tus días. Escucha, pues, Israel, y esmérate en
+            practicarlos, a fin de que te vaya bien y te multipliques, como te prometió el Señor, Dios de tus padres, en
+            la tierra que mana leche y miel.<br>
+            Escucha, Israel: El Señor es nuestro Dios, el Señor es uno solo. Amarás, pues, al Señor, tu Dios, con todo
+            tu corazón, con toda tu alma y con todas tus fuerzas.<br>
+            Estas palabras que yo te mando hoy estarán en tu corazón».</p>
+        <p><strong>Palabra de Dios.</strong></p>
+        <h2 style="color:red">Salmo</h2>
+        <h3>Sal. 17, 2-3a. 3bc-4. 47 y 51ab </h3>
+        <h3>R: Yo te amo, Señor, tú eres mi fortaleza.</h3>
+        <p>Yo te amo, Señor; tú eres mi fortaleza;<br>
+            Señor, mi roca, mi alcázar, mi libertador. <strong>R/.</strong></p>
+        <p>Dios mío, peña mía, refugio mío,<br>
+            escudo mío, mi fuerza salvadora, mi baluarte.<br>
+            Invoco al Señor de mi alabanza<br>
+            y quedo libre de mis enemigos. <strong>R/.</strong></p>
+        <p>Viva el Señor, bendita sea mi Roca,<br>
+            sea ensalzado mi Dios y Salvador:<br>
+            Tú diste gran victoria a tu rey,<br>
+            tuviste misericordia de tu ungido. <strong>R/.</strong></p>
+        <h2 style="color:red">Segunda lectura</h2>
+        <h3>Lectura de la carta a los Hebreos 7, 23-28</h3>
+        <p>Hermanos:<br>
+            Ha habido multitud de sacerdotes de la anterior Alianza, porque la muerte les impedía permanecer; en cambio,
+            Jesús, como permanece para siempre, tiene el sacerdocio que no pasa. De ahí que puede salvar definitivamente
+            a los que se acercan a Dios por medio de él, pues vive siempre para interceder a favor de ellos.<br>
+            Y tal convenía que fuese nuestro sumo sacerdote: santo, inocente, sin mancha, separado de los pecadores y
+            encumbrado sobre el cielo.<br>
+            Él no necesita ofrecer sacrificios cada día como los sumos sacerdotes, que ofrecían primero por los propios
+            pecados, después por los del pueblo, porque lo hizo de una vez para siempre, ofreciéndose a sí mismo.<br>
+            En efecto, la ley hace sumos sacerdotes a hombres llenos de debilidades. En cambio, la palabra del
+            juramento, posterior a la ley, consagra al Hijo, perfecto para siempre.</p>
+        <p><strong>Palabra de Dios.</strong></p>
+        <h2 style="color:red">Evangelio del día</h2>
+        <h3>Lectura del santo Evangelio según San Marcos 12, 28b-34</h3>
+        <p>En aquel tiempo, un escriba se acercó a Jesús y le preguntó:<br>
+            «¿Qué mandamiento es el primero de todos?».<br>
+            Respondió Jesús:<br>
+            «El primero es: &ldquo;Escucha, Israel, el Señor, nuestro Dios, es el único Señor: amarás al Señor, tu Dios,
+            con todo tu corazón, con toda tu alma, con toda tu mente, con todo tu ser&rdquo;. El segundo es este:
+            &ldquo;Amarás a tu prójimo como a ti mismo&rdquo;. No hay mandamiento mayor que estos».<br>
+            El escriba replicó:<br>
+            «Muy bien, Maestro, sin duda tienes razón cuando dices que el Señor es uno solo y no hay otro fuera de él; y
+            que amarlo con todo el corazón, con todo el entendimiento y con todo el ser, y amar al prójimo como a uno
+            mismo vale más que todos los holocaustos y sacrificios».<br>
+            Jesús, viendo que había respondido sensatamente, le dijo:<br>
+            «No estás lejos del reino de Dios».<br>
+            Y nadie se atrevió a hacerle más preguntas.</p>
+        <p><strong>Palabra del Señor.</strong></p>
+        <h2 style="color:red">&nbsp;</h2>
+        <br><br><br>
+
+    </div>
+
+
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

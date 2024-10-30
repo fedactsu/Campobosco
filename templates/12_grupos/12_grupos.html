@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        .table-custom {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+        .table-custom th, .table-custom td {
+          vertical-align: middle;
+        }
+      </style>
+
+</head>
+
+<body class="verdebosco">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">GRUPOS y Sub GRUPOS</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="location.href='/inicio'">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+        <br>
+
+
+        <div class="container mt-5">
+            <h1>Selecciona un grupo</h1>
+
+            <a href="/grupos/grupo12" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/1DOCE.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/grupos/grupo15" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/2QUINCE.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/grupos/grupo16" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/3DIECISEIS.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/grupos/grupo17" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/4DIECISIETE.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+            <a href="/grupos/grupo18" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/5DIECIOCHO.png')}} " 
+                alt=""
+                width="100%">
+            </a>
+
+
+        </div>
+
+
+        {% include 'estructura/footer.html' %}
+
+    </div>
+
+
+
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+
+</body>
+
+</html>

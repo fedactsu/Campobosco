@@ -3,6 +3,7 @@ from flask import render_template
 import configuracion as c
 import cancionero as can
 import talleres as ttlr
+import grupos as grp
 from user_agents import parse
 from datetime import datetime
 
@@ -172,6 +173,91 @@ def talleres():
 
 @app.route('/taller/<idtaller>',methods=['GET'])
 def taller_get(idtaller):
+    try:
+        taller= ttlr.talleres().main(int(idtaller))
+        id_taller, nombre_taller, edad, lugar, tallerist, integrantes = taller
+        return render_template('11_talleres/12_talleres_esp.html', nombretaller=nombre_taller,tallerista=tallerist,edad=edad, lugar=lugar,integrantes=integrantes)
+    except:
+        return render_template('estructura/inicio.html', mensaje=determinar_momento_del_dia())
+    
+#-----------------------------------------------------------------------------------------------GRUPOS
+@app.route('/grupos')
+def grupos_g():
+    return render_template('12_grupos/12_grupos.html') #ok ok
+
+@app.route('/grupos/grupo12')
+def grupos_g12():
+    nombre="12 A 14 AÑOS"
+    grupo12 = grp.gruposnuevos().SUBGRUPO14
+    integrantes_con_espacios = []
+    previous_group = None
+    for vuelta in grupo12:
+        if previous_group and previous_group != vuelta[0]:
+            integrantes_con_espacios.append(("SALTO", "", ""))
+        integrantes_con_espacios.append(vuelta)
+        previous_group = vuelta[0]
+    return render_template('12_grupos/12_grupos12.html',subgrupo=nombre,integrantes=integrantes_con_espacios) 
+
+
+
+
+@app.route('/grupos/grupo15')
+def grupos_g15():
+    nombre="15 AÑOS"
+    grupo15 = grp.gruposnuevos().SUBGRUPO15
+    integrantes_con_espacios = []
+    previous_group = None
+    for vuelta in grupo15:
+        if previous_group and previous_group != vuelta[0]:
+            integrantes_con_espacios.append(("SALTO", "", ""))
+        integrantes_con_espacios.append(vuelta)
+        previous_group = vuelta[0]
+    return render_template('12_grupos/12_grupos12.html',subgrupo=nombre,integrantes=integrantes_con_espacios) 
+
+
+@app.route('/grupos/grupo16')
+def grupos_g16():
+    nombre="16 AÑOS"
+    grupo16 = grp.gruposnuevos().SUBGRUPO16
+    integrantes_con_espacios = []
+    previous_group = None
+    for vuelta in grupo16:
+        if previous_group and previous_group != vuelta[0]:
+            integrantes_con_espacios.append(("SALTO", "", ""))
+        integrantes_con_espacios.append(vuelta)
+        previous_group = vuelta[0]
+    return render_template('12_grupos/12_grupos12.html',subgrupo=nombre,integrantes=integrantes_con_espacios) 
+
+@app.route('/grupos/grupo17')
+def grupos_g17():
+    nombre="17 AÑOS"
+    grupo17 = grp.gruposnuevos().SUBGRUPO17
+    integrantes_con_espacios = []
+    previous_group = None
+    for vuelta in grupo17:
+        if previous_group and previous_group != vuelta[0]:
+            integrantes_con_espacios.append(("SALTO", "", ""))
+        integrantes_con_espacios.append(vuelta)
+        previous_group = vuelta[0]
+    return render_template('12_grupos/12_grupos12.html',subgrupo=nombre,integrantes=integrantes_con_espacios) 
+
+
+@app.route('/grupos/grupo18')
+def grupos_g18():
+    nombre="18 A 29 AÑOS"
+    grupo18 = grp.gruposnuevos().SUBGRUPO18
+    integrantes_con_espacios = []
+    previous_group = None
+    for vuelta in grupo18:
+        if previous_group and previous_group != vuelta[0]:
+            integrantes_con_espacios.append(("SALTO", "", ""))
+        integrantes_con_espacios.append(vuelta)
+        previous_group = vuelta[0]
+    return render_template('12_grupos/12_grupos12.html',subgrupo=nombre,integrantes=integrantes_con_espacios) 
+
+
+@app.route('/grupos/<idgrupos>',methods=['GET'])
+def subgrupos(idtaller):
     try:
         taller= ttlr.talleres().main(int(idtaller))
         id_taller, nombre_taller, edad, lugar, tallerist, integrantes = taller

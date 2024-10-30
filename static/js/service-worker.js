@@ -1,4 +1,4 @@
-const CACHE_NAME = 'offline-cache-v8';
+const CACHE_NAME = 'offline-cache-v9';
 const urlsToCache = [
     '/',
     '/static/Favicon.png',
@@ -54,6 +54,12 @@ const urlsToCache = [
     '/static/img/imagenes_CP50/vocacional/5_fma.png',
     '/static/img/imagenes_CP50/vocacional/5_sdb.png',
     '/static/img/imagenes_CP50/vocacional/sdb.png',
+    '/static/img/imagenes_CP50/GRUPOS/0BTN_GRUPOS.png',
+    '/static/img/imagenes_CP50/GRUPOS/1DOCE.png',
+    '/static/img/imagenes_CP50/GRUPOS/2QUINCE.png',
+    '/static/img/imagenes_CP50/GRUPOS/3DIECISEIS.png',
+    '/static/img/imagenes_CP50/GRUPOS/4DIECISIETE.png',
+    '/static/img/imagenes_CP50/GRUPOS/5DIECIOCHO.png',
     '/static/img/imagenes_CP50/mapa/mapa_picarquin.jpeg',
     '/static/img/imagenes_CP50/mapa/norte.png',
     '/static/img/imagenes_CP50/documentos/btn_carta_identidad.png',
@@ -189,6 +195,12 @@ const urlsToCache = [
     '/taller/55',
     '/taller/56',
     '/taller/57',
+    '/grupos',
+    '/grupos/grupo12',
+    '/grupos/grupo15',
+    '/grupos/grupo16',
+    '/grupos/grupo17',
+    '/grupos/grupo18',
 
 
 ];

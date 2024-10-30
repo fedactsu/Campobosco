@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPOBOSCO 2024</title>
+    <!-- CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
+    <style>
+        .table-custom {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .table-custom th,
+        .table-custom td {
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+
+<body class="verdebosco">
+    {% include 'estructura/nav.html' %}
+    <div class="container my-3">
+        <h1 class="text-center">{{subgrupo}}</h1>
+        <div class="d-flex justify-content-center">
+            <a onclick="history.back()">
+                <img src="{{ url_for('static', filename='img/imagenes_CP50/CAMPO/atras.png') }}" alt="" width="100px">
+            </a>
+        </div>
+
+        <div class="container mt-5">
+
+            <div class="table-responsive">
+                <!-- Campo de búsqueda -->
+                <input type="text" id="searchInput" class="form-control mb-3" placeholder="Buscar por nombre..."
+                    onkeyup="filterTable()">
+
+                <table class="table table-bordered table-hover table-custom">
+                    <thead>
+                        <tr>
+                            <!-- <th>SUB GRUPO</th> -->
+                            <th>PROCEDENCIA</th>
+                            <th>NOMBRE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="spacer-row">
+                            <td colspan="3">
+                                <h4 style="color: black;"> SUB GRUPO 1</h4>
+                            </td>
+                        </tr>
+                        {% for vuelta in integrantes %}
+                        {% if vuelta[0] == "SALTO" %}
+                        <tr class="spacer-row">
+                            <td colspan="3">
+                                <h4 style="color: black;"> SUB GRUPO {{ (loop.index // 11 // 2 + 1) }}</h4>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <!-- <td><b>{{ vuelta[0] }}</b></td> -->
+                            <td>{{ vuelta[1] }}</td>
+                            <td class="nombre">{{ vuelta[2] }}</td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            function filterTable() {
+                // Obtener el valor del campo de búsqueda
+                const input = document.getElementById('searchInput');
+                const filter = input.value.toUpperCase();
+                const table = document.querySelector('.table-custom tbody');
+                const rows = table.getElementsByTagName('tr');
+
+                // Recorrer todas las filas de la tabla y ocultar las que no coincidan con la búsqueda
+                for (let i = 0; i < rows.length; i++) {
+                    const cell = rows[i].getElementsByClassName('nombre')[0];
+                    if (cell) {
+                        const textValue = cell.textContent || cell.innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            rows[i].style.display = '';
+                        } else {
+                            rows[i].style.display = 'none';
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/sweetalert2.all.min.js') }}"></script>
+    </div>
+    {% include 'estructura/footer.html' %}
+</body>
+
+</html>

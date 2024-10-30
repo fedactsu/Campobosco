@@ -68,13 +68,13 @@
                 title: "Equipo de Liturgia",
                 html: `Trabajo realizado por el equipo de liturgia<br>
                Cualquier cosa que necesiten, no duden en buscarnos en el campamento.<br>
-               V. 1.27.03.58`,
+               V. 1.29.10.24`,
 
             });
         }
 
         document.getElementById('cache-btn').addEventListener('click', () => {
-            caches.open('offline-cache-v8').then(function (cache) {
+            caches.open('offline-cache-v9').then(function (cache) {
                 cache.addAll([
                     '/',
                     '/static/Favicon.png',
@@ -130,6 +130,12 @@
                     '/static/img/imagenes_CP50/vocacional/5_fma.png',
                     '/static/img/imagenes_CP50/vocacional/5_sdb.png',
                     '/static/img/imagenes_CP50/vocacional/sdb.png',
+                    '/static/img/imagenes_CP50/GRUPOS/0BTN_GRUPOS.png',
+                    '/static/img/imagenes_CP50/GRUPOS/1DOCE.png',
+                    '/static/img/imagenes_CP50/GRUPOS/2QUINCE.png',
+                    '/static/img/imagenes_CP50/GRUPOS/3DIECISEIS.png',
+                    '/static/img/imagenes_CP50/GRUPOS/4DIECISIETE.png',
+                    '/static/img/imagenes_CP50/GRUPOS/5DIECIOCHO.png',
                     '/static/img/imagenes_CP50/mapa/mapa_picarquin.jpeg',
                     '/static/img/imagenes_CP50/mapa/norte.png',
                     '/static/img/imagenes_CP50/documentos/btn_carta_identidad.png',
@@ -265,6 +271,12 @@
                     '/taller/55',
                     '/taller/56',
                     '/taller/57',
+                    '/grupos',
+                    '/grupos/grupo12',
+                    '/grupos/grupo15',
+                    '/grupos/grupo16',
+                    '/grupos/grupo17',
+                    '/grupos/grupo18',
 
                 ]);
             });

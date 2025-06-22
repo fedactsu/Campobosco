@@ -1,34 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <title> CampoBOSCO 2024 Liturgia </title>
-    <meta charset="utf-8">
-
-    <!-- Bootstrap CSS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
-
-    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
-    <style>
-        body {
-            background-color: #361439;
-        }
-
-        footer {
-            padding: 10px;
-        }
-    </style>
-
-</head>
-
-<body>
-    <header>
-
-    </header>
-    <main>
-
+{% extends 'estructura/base.html' %}
+{% block content %}
         <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
 
             <img src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="Logo Campobosco"
@@ -100,10 +71,5 @@
 
         document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
-    <div>
-        <br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br>
-        {% include 'estructura/footer.html' %}
-    </div>
-</body>
 
-</html>
+    {% endblock  %}

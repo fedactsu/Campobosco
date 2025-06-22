@@ -6,12 +6,24 @@
         <div id="idhora"></div>
         <h1 class="text-center">Selecciona el Día:</h1>
 
+        {% set dia = [
+        ['domingo','/domingo','2️⃣9️⃣'],
+        ['lunes','/lunes','3️⃣0️⃣'],
+        ['martes','/martes','0️⃣1️⃣'],
+        ['miercoles','/miercoles','0️⃣2️⃣'],
+        ['jueves','/jueves', '0️⃣3️⃣'],
+        ['viernes','/viernes','0️⃣4️⃣'],
+        ['sábado','/sabado','0️⃣5️⃣']
+    ] %}
+
         <div class="list-group mt-4">
-            <a href="/cancionero" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_cancionero2.png')}} " 
+            {% for dias in dia %}
+            <a href="{{dias[1]}}" class=" list-group-item-action">
+                <img src=" {{ url_for('static', filename='img/retiro_01/eeee/' ~ dias[1] ~ '.png')}} " 
                 alt=""
                 width="100%">
             </a>
+            {% endfor %}
 
         </div>
 

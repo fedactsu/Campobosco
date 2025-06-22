@@ -27,10 +27,21 @@ def index():
     print(user_agente)
     return render_template('index.html',device=dispositivo, mensaje=determinar_momento_del_dia())
 
+def obtenerdias():
+    return [
+        ['domingo','/domingo','2️⃣9️⃣'],
+        ['lunes','/lunes','3️⃣0️⃣'],
+        ['martes','/martes','0️⃣1️⃣'],
+        ['miercoles','/miercoles','0️⃣2️⃣'],
+        ['jueves','/jueves', '0️⃣3️⃣'],
+        ['viernes','/viernes','0️⃣4️⃣'],
+        ['sábado','/sabado','0️⃣5️⃣']
+    ]
 
 @app.route("/inicio")
 def inicio():
-    return render_template('estructura/inicio.html', mensaje=determinar_momento_del_dia())
+    return render_template('estructura/inicio.html',dia=obtenerdias(), mensaje=determinar_momento_del_dia())
+
 @app.route("/base")
 def base():
     return render_template('estructura/base.html', mensaje=determinar_momento_del_dia())

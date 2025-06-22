@@ -1,11 +1,11 @@
 
 class Opcion():
     def __init__(self):
-        self.tituloGlobal = "CAMPOBOSCO 2024"
+        self.tituloGlobal = "EJERCICIOS ESPIRITUALES 2025"
         self.logoCabeza = ""
         self.subLogoCABEZA = ""
         self.fechaAct = ""
-        self.anioActualTotal = 2024
+        self.anioActualTotal = 2025
         self.DEBUG = False
         self.keyPrivada = '][232312023!_01@@@@dsEWFds¡@∑€∂'
 

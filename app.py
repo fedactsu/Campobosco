@@ -31,33 +31,38 @@ def index():
 @app.route("/inicio")
 def inicio():
     return render_template('estructura/inicio.html', mensaje=determinar_momento_del_dia())
-#-----------------------------------------------------------------------------------------------MIERCOLES
+@app.route("/base")
+def base():
+    return render_template('estructura/base.html', mensaje=determinar_momento_del_dia())
+
+#-----------------------------------------------------------------------------------------------DOMINGO
+@app.route('/domingo')
+def domingo():
+    return render_template('1_DOMINGO/1_DOMINGO.html')
+#-----------------------------------------------------------------------------------------------LUNES
+@app.route('/lunes')
+def lunes():
+    return render_template('2_LUNES/2_LUNES.html')
+#-----------------------------------------------------------------------------------------------MARTES
+@app.route('/martes')
+def martes():
+    return render_template('3_MARTES/3_MARTES.html')
+#-----------------------------------------------------------------------------------------------MIÉRCOLES
 @app.route('/miercoles')
 def miercoles():
-    return render_template('1_miercoles/1_miercoles.html')
-
-
+    return render_template('4_MIERCOLES/4_MIERCOLES.html')
 #-----------------------------------------------------------------------------------------------JUEVES
 @app.route('/jueves')
 def jueves():
-    return render_template('2_jueves/1_jueves.html')
-
-
-#-----------------------------------------------------------------------------------------------viernes
+    return render_template('5_JUEVES/5_JUEVES.html')
+#-----------------------------------------------------------------------------------------------VIERNES
 @app.route('/viernes')
 def viernes():
-    return render_template('3_viernes/1_viernes.html')
-
-#-----------------------------------------------------------------------------------------------sabado
+    return render_template('6_VIERNES/6_VIERNES.html')
+#-----------------------------------------------------------------------------------------------SABADO
 @app.route('/sabado')
 def sabado():
-    return render_template('4_sabado/1_sabado.html')
-
-#-----------------------------------------------------------------------------------------------domingo
-@app.route('/domingo')
-def domingo():
-    return render_template('5_domingo/1_domingo.html')
-
+    return render_template('7_SABADO/7_SABADO.html')
 
 
 

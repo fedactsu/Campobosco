@@ -3,6 +3,7 @@ class Opcion():
     def __init__(self):
         self.tituloGlobal = "EJERCICIOS ESPIRITUALES 2025"
         self.logoCabeza = ""
+        self.tandaejercicio = "TANDA 1"
         self.subLogoCABEZA = ""
         self.fechaAct = ""
         self.anioActualTotal = 2025
@@ -30,4 +31,9 @@ class Opcion():
 
     def get_keyPrivada(self):
         return self.keyPrivada
+    
+    def get_tandaejercicio(self):
+        return self.tandaejercicio
 
+    def set_tandaejercicio(self, value):
+        self.tandaejercicio = value

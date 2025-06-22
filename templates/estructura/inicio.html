@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAMPOBOSCO 2024</title>
-    <!-- Bootstrap CSS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
-
-    <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
-    <style>
-        body {
-            background-color: #361439;
-            font-family: 'tipoCampo', sans-serif;
-        }
-
-        h1,
-        h3,h2 {
-            color: #ffffff;
-        }
-
-        .list-group-item {
-            font-size: 1.2em;
-        }
-
-        #cache-btn {
-            font-size: 1.1em;
-        }
-    </style>
-
-</head>
-
-<body>
+{% extends 'estructura/base.html' %}
+{% block content %}
    
-        {% include 'estructura/nav.html' %}
     
     <div class="container my-3">
         <div id="idhora"></div>
@@ -48,68 +13,6 @@
                 width="100%">
             </a>
 
-            <a href="/miercoles" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnmiercoles.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/jueves" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnjueves.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/viernes" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnviernes.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/sabado" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnsabado.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/domingo" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btndomingo.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/talleres" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/talleres/btn_talleres.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/grupos" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/GRUPOS/0BTN_GRUPOS.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-
-            <a href="/vocacional" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/vocacional.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-
-            <a href="/mapalugar" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btnMapa01.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/documentos" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/documentos/btn_documentos_gnral.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a href="/acercade" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/imagenes_CP50/CAMPO/btn_campobosco_acerca.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            <a onclick="location.href='/'">
-            <img 
-            class="list-group-item-action"
-            src="{{ url_for('static', filename='img/imagenes_CP50/cpb50_sin.png') }}" alt="" width="50%">
-            </a>
         </div>
 
 
@@ -144,7 +47,4 @@
 
         document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
     </script>
-    {% include 'estructura/footer.html' %}
-</body>
-
-</html>
+{% endblock %}

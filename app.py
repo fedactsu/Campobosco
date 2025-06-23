@@ -48,7 +48,8 @@ def base():
 #-----------------------------------------------------------------------------------------------DOMINGO
 @app.route('/domingo')
 def domingo():
-    return render_template(obtenercoso()[0][2],domingo=obteneroracion(),dia=obtenercoso()[0][0],onomastico=obtenercoso()[0][1])
+    lec = tpt.PrimeraTanda().lecturadomingo()
+    return render_template(obtenercoso()[0][2],domingo=obteneroracion(),dia=obtenercoso()[0][0],onomastico=obtenercoso()[0][1],lec=lec)
 #-----------------------------------------------------------------------------------------------LUNES
 @app.route('/lunes')
 def lunes():

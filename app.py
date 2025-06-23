@@ -3,53 +3,43 @@ from flask import render_template
 import configuracion as c
 from user_agents import parse
 from datetime import datetime
-
+import textos_primera_tanda as tpt
 import os
 
 app=Flask(__name__)
 app.config['SECRET_KEY']=c.Opcion().get_keyPrivada()
 application=app
 
-
 @app.route("/",methods=['GET','POST'])
 def index():
-    user_agente=request.headers.get('User-Agent')
-    parse_agente = parse(user_agente)
-    if parse_agente.is_mobile:
-        if "Android" in user_agente:
-            dispositivo = "Android"
-        elif "iPhone" in user_agente:
-            dispositivo = "iPhone"
-        else:
-            dispositivo = "Otro móvil"
-    else:
-        dispositivo = "WEB"
-    print(user_agente)
-    return render_template('index.html',device=dispositivo, mensaje=determinar_momento_del_dia())
+    return render_template('index.html')
 
 def obtenerdias():
     return [
         ['domingo','/domingo','2️⃣9️⃣'],
         ['lunes','/lunes','3️⃣0️⃣'],
         ['martes','/martes','0️⃣1️⃣'],
-        ['miercoles','/miercoles','0️⃣2️⃣'],
+        ['miércoles','/miercoles','0️⃣2️⃣'],
         ['jueves','/jueves', '0️⃣3️⃣'],
         ['viernes','/viernes','0️⃣4️⃣'],
         ['sábado','/sabado','0️⃣5️⃣']
     ]
 
+def obteneroracion():
+    return ['laudes','vísperas','completas']
+
 @app.route("/inicio")
 def inicio():
-    return render_template('estructura/inicio.html',dia=obtenerdias(), mensaje=determinar_momento_del_dia())
-
+    return render_template('estructura/inicio.html',dia=obtenerdias())
 @app.route("/base")
 def base():
-    return render_template('estructura/base.html', mensaje=determinar_momento_del_dia())
-
+    return render_template('estructura/base.html')
 #-----------------------------------------------------------------------------------------------DOMINGO
 @app.route('/domingo')
 def domingo():
-    return render_template('1_DOMINGO/1_DOMINGO.html')
+    dia="Domingo 29"
+    onomastico = "San Pablo y San Pedro apóstoles"
+    return render_template('1_DOMINGO/1_DOMINGO.html',domingo=obteneroracion(),dia=dia,onomastico=onomastico)
 #-----------------------------------------------------------------------------------------------LUNES
 @app.route('/lunes')
 def lunes():
@@ -74,39 +64,15 @@ def viernes():
 @app.route('/sabado')
 def sabado():
     return render_template('7_SABADO/7_SABADO.html')
-
-
-
-
 #-----------------------------------------------------------------------------------------------ERRORES
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('estructura/404.html')
+@app.errorhandler(500)
+def internal_server_error(error):
+    return render_template('estructura/500.html')
 
-@app.route('/service-worker.js')
-def service_worker():
-    return app.send_static_file('js/service-worker.js')
 
-
-def determinar_momento_del_dia():
-    hora_actual = datetime.now().hour  # Obtiene la hora actual
-
-    if 6 <= hora_actual < 8:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>"
-    elif 8 <= hora_actual < 13:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🪚</h3>"
-    elif 13<= hora_actual <14:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>"
-    elif 14 <= hora_actual < 18:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>"
-    elif hora_actual==19:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>"
-    elif 20 <= hora_actual < 21:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>"
-    elif 21 <= hora_actual < 24:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>"
-    else:
-        return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>" 
 
 if __name__ == '__main__':
     app.run(debug=True,port=5001)

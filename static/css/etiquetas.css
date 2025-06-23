@@ -1,0 +1,67 @@
+.titulo-elegante {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.tarjeta-dia {
+    display: block;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    background: #f9f6f2;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(54, 20, 57, 0.08);
+    color: #5a3472;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Merriweather', serif;
+}
+
+.tarjeta-dia:hover,
+.tarjeta-dia:focus {
+    background: #e6e0f3;
+    color: #d32f2f;
+}
+
+.texto-dia {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #222;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #66b352 !important;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(54, 20, 57, 0);
+    margin-top: 30px;
+    padding: 10px 10px;
+}
+
+footer {
+    background: #361439;
+    color: #fff;
+    padding: 16px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 12px 4px;
+    }
+}

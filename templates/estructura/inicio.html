@@ -1,62 +1,16 @@
 {% extends 'estructura/base.html' %}
 {% block content %}
-   
-    
-    <div class="container my-3">
-        <div id="idhora"></div>
-        <h1 class="text-center">Selecciona el Día:</h1>
-
-        {% set dia = [
-        ['domingo','/domingo','2️⃣9️⃣'],
-        ['lunes','/lunes','3️⃣0️⃣'],
-        ['martes','/martes','0️⃣1️⃣'],
-        ['miercoles','/miercoles','0️⃣2️⃣'],
-        ['jueves','/jueves', '0️⃣3️⃣'],
-        ['viernes','/viernes','0️⃣4️⃣'],
-        ['sábado','/sabado','0️⃣5️⃣']
-    ] %}
-
-        <div class="list-group mt-4">
-            {% for dias in dia %}
-            <a href="{{dias[1]}}" class=" list-group-item-action">
-                <img src=" {{ url_for('static', filename='img/retiro_01/eeee/' ~ dias[1] ~ '.png')}} " 
-                alt=""
-                width="100%">
-            </a>
-            {% endfor %}
-
-        </div>
-
-
+<div class="container my-3">
+    <h1 class="text-center titulo-elegante">Selecciona el Día:</h1>
+    <div class="list-group mt-4">
+        {% for dias in dia %}
+        <a href="{{ dias[1] }}" class="list-group-item-action text-center tarjeta-dia">
+            <span class="texto-dia">
+                {{ dias[0]|capitalize }}
+            </span>
+        </a>
+        {% endfor %}
     </div>
+</div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
-
-    <script>
-         function determinarMomentoDelDia() {
-            const horaActual = new Date().getHours();  // Obtiene la hora actual
-
-            if (6 <= horaActual && horaActual < 8) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Hola buenos días✌️</h3>";
-            } else if (8 <= horaActual && horaActual < 13) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buena jornada 👩‍🏭🌴</h3>";
-            } else if (13 <= horaActual && horaActual < 14) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🍢A comeer!! 🍕</h3>";
-            } else if (14 <= horaActual && horaActual < 19) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>☀️🫡Buena tarde </h3>";
-            } else if (horaActual === 19) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>⛪Vamos a misa ✝️</h3>";
-            } else if (20 <= horaActual && horaActual < 21) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>vamos a cenar🌃</h3>";
-            } else if (21 <= horaActual && horaActual < 24) {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>Buenas actividades nocturnas<br>🌉🌓🌙</h3>";
-            } else {
-                return "<h3 class='text-center' style='padding-left: 5%; padding-right: 5%;'>🤫🥷shhh deben estar durmiendo🛌🏕️</h3>";
-            }
-        }
-
-        document.getElementById("idhora").innerHTML = determinarMomentoDelDia();
-    </script>
 {% endblock %}

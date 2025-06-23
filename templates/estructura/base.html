@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/boot/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/botones.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='Favicon.png') }}">
-    <style>
-        body {
-            background: linear-gradient(135deg, #54bdc4 0%, #8B268C 100%);
-            min-height: 100vh;
-            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-            color: #222;
-        }
-        .navbar {
-            background: #361439;
-        }
-        .navbar .nav-link, .navbar-brand {
-            color: #fff !important;
-        }
-        .navbar .nav-link.active {
-            font-weight: bold;
-            color: #66b352 !important;
-        }
-        .container {
-            background: rgba(255,255,255,0.95);
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(54,20,57,0.08);
-            margin-top: 30px;
-            padding: 24px 16px;
-        }
-        footer {
-            background: #361439;
-            color: #fff;
-            padding: 16px 0;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 12px 4px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/etiquetas.css') }}">
+
     {% block extra_head %}{% endblock %}
 </head>
 <body>
@@ -56,6 +24,8 @@
     </main>
     {% include 'estructura/footer.html' %}
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
     {% block extra_js %}{% endblock %}
 </body>
+
 </html>

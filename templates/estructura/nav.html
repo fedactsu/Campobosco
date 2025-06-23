@@ -2,6 +2,16 @@
     <nav class="navbar navbar-expand ">
         <div class="nav navbar-nav d-flex justify-content-center w-100">
             <a class="nav-item nav-link active" style="font-size: 14px;" href="/inicio"><h3>🏠</h3></a>
+                   {% set dia = [
+        ['domingo','/domingo','2️⃣9️⃣'],
+        ['lunes','/lunes','3️⃣0️⃣'],
+        ['martes','/martes','0️⃣1️⃣'],
+        ['miercoles','/miercoles','0️⃣2️⃣'],
+        ['jueves','/jueves', '0️⃣3️⃣'],
+        ['viernes','/viernes','0️⃣4️⃣'],
+        ['sábado','/sabado','0️⃣5️⃣']
+    ] %}
+
             {% for dias in dia %}
             <a class="nav-item nav-link" href="{{dias[1]}}"><h3>{{dias[2]}}</h3></a>
             {% endfor %}

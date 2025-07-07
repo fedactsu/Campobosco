@@ -82,7 +82,6 @@ def page_not_found(error):
 def internal_server_error(error):
     return render_template('estructura/500.html')
 
-
-
+#-----------------------------------------------------------------------------------------------MAIN
 if __name__ == '__main__':
     app.run(debug=True,port=5001)

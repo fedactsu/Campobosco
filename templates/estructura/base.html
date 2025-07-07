@@ -13,6 +13,7 @@
 
     {% block extra_head %}{% endblock %}
 </head>
+
 <body>
     {% include 'estructura/nav.html' %}
     <main>
@@ -25,6 +26,27 @@
     {% include 'estructura/footer.html' %}
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/bootjs/bootstrap.min.js') }}"></script>
+    <script>
+        let currentFontSize = 16; // Tamaño inicial
+
+        function increaseFontSize() {
+            currentFontSize += 2; // Incrementar tamaño en 2px
+            let paragraphs = document.querySelectorAll("div");
+            paragraphs.forEach(p => {
+                p.style.fontSize = currentFontSize + "px";
+            });
+        }
+
+        function decreaseFontSize() {
+            if (currentFontSize > 10) { // Establece un tamaño mínimo para evitar que el texto sea demasiado pequeño
+                currentFontSize -= 2; // Reducir tamaño en 2px
+                let paragraphs = document.querySelectorAll("div");
+                paragraphs.forEach(p => {
+                    p.style.fontSize = currentFontSize + "px";
+                });
+            }
+        }
+    </script>
     {% block extra_js %}{% endblock %}
 </body>
 

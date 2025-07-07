@@ -1,5 +1,7 @@
 {% extends 'estructura/base.html' %}
 {% block content %}
+
+
 <div class="container my-3" style="padding-left: 5%; padding-right: 5%;">
     <h1 class="text-center">{{dia}}</h1>
     <h3 class="text-center">{{onomastico}}</h3>
@@ -17,7 +19,15 @@
     </a>
     {% endfor %}
     <div>
+        <div class="controls">
+    <button class="btn btn-danger" onclick="decreaseFontSize()">-A</button>
+    <button class="btn btn-success" onclick="increaseFontSize()">+A</button>
+</div>
+    </div>
+    <div>
         {{lec|safe}}
     </div>
+
+    
 </div>
 {% endblock %}

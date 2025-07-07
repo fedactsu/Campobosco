@@ -26,9 +26,9 @@ class PrimeraTanda():
         la ciudad, que se abrió solo. ante ellos. Salieron, y anduvieron una calle y de pronto se marchó el ángel.</p>
     <p>Pedro volvió en sí y dijo:<br>«Ahora sé realmente que el Señor ha enviado a su ángel para librarme de las manos
         de Herodes y de toda la expectación del pueblo de los judíos».</p>
-    <p></p>
+    <p></p><strong>Palabra de Dios.</strong>
     <h2>Salmo</h2>
-    <h3>Salmo 33, 2-3. 4-5. 6-7. 8-9 R/. El Señor me libró de todas mis ansias.</h3>
+    <h3>Salmo 33, 2-3. 4-5. 6-7. 8-9 </h3><br><h3>R/. El Señor me libró de todas mis ansias.</h3>
     <p></p>
     <p>Bendigo al Señor en todo momento,<br>su alabanza está siempre en mi boca;<br>mi alma se gloría en el
         Señor:<br>que los humildes lo escuchen y se alegren. R/.</p>
@@ -50,7 +50,7 @@ class PrimeraTanda():
         lo oyeran todas las naciones. Y fui librado de la boca del león.</p>
     <p>El Señor me librará de toda obra mal y me salvará llevándome a su reino celestial.</p>
     <p>A él la gloria por los siglos de los siglos. Amén.</p>
-    <p></p>
+    <p></p><strong>Palabra de Dios.</strong>
     <h2>Evangelio del día</h2>
     <h3>Lectura del santo evangelio según san Mateo 16, 13-19</h3>
     <p></p>
@@ -65,8 +65,8 @@ class PrimeraTanda():
         derrotará.</p>
     <p>Te daré las llaves del reino de los cielos; lo que ates en la tierra quedará atado en el cielo, y lo que desates
         en la tierra quedará desatado en los cielos».</p>
-    <p></p>
-</div>" 
+    <p></p><strong>Palabra del Señor.</strong>
+</div>
 """
 
     def lunes(self):
